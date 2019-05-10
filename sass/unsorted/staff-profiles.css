@@ -1,0 +1,28 @@
+.profile-header {background:#d52b1e url("/__data/assets/image/0005/545990/texture-red.jpg") repeat-x 0 70%; background-size:cover; box-shadow:0 0 5px rgba(0,0,0,0.5); position:relative;}
+.profile-header-img {}
+.content-wrapper .profile-header-img img {display:block; float:none; margin:0 auto; max-width:240px; padding:20px;}
+.profile-header-text {color:#fff; overflow:hidden;}
+.profile-header-text h1 {color:#fff; line-height:54px; padding:20px 20px 0 20px;}
+.profile-header-text .post-text {background-color:#fff; color:#242424; display:inline-block; margin:-20px 20px 20px 20px; padding:4px 8px;}
+.profile-header-text p {line-height:20px; margin:20px;}
+.profile-header-text p.shout {line-height:32px;}
+.profile-header-text p:last-of-type {margin-bottom:28px;}
+.content-wrapper .profile-header .button-list {margin:0 20px 20px 20px; padding-left:0;}
+.main-content .contact-list {list-style-type:none; margin:20px; max-width:400px; padding:0;}
+.main-content .contact-list li {margin-bottom:4px;}
+.contact-list a {background-color:#ab2328; color:#fff; display:block; font-family:Roboto, sans-serif; padding:4px 16px; text-decoration:none;}
+.contact-list a:hover, .contact-list a:focus {background-color:#242424;}
+.contact-list a:active {background-color:#e42312;}
+.profile-data {background-color:#f4f4f4; padding:20px;}
+/*.profile-data h3 {font-size:24px; margin-bottom:0;}
+.profile-data h3 + h4 {margin-top:0;}
+.profile-data h4 {margin-bottom:0;}*/
+
+
+@media (min-width:768px) {
+    .profile-header {display:flex;}
+    .profile-header-img {flex:1 0 260px; max-width:260px;}
+    .profile-header-text {flex:3 0 calc(100% - 260px);}
+    .content-wrapper .profile-header .button-list {display:inline-block;}
+    .profile-data {padding:60px;}
+}

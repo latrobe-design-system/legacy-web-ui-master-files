@@ -1,0 +1,69 @@
+.home .expander,
+.LP2 .expander {
+    margin-top: 40px;
+}
+
+@media (min-width:768px) {
+    .home .expander,
+    .LP2 .expander {
+        margin: 3vw 12vw 3vw;
+    }
+}
+
+.tfl .expander  {
+    padding: 30px 20px 30px 20px;
+    background-color: white;
+}
+
+@media screen and (min-width: 480px) {
+    .tfl .expander  {
+        padding: 20px 20px 0 0;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .tfl .expander  {
+        padding: 48px 44px;
+    }
+}
+.main-content .expander-trigger {cursor:pointer; margin:0 0 1px 0; position:relative; -webkit-transition:background-color 0.3s ease-in-out; transition:background-color 0.3s ease-in-out; z-index:1;}
+.expander-trigger.red {background-color:#fff; border-top:1px solid #ccc;}
+.expander-trigger.red:last-of-type {border-bottom:1px solid #ccc;}
+.expander-trigger.black {background-color:#242424; color:#ff9e1b;}
+.expander-trigger button {background:transparent; border:none; display:block; font:normal 18px/24px 'Roboto Bold',sans-serif; padding:12px 12px 12px 46px; text-align:left; transition:color 0.3s ease-in-out, text-indent 0.3s ease-in-out; width:100%;}
+@media (min-width:1400px) {
+    .expander-trigger button {font-size:20px;}
+}
+.expander-trigger.black button:focus {color:#fff;}
+.expander-trigger.red button {color:#e42312; padding:12px 46px 12px 12px;}
+.expander-trigger.black button {color:#fff; padding:12px 46px 12px 12px;}
+.expander .expander-trigger img {padding:0; position:absolute; top:0; transition:transform 0.3s ease-in-out;}
+.expander-trigger.plain img {left:0;}
+.expander-trigger.red img, .expander-trigger.black img {right:0;}
+.expander-trigger img[alt="collapsed"] {transform:rotate(90deg);}
+@media (min-width:768px) {
+    .expander-trigger.plain button {padding:20px 0px 20px 54px;}
+    .expander-trigger.red button, .expander-trigger.black button {padding:20px 62px 20px 20px;}
+    .expander-trigger.plain img {left:0px; top:8px;}
+    .expander-trigger.red img, .expander-trigger.black img {right:8px; top:8px;}
+}
+.expander-content {margin:0; overflow:hidden; -webkit-transition:height 0.3s ease-in-out, visibility 0s 0.3s; transition:height 0.3s ease-in-out, visibility 0s 0.3s; visibility:hidden;}
+.black + .expander-content {background-color:#eee;}
+.plain + .expander-content.open {box-shadow:0 1px 1px #eee;}
+.expander-content.open {overflow:hidden; -webkit-transition:height 0.3s ease-in-out, visibility 0s 0s; transition:height 0.3s ease-in-out, visibility 0s 0s; visibility:visible;}
+.expander-content > div {overflow:hidden; padding:20px;}
+.plain + .expander-content > div {padding:0 14px;}
+.expander-content ul {padding-left:20px;}
+
+.checkbox-expander {perspective:500px;}
+.checkbox-expander input {opacity:0; position:absolute;}
+.checkbox-expander-heading {background:#f4f4f4; margin-bottom:4px;}
+.checkbox-expander label {cursor:pointer; display:block; font:normal 20px/24px RobotoCondensed-Bold,sans-serif; margin-bottom:0; padding:12px 12px 12px 48px; position:relative;}
+.checkbox-expander label:hover {background:#ddd;}
+.checkbox-expander input:focus + .checkbox-expander-heading label {outline:2px dotted #e42312;}
+.checkbox-expander label:before {content:url(https://www.latrobe.edu.au/__data/assets/file/0005/745196/plus-dark.svg); display:inline-block; height:48px; left:0; position:absolute; top:0; vertical-align:middle; width:48px;}
+.checkbox-expander input:checked + .checkbox-expander-heading {background:#ddd; margin-bottom:0;}
+.checkbox-expander input:checked + .checkbox-expander-heading label:before {content:url(https://www.latrobe.edu.au/__data/assets/file/0004/745195/minus-dark.svg);}
+.checkbox-expander-content {background:#f4f4f4; animation:accordion-closed 0.2s 1 ease-in-out forwards; display:block; transform-origin:top; visibility:hidden;}
+.checkbox-expander-content-wrapper {padding:20px;}
+.checkbox-expander input:checked ~ .checkbox-expander-content {animation:accordion-open 0.2s 1 ease-in-out forwards; display:block; margin-bottom:4px; transform-origin:top; visibility:hidden;}

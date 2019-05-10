@@ -1,0 +1,27 @@
+/* Banner Promo feature - Home, LP2, Course detail */
+.banner {max-height:60vh; overflow:hidden; position:relative; width:100%;}
+.home .banner {max-height:52vh;}
+.content-wrapper .banner img {padding:0; width:100%;}
+.gradient {background:linear-gradient(to bottom, rgba(0,0,0,.2) 1%,rgba(0,0,0,.4) 100%); bottom:0; height:100%; pointer-events:none; position:absolute; top:0; width:100%;}
+.banner-text {color:#fff; left:50%; max-width:80%; position:absolute; text-align:center; top:50%; transform:translate(-50%, -50%); width:100%;}
+.banner .label {border-bottom:2px solid #fff; display:none; font:20px/24px 'Roboto Bold',sans-serif; padding:0 30px 20px 30px; text-transform:uppercase;}
+.banner-text {max-width:60%;}
+.banner-text h2 {color:#fff; font-size:28px; line-height:32px; margin-top:0;}
+.banner-text h2 a, .banner-text h2 a:visited, .banner-text h2 a:hover {color:#fff; text-decoration:none;}
+.banner-text p {color:#fff;}
+.banner-text .cta {font-size:18px;}
+.banner-text .cta a.ltu-button {background-color:rgba(0,0,0,0.3);}
+.banner-text .cta a.ltu-button:hover {background-color:rgba(0,0,0,0.6);}
+@media (min-width:768px) {
+    .banner.inset {max-height:60vh; margin:0 auto; width:calc(100% - 24vw);}
+    .banner .label {display:inline-block;}
+    .banner-text {max-width:50%;}
+    .home .banner {min-height:520px; }
+    .home .banner-text {top:calc(50% - 44px);}
+}
+@media (min-width:1024px) {
+    .banner-text h2 {font-size:56px; line-height:60px; margin-bottom:32px;}
+}
+@media (min-width:1400px) {
+    .banner img {transform:translateY(-12vh);}
+}

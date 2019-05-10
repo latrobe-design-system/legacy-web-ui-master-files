@@ -1,0 +1,16 @@
+/* V6 Contact Box */
+.contact-box {background:#e2231b url(/__data/assets/file/0005/796397/bg-nodes.svg) no-repeat center; color:#fff; padding:20px; position:relative; text-align:center;}
+.contact {margin-bottom:3vw;}
+.home .contact-box h2 {color:#fff;}
+.home .contact-box h3 {color:#fff; font-size:20px; line-height:24px; margin:0; text-transform:none;}
+.contact-box a {color:#fff; font:28px/32px 'Roboto Bold',sans-serif; text-decoration:none; text-transform:uppercase;}
+.contact-box a[href^=mailto] {text-transform:none;}
+.contact-box a:hover {border-bottom:1px solid #fff;}
+@media (min-width:768px) {
+    .contact-box {padding:3vw 12vw;}
+}
+@media (min-width:1024px) {
+    .contact-box {background-size:cover;}
+    .contact-box-wrapper {display:flex;}
+    .contact {flex:1 0 0%; margin-bottom:0;}
+}
