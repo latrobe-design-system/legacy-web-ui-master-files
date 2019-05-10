@@ -1,0 +1,31 @@
+/// mixin for inline Icons
+/// @param {string} $icon
+///     The icon name (filename less extension)
+/// @param {string} $color
+///     The color version to use default is black (currentColor), other options red or white
+/// @param {string} $position
+///     Place icon before or after - default after
+/// @example scss - add red activity icon to `.foo` before .foo text
+///   .foo {
+///       @include icon(activity, red, before);
+///   }
+@mixin icon($icon, $color: none, $position: after) {
+    &::#{$position} {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 1em;
+        height: 1em;
+        margin-left: 8px;
+        background: {
+            image: url("icons/feather/" + $icon + ".svg");
+            repeat: no-repeat;
+            size: 100%;
+            position: center;
+        }
+    }
+}
+
+.activity {
+    @include icon(activity);
+}
