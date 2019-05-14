@@ -9,23 +9,30 @@
 ///   .foo {
 ///       @include icon(activity, red, before);
 ///   }
-@mixin icon($icon, $color: none, $position: after) {
+@mixin icon($icon, $color: none, $position: before) {
     &::#{$position} {
         content: "";
         display: inline-block;
-        vertical-align: middle;
-        width: 1em;
-        height: 1em;
-        margin-left: 8px;
+        vertical-align: baseline;
+        width: 0.8em;
+        height: 0.8em;
+        line-height: inherit;
+        @if $position == after {
+            margin-left: 8px;
+        } @else {
+            margin-right: 8px;
+        }
         background: {
-            image: url("icons/feather/" + $icon + ".svg");
+            @if $color == red {
+                image: url("icons/feather-red/" + $icon + ".svg");
+            } @else if $color == white {
+                image: url("icons/feather-white/" + $icon + ".svg");
+            } @else {
+                image: url("icons/feather/" + $icon + ".svg");
+            }
             repeat: no-repeat;
             size: 100%;
             position: center;
         }
     }
-}
-
-.activity {
-    @include icon(activity);
 }
