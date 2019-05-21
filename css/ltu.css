@@ -1,5 +1,18 @@
 @charset "UTF-8";
-/* comment */
+.activity::before {
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  width: 0.8em;
+  height: 0.8em;
+  line-height: inherit;
+  margin-right: 8px;
+  background-image: url("icons/feather-red/activity.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto-Light-webfont.eot");
