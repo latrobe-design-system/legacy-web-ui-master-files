@@ -1,18 +1,4 @@
 @charset "UTF-8";
-.activity::before {
-  content: "";
-  display: inline-block;
-  vertical-align: baseline;
-  width: 0.8em;
-  height: 0.8em;
-  line-height: inherit;
-  margin-right: 8px;
-  background-image: url("icons/feather-red/activity.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-}
-
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto-Light-webfont.eot");
@@ -31,6 +17,20 @@
   font-style: normal;
   font-stretch: normal;
 }
+.activity::before {
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  width: 0.8em;
+  height: 0.8em;
+  line-height: inherit;
+  margin-right: 8px;
+  background-image: url("icons/feather-red/activity.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
 article, aside, details, figcaption, figure, footer, header, main, nav, section {
   display: block;
   margin: 0;
@@ -2546,9 +2546,9 @@ li.hide-nav {
   }
 }
 .landing .layout h1 {
-  background: rgb(226, 35, 27);
+  background: #e2231b;
   background-image: url(/__data/assets/file/0005/796397/bg-nodes.svg);
-  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, rgb(226, 35, 27) 1%, rgb(209, 65, 36) 100%);
+  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, #e2231b 1%, #d14124 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -3904,7 +3904,7 @@ input[type=text], input[type=email], input[type=date], input[type=tel], input[ty
 }
 
 .lightbox-popup form {
-  background-color: rgb(238, 237, 232);
+  background-color: #eeede8;
   box-sizing: border-box;
   margin: 10vh auto;
   max-height: 80vh;
@@ -3937,7 +3937,7 @@ input[type=text], input[type=email], input[type=date], input[type=tel], input[ty
 }
 
 .lightbox-popup select, .lightbox-popup textarea {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border: 1px solid #D5D2C3;
   border-radius: 0px;
   box-sizing: border-box;
@@ -3951,7 +3951,7 @@ input[type=text], input[type=email], input[type=date], input[type=tel], input[ty
 }
 
 .lightbox-popup input[type=submit], .lightbox-popup input[type=button], .lightbox-popup textarea {
-  border: 1px solid rgb(213, 210, 195);
+  border: 1px solid #d5d2c3;
   border-image-source: initial;
   border-image-slice: initial;
   border-image-width: initial;
@@ -4998,9 +4998,9 @@ img.inline {
 }
 
 .news-intro {
-  background: rgb(226, 35, 27);
+  background: #e2231b;
   background-image: url(/__data/assets/file/0005/796397/bg-nodes.svg);
-  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, rgb(226, 35, 27) 1%, rgb(209, 65, 36) 100%);
+  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, #e2231b 1%, #d14124 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -8018,7 +8018,7 @@ p.gallery-attribution {
 }
 
 .lt-ie9 .scrollers:hover {
-  background-color: rgba(209, 65, 36, 1);
+  background-color: #d14124;
 }
 
 /* =============================================================================
@@ -8420,9 +8420,9 @@ p.gallery-attribution {
 }
 
 .tfl h1, .page-heading {
-  background: rgb(226, 35, 27);
+  background: #e2231b;
   background-image: url(/__data/assets/file/0005/796397/bg-nodes.svg);
-  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, rgb(226, 35, 27) 1%, rgb(209, 65, 36) 100%);
+  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, #e2231b 1%, #d14124 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -8443,7 +8443,7 @@ p.gallery-attribution {
 }
 .page-header {
   background-image: url(/__data/assets/file/0005/796397/bg-nodes.svg);
-  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, rgb(226, 35, 27) 1%, rgb(209, 65, 36) 100%);
+  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, #e2231b 1%, #d14124 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -8751,9 +8751,9 @@ p.gallery-attribution {
 }
 /* Course search */
 .course-search-flex {
-  background: rgb(226, 35, 27);
+  background: #e2231b;
   background-image: url(/__data/assets/file/0005/796397/bg-nodes.svg);
-  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, rgb(226, 35, 27) 1%, rgb(209, 65, 36) 100%);
+  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, #e2231b 1%, #d14124 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -8762,9 +8762,9 @@ p.gallery-attribution {
 }
 
 #fb-queryform.course-search-flex {
-  background: rgb(36, 36, 36);
+  background: #242424;
   background-image: url(/__data/assets/file/0005/796397/bg-nodes.svg);
-  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, rgb(36, 36, 36) 1%, rgb(36, 36, 36) 100%);
+  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, #242424 1%, #242424 100%);
 }
 
 @media (min-width: 769px) {
@@ -12051,9 +12051,9 @@ body .ui-tooltip {
 }
 /* Our Courses - Funnelback course-search on home and courses */
 .our-courses {
-  background: rgb(226, 35, 27);
+  background: #e2231b;
   background-image: url(/__data/assets/file/0005/796397/bg-nodes.svg);
-  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, rgb(226, 35, 27) 1%, rgb(209, 65, 36) 100%);
+  background: url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, #e2231b 1%, #d14124 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -12286,11 +12286,11 @@ li.need-help a, li.need-help a:visited {
 }
 
 .LP2-nav.scrolls:after {
-  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(244, 244, 244, 1) 100%);
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #f4f4f4 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(244, 244, 244, 1) 100%);
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #f4f4f4 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(244, 244, 244, 1) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #f4f4f4 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffffff", endColorstr="#f4f4f4", GradientType=1);
   /* IE6-9 */
@@ -12636,8 +12636,8 @@ div.awesomplete > ul {
   padding: 0;
   border-radius: 0.3em;
   margin: 0.2em 0 0;
-  background: hsla(0, 0%, 100%, 0.9);
-  background: linear-gradient(to bottom right, white, hsla(0, 0%, 100%, 0.8));
+  background: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(to bottom right, white, rgba(255, 255, 255, 0.8));
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0.05em 0.2em 0.6em rgba(0, 0, 0, 0.2);
   text-shadow: none;
@@ -12687,25 +12687,25 @@ div.awesomplete > ul > li {
 }
 
 div.awesomplete > ul > li:hover {
-  background: hsl(200, 40%, 80%);
+  background: #b8d3e0;
   color: black;
 }
 
 div.awesomplete > ul > li[aria-selected=true] {
-  background: hsl(205, 40%, 40%);
+  background: #3d6d8f;
   color: white;
 }
 
 div.awesomplete mark {
-  background: hsl(65, 100%, 50%);
+  background: #eaff00;
 }
 
 div.awesomplete li:hover mark {
-  background: hsl(68, 100%, 41%);
+  background: #b5d100;
 }
 
 div.awesomplete li[aria-selected=true] mark {
-  background: hsl(86, 100%, 21%);
+  background: #3d6b00;
   color: inherit;
 }
 
