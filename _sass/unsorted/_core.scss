@@ -110,8 +110,8 @@ select:not([multiple]) {-webkit-appearance:none;}
 /* Restore arrow to select elements in webkit browsers
 Edge evaluates -webkit rules but can't perform calc() on background position */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    select:not([multiple]) {background-image:url(/__data/assets/image/0003/552090/chevron-sm-orange-down.png); background-repeat:no-repeat; background-position:calc(100% - 12px) center;}
-    .main-content select:not([multiple]) {background-image:url(/__data/assets/image/0003/552090/chevron-sm-orange-down.png); background-repeat:no-repeat; background-position:calc(100% - 12px) center; padding-right:36px;}
+    select:not([multiple]) {background-image:url(https://www.latrobe.edu.au/__data/assets/image/0003/552090/chevron-sm-orange-down.png); background-repeat:no-repeat; background-position:calc(100% - 12px) center;}
+    .main-content select:not([multiple]) {background-image:url(https://www.latrobe.edu.au/__data/assets/image/0003/552090/chevron-sm-orange-down.png); background-repeat:no-repeat; background-position:calc(100% - 12px) center; padding-right:36px;}
 }
 textarea {box-sizing:content-box; -ms-box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
 
@@ -227,9 +227,9 @@ ul.nav-utility-dropdown li {display:block;}
     .nav-out #favourite-count {position:static;}
 }
 
-#hamburger {background-image: url(/__data/assets/file/0006/806649/hamburger-white.svg); background-size:48px; background-color:#fff; cursor:pointer; font-family:'Roboto Bold', sans-serif; font-size:14px; height:48px; left:calc(100% - 48px); overflow:hidden; text-align:center; text-indent:-200px; top:80px; position:absolute; -webkit-transition:-webkit-transform 0.3s ease-in-out; transition:left 0.3s ease-in-out; width:48px;}
+#hamburger {background-image: url(https://www.latrobe.edu.au/__data/assets/file/0006/806649/hamburger-white.svg); background-size:48px; background-color:#fff; cursor:pointer; font-family:'Roboto Bold', sans-serif; font-size:14px; height:48px; left:calc(100% - 48px); overflow:hidden; text-align:center; text-indent:-200px; top:80px; position:absolute; -webkit-transition:-webkit-transform 0.3s ease-in-out; transition:left 0.3s ease-in-out; width:48px;}
 #hamburger:focus {outline:1px dotted #fff;}
-#hamburger:after {background-color:#fff; color:#000; content:url(/__data/assets/file/0005/745196/plus-dark.svg); display:block; height:48px; left:0; position:absolute; top:0; text-indent:0; -webkit-transform:rotateZ(45deg) scale(1); transform:rotateZ(45deg) scale(1); transition:transform 0.3s; width:48px;}
+#hamburger:after {background-color:#fff; color:#000; content:url(https://www.latrobe.edu.au/__data/assets/file/0005/745196/plus-dark.svg); display:block; height:48px; left:0; position:absolute; top:0; text-indent:0; -webkit-transform:rotateZ(45deg) scale(1); transform:rotateZ(45deg) scale(1); transition:transform 0.3s; width:48px;}
 .nav-out #hamburger {background-color:#242424;}
 .nav-out #hamburger:after {-webkit-transform:rotateZ(45deg) scale(0); transform:rotateZ(45deg) scale(0);}
 @media (min-width:1024px) {
@@ -248,11 +248,11 @@ ul.nav-utility-dropdown li {display:block;}
 /* Search */
 .search-active {overflow:hidden;}
 #global-search-button {border:none; border-radius:0; box-sizing:border-box; display:block; height:80px; margin:0; padding:0; position:absolute; right:0; top:0; vertical-align:top; width:80px;}
-#global-search-button + label {background:#fff url(/__data/assets/file/0007/796390/search.svg) no-repeat center; bottom:0; box-shadow:0 -3px 8px #999; display:block; height:80px; position:absolute; right:0; text-indent:-100vw; width:80px;}
+#global-search-button + label {background:#fff url(https://www.latrobe.edu.au/__data/assets/file/0007/796390/search.svg) no-repeat center; bottom:0; box-shadow:0 -3px 8px #999; display:block; height:80px; position:absolute; right:0; text-indent:-100vw; width:80px;}
 #global-search-button:after { display:block; height:48px; margin:0; padding:16px; width:48px;}
 #global-search-button:hover:after {background-color:#e42312;}
 #ltu-global-search {margin-bottom:28px;}
-#global-search-button:checked + label {background:#fff url(/__data/assets/file/0018/815112/delete-242424.svg) no-repeat center;}
+#global-search-button:checked + label {background:#fff url(https://www.latrobe.edu.au/__data/assets/file/0018/815112/delete-242424.svg) no-repeat center;}
 #global-search-button:checked + label + .global-search {box-shadow:0 0 8px #999; -webkit-transform:translateX(0); transform:translateX(0);}
 .global-search {background-color:rgba(255,255,255,0.95); box-sizing:border-box; height:calc(100vh - 80px); left:0; padding:20px; position:fixed; top:80px; -webkit-transform:translateX(100%); transform:translateX(100%); -webkit-transition:transform 0.3s ease-in-out; transition:transform 0.3s ease-in-out; width:100%;}
 .global-search .section-heading {color:#e42312; text-align:center;}
@@ -263,7 +263,7 @@ ul.nav-utility-dropdown li {display:block;}
 .global-search #LT_search_field::-moz-placeholder {}
 #clear_LT_search_field {background-color:transparent; border:none; margin-left:-60px; padding:16px; position:relative; vertical-align:top;}
 #clear_LT_search_field img {background-color:#ddd; border-radius:100%; padding:4px;}
-#ltu-search-submit {background:#fff url(/__data/assets/file/0007/796390/search.svg) no-repeat center; border:3px solid #242424; border-left:none; height:60px; padding:18px; text-indent:-100px; vertical-align:top; width:60px;}
+#ltu-search-submit {background:#fff url(https://www.latrobe.edu.au/__data/assets/file/0007/796390/search.svg) no-repeat center; border:3px solid #242424; border-left:none; height:60px; padding:18px; text-indent:-100px; vertical-align:top; width:60px;}
 @media (min-width:768px) {
     .global-search {padding:3vw 12vw;}
     #global-search-button + label {bottom:48px;}
@@ -307,13 +307,13 @@ ul.nav-utility-dropdown li {display:block;}
 }
 .nav-universes .mm-trigger:focus {outline:none;}
 .nav-universes .mm-trigger:checked + label {color:#000;}
-.nav-universes label:after {background:transparent url(/__data/assets/file/0006/764934/chevron-sm-ffffff.svg) no-repeat center; background-size:42px; border-radius:100%; color:#d14124; content:''; display:inline-block; font-size:20px; height:20px; line-height:48px; margin:14px 4px; pointer-events:none; text-align:center; transform:rotate(90deg); vertical-align:middle; width:20px;}
+.nav-universes label:after {background:transparent url(https://www.latrobe.edu.au/__data/assets/file/0006/764934/chevron-sm-ffffff.svg) no-repeat center; background-size:42px; border-radius:100%; color:#d14124; content:''; display:inline-block; font-size:20px; height:20px; line-height:48px; margin:14px 4px; pointer-events:none; text-align:center; transform:rotate(90deg); vertical-align:middle; width:20px;}
 .nav-universes .mm-trigger:checked + label:after {background-size:24px;}
 .nav-universes-list .mm-close {box-shadow:none; display:none; position:absolute; right:12px; top:64px; transition:opacity 0.3s; width:48px;}
 .nav-universes-list .mm-close:hover {box-shadow:none;}
 .active .mm-close {display:block;}
 .nav-universes #mm-close + label {padding:0 10px; overflow:hidden;}
-.nav-universes #mm-close + label:after {background-color:#333; background-image:url(/__data/assets/file/0007/767095/delete.svg); background-size:38px; margin:14px 4px; text-indent:0;}
+.nav-universes #mm-close + label:after {background-color:#333; background-image:url(https://www.latrobe.edu.au/__data/assets/file/0007/767095/delete.svg); background-size:38px; margin:14px 4px; text-indent:0;}
 .nav-universes input:checked + label + .mega-menu-item, .open-mob-nav .mega-menu-item {animation:accordion-open 0.2s 1 ease-in-out forwards; height:auto; visibility:visible;}
 @media (min-width:1024px) {
     .nav-universes input:checked + label + .mega-menu-item {animation:none; transform:translateY(0); transition:transform 0.3s 0s ease-in-out, visibility 0s 0s;}
@@ -331,21 +331,21 @@ ul.nav-utility-dropdown li {display:block;}
 .mega-menu-item a {color:#363636; text-decoration:none;}
 .mega-menu-item a:hover {color:#e42312;}
 .mm-keyword {box-sizing:border-box; height:48px; margin-bottom:8px; padding:13px 16px; vertical-align:top; width:calc(100% - 48px);}
-.mm-button {border:none; background:#363636 url(/__data/assets/file/0007/797119/search-white.svg) no-repeat 0 0; height:48px; text-indent:-1000%; width:48px;}
+.mm-button {border:none; background:#363636 url(https://www.latrobe.edu.au/__data/assets/file/0007/797119/search-white.svg) no-repeat 0 0; height:48px; text-indent:-1000%; width:48px;}
 .mm-button:focus {background-color:#e42312;}
 .mega-menu-item .mm1 li {border-bottom:1px dotted #363636; padding:15px 0;}
 .mm1 a {display:block; font-size:18px;}
 .mega-menu-item .mm1 li.mm-root-node {border-bottom:none; margin-top:28px; text-align:left;}
-.mm-root-node a {background: transparent url(/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat -12px -9px; background-size:40px; color:#e42312; padding-left:28px;}
+.mm-root-node a {background: transparent url(https://www.latrobe.edu.au/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat -12px -9px; background-size:40px; color:#e42312; padding-left:28px;}
 .mega-menu-item .mm-brag {border-top:2px solid #e42312; border-bottom:2px solid #e42312; font-size:24px; line-height:24px; padding:20px 15px;}
 .mega-menu-item .mm-brag-source {font-size:14px; margin-bottom:0px; text-align:right;}
-.mm-cta {background:transparent url(/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat right center; border:4px solid #363636; color:#363636; font-size:18px;	font-family:'Roboto Bold', sans-serif; padding:10px 46px 10px 26px; margin-bottom:15px; display:inline-block;}
+.mm-cta {background:transparent url(https://www.latrobe.edu.au/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat right center; border:4px solid #363636; color:#363636; font-size:18px;	font-family:'Roboto Bold', sans-serif; padding:10px 46px 10px 26px; margin-bottom:15px; display:inline-block;}
 ul.mm2 li, ul.mm3 li, ul.mm4 li {margin-left: 15px;}
-ul.mm2 li:before, ul.mm3 li:before, ul.mm4 li:before {content:url(/__data/assets/file/0010/796384/chevron-left-d52b1e.svg); display:block; margin:-22px 0 0 -40px; position:absolute; transform:rotate(180deg) scale(.5);}
+ul.mm2 li:before, ul.mm3 li:before, ul.mm4 li:before {content:url(https://www.latrobe.edu.au/__data/assets/file/0010/796384/chevron-left-d52b1e.svg); display:block; margin:-22px 0 0 -40px; position:absolute; transform:rotate(180deg) scale(.5);}
 .mm-browse > li {background-color:#EEE; float:left; margin:20px 20px 0 0; padding:10px 20px;}
 
 /* Breadcrumbs */
-.breadcrumbs {background:transparent url(/__data/assets/image/0003/12864/dotted-line.gif) repeat-x 0 bottom; color:#E87722; font-size:16px; line-height:20px; margin:0 0 12px; padding:0 0 20px 0;}
+.breadcrumbs {background:transparent url(https://www.latrobe.edu.au/__data/assets/image/0003/12864/dotted-line.gif) repeat-x 0 bottom; color:#E87722; font-size:16px; line-height:20px; margin:0 0 12px; padding:0 0 20px 0;}
 .breadcrumbs a:last-of-type {color:#000; cursor:test; pointer-events:none; text-decoration:none;}
 
 /* Local Navigation */
@@ -378,7 +378,7 @@ ul.mm2 li:before, ul.mm3 li:before, ul.mm4 li:before {content:url(/__data/assets
 .root {padding:0;}
 li.root > a {background-color:#ccc; color:#242424; font-size:20px; padding:20px 20px 20px 40px; text-transform:uppercase;}
 li.root > a:hover {background-color:#bbb;}
-li.root > a:before {background:transparent url(/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat center;
+li.root > a:before {background:transparent url(https://www.latrobe.edu.au/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat center;
 background-size:24px; content:""; display:block; height:24px; left:8px; position:absolute; top:19px; transform:rotate(90deg); width:24px;}
 ul.level-one {background-color:rgba(0,0,0,0.1);}
 ul.level-two {background-color:rgba(255,255,255,0.5);}
@@ -398,7 +398,7 @@ ul.level-three {background-color:#fff; font:15px/20px 'Roboto', sans-serif;}
 .level-two li a.open-parent {background-color:#e8e8e8; padding-left:8px;}*/
 /*.current .level-two a.open-parent {background-color:#fff; border-color:#fff;}*/
 li.hide-nav {box-shadow:none; display:none;}
-.hide-nav button {background:transparent url(/__data/assets/file/0011/796394/hide-nav-bg.svg) no-repeat 0 0; height:60px; padding:0; text-align:right; width:48px;}
+.hide-nav button {background:transparent url(https://www.latrobe.edu.au/__data/assets/file/0011/796394/hide-nav-bg.svg) no-repeat 0 0; height:60px; padding:0; text-align:right; width:48px;}
 .hide-nav button:hover {background-color:transparent}
 .hide-nav button:before {color:#fff; content:"\25C0"; display:block; width:24px;}
 .nav-out .hide-nav button:before {margin-left:7px; transform:rotateY(180deg);}
@@ -460,7 +460,7 @@ li.hide-nav {box-shadow:none; display:none;}
 #footer :-moz-input-placeholder {font-size:16px; line-height:-moz-block-height;}
 #footer ::-moz-input-placeholder {font-size:16px; line-height:-moz-block-height;}
 #footer ::-webkit-input-placeholder {font-size:16px;}
-#footer form input[type="submit"] {background:#fff url(/__data/assets/file/0007/796390/search.svg) no-repeat 0 0; color:#fff; border:none; height:48px; margin-left:1px; vertical-align:bottom; width:48px;}
+#footer form input[type="submit"] {background:#fff url(https://www.latrobe.edu.au/__data/assets/file/0007/796390/search.svg) no-repeat 0 0; color:#fff; border:none; height:48px; margin-left:1px; vertical-align:bottom; width:48px;}
 #footer form input[type="submit"]:hover {background-color:#e42312;}
 #footer-logo {width:100%;}
 
@@ -468,7 +468,7 @@ li.hide-nav {box-shadow:none; display:none;}
 
 #latrobePinWrapper {height:48px; padding:0 24px;}
 @media (min-width:768px) {#latrobePinWrapper {padding:0 60px;}}
-#latrobePin {background:#fff url(/_media/la-trobe-api/v5/img/pin.png) no-repeat 0 0; border-radius:18px; cursor:pointer; display:inline-block; float:right; padding:2px 8px 4px 28px; transition:background-color 0.3s;}
+#latrobePin {background:#fff url(https://www.latrobe.edu.au/_media/la-trobe-api/v5/img/pin.png) no-repeat 0 0; border-radius:18px; cursor:pointer; display:inline-block; float:right; padding:2px 8px 4px 28px; transition:background-color 0.3s;}
 #latrobePin:hover {background-color:#e42312;}
 
 #footer a, #footer a:visited {color:#fff; text-decoration:none;}
@@ -478,15 +478,15 @@ li.hide-nav {box-shadow:none; display:none;}
 #footer .footer-node h2 {border:none; color:#fff; font-size:18px; line-height:20px; margin:0; padding:0 20px 12px 0; text-transform:uppercase;}
 .footer-node ul { list-style-type:none; margin:0 20px 24px 0; padding:0; transform-origin:top;}
 @media (max-width:1024px) {
-    #footer .footer-node h2 {background:transparent url(/__data/assets/file/0007/745198/plus.svg) no-repeat 0 -6px; cursor:pointer; padding-left:32px;}
-    #footer .footer-node h2.open {background:transparent url(/__data/assets/file/0006/745197/minus.svg) no-repeat 0 -6px;}
+    #footer .footer-node h2 {background:transparent url(https://www.latrobe.edu.au/__data/assets/file/0007/745198/plus.svg) no-repeat 0 -6px; cursor:pointer; padding-left:32px;}
+    #footer .footer-node h2.open {background:transparent url(https://www.latrobe.edu.au/__data/assets/file/0006/745197/minus.svg) no-repeat 0 -6px;}
     .footer-node ul {animation:accordion-closed 0.2s 1 ease-in-out forwards; margin-left:32px; visibility:hidden;}
     .footer-node h2.open + ul {animation:accordion-open 0.2s 1 ease-in-out forwards;}
 }
 .footer-node li {font-size:16px; line-height:20px; padding-bottom:8px;}
 .footer-node .social-media {list-style-type:none; margin:0; overflow:auto; padding:0;}
 .social-media li {display:block; float:left; margin:0 1px 0 0; padding:0;}
-.social-media a {background:#555 url(/__data/assets/file/0004/796396/social-media.svg) no-repeat 0 0; display:block; height:100%; text-indent:-5000px;}
+.social-media a {background:#555 url(https://www.latrobe.edu.au/__data/assets/file/0004/796396/social-media.svg) no-repeat 0 0; display:block; height:100%; text-indent:-5000px;}
 .social-media a:hover {background-color:#e42312;}
 
 .footer-node .social-media li {height:80px; margin-bottom:1px; width:80px;}

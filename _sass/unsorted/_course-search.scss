@@ -1,7 +1,7 @@
 /* Our Courses - Funnelback course-search on home and courses */
 .our-courses {background:rgb(226,35,27);
-background-image: url(/__data/assets/file/0005/796397/bg-nodes.svg);
-background:url(/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, rgb(226,35,27) 1%, rgb(209,65,36) 100%);
+background-image: url(https://www.latrobe.edu.au/__data/assets/file/0005/796397/bg-nodes.svg);
+background:url(https://www.latrobe.edu.au/__data/assets/file/0005/796397/bg-nodes.svg), linear-gradient(to bottom, rgb(226,35,27) 1%, rgb(209,65,36) 100%);
 background-repeat:no-repeat;
 background-size:cover;
 background-position:center center; box-sizing:border-box; color:#fff; font-size:18px; padding:20px;}
@@ -12,7 +12,7 @@ background-position:center center; box-sizing:border-box; color:#fff; font-size:
 #our-course-search div.awesomplete > ul > li {color:#242424;}
 .our-course-search label {display:block; font-size:20px; line-height:24px; margin-bottom:4px;}
 .our-course-search input[type=search] {border:none; border-radius:0; height:48px; padding:12px 20px;}
-.our-course-search input[type=submit] {background:#fff url(/__data/assets/file/0007/841156/search-red.svg) no-repeat 0 0; border:none; border-radius:0; box-sizing:border-box; color:#242424; height:48px; margin-left:1px; padding:0; text-align:center; vertical-align:top; width:48px; border-radius: 0;}
+.our-course-search input[type=submit] {background:#fff url(https://www.latrobe.edu.au/__data/assets/file/0007/841156/search-red.svg) no-repeat 0 0; border:none; border-radius:0; box-sizing:border-box; color:#242424; height:48px; margin-left:1px; padding:0; text-align:center; vertical-align:top; width:48px; border-radius: 0;}
 .our-course-search input[type=submit]:hover {background-color:rgba(0,0,0,0.2);}
 .our-course-search input[type=search]::-webkit-input-placeholder {color:#e42312; font-size:inherit; font-family:'Roboto Bold',sans-serif; line-height:28px;}
 .our-course-search input[type=search]::-moz-placeholder {color:#e42312; font-size:inherit; font-family:'Roboto Bold',sans-serif; opacity: 1;}
@@ -52,7 +52,7 @@ background-position:center center; box-sizing:border-box; color:#fff; font-size:
     .discipline-list li {font-size:20px;}
 }
 
-li.need-help {background:transparent url(/__data/assets/file/0009/842778/info-white.svg) no-repeat calc(50% - 74px) center; margin-top:20px;}
+li.need-help {background:transparent url(https://www.latrobe.edu.au/__data/assets/file/0009/842778/info-white.svg) no-repeat calc(50% - 74px) center; margin-top:20px;}
 li.need-help {background-color:transparent;}
 li.need-help a, li.need-help a:visited {color:#fff; padding-left:48px;}
 @media (min-width:768px) {
