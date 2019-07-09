@@ -17,20 +17,6 @@
   font-style: normal;
   font-stretch: normal;
 }
-.activity::before {
-  content: "";
-  display: inline-block;
-  vertical-align: baseline;
-  width: 0.8em;
-  height: 0.8em;
-  line-height: inherit;
-  margin-right: 8px;
-  background-image: url("icons/feather-red/activity.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-}
-
 article, aside, details, figcaption, figure, footer, header, main, nav, section {
   display: block;
   margin: 0;
