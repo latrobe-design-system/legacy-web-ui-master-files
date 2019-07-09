@@ -1,10 +1,6 @@
 @charset "UTF-8";
 @import "mixins";
 @import "fonts";
-/*test*/
-.activity {
-    @include icon(activity, red);
-}
 @import "unsorted/core";
 @import "unsorted/styles";
 @import "unsorted/accordion";
