@@ -128,6 +128,7 @@ li {margin-bottom:0;}
 /* Tables */
 table {border:none; width:100%;}
 table caption {background-color:#242424; font-family:'Roboto Bold', sans-serif; color:#fff; font-size:28px; line-height:32px; margin-bottom:1px; padding:16px 24px; text-align:left;}
+table caption.subtle-right {background-color:#eee; color:#333; font-size:16px; line-height:inherit; padding:8px 24px; text-align: right;}
 table { border-collapse: collapse; border-spacing: 0; }
 th,td { vertical-align: top; }
 th {background-color:#333; color:#fff; font-family:'Roboto Bold', sans-serif; font-size:18px; font-weight:normal!important; padding:12px; text-align:left;}
@@ -162,7 +163,7 @@ body:not(.flow_page) #content {min-height:45em;}
     #content {display:flex; transition:transform 0.3s ease-in-out;}
     .home #content {display:block;}
     .nav-out #content {transform:translateX(-25%);}
-    .home.nav-out #content, .LP2.nav-out #content, .study_option.nav-out #content, .course-parent.nav-out #content {transform:translateX(0);}
+    .home.nav-out #content, .LP2.nav-out #content, .discipline_page.nav-out #content, .study_option.nav-out #content, .course-parent.nav-out #content {transform:translateX(0);}
 }
 @media (min-width:1600px) {
     .nav-out #content {transform:translateX(-400px);}
@@ -355,7 +356,7 @@ ul.mm2 li:before, ul.mm3 li:before, ul.mm4 li:before {content:url(https://www.la
 @media (min-width:1024px) {
   .nav-container {flex:1 0 25%; max-width:400px; position:static; -webkit-transition:transform 0.3s ease-in-out; transition:transform 0.3s ease-in-out; z-index:1;}
   .nav-out .nav-container {-webkit-transform:none; transform:none;}
-  .home .nav-container, .LP2 .nav-container, .study_option .nav-container, .course-parent .nav-container {display:none;}
+  .home .nav-container, .LP2 .nav-container, .discipline_page .nav-container, .study_option .nav-container, .course-parent .nav-container {display:none;}
 }
 
 /* Local nav */
@@ -421,7 +422,7 @@ li.hide-nav {box-shadow:none; display:none;}
 
 /* Content Layouts */
 .main-content {padding:20px;}
-.home .main-content {padding:0;}
+.home .main-content, .discipline_page .main-content {padding:0;}
 @media (min-width: 1024px) {
   .main-content {-moz-box-sizing:border-box; box-sizing:border-box; padding:60px; width:100%;}
   .layout {flex:1 0 75%;}
