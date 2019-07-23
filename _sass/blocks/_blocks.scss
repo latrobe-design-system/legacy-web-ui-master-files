@@ -1,0 +1,21 @@
+.ds-block {
+    clear: both; /* incase there is a float */
+    &[data-bgcolor="grey1"] {
+        background: #f4f4f4;
+    }
+}
+.ds-block-container-narrow,
+.ds-block-container-wide {
+    padding: 20px;
+}
+@media (min-width: 640px) {
+    .ds-block-container-narrow,
+    .ds-block-container-wide {
+        padding: 3vw 6vw;
+    }
+}
+@media (min-width: 1660px) {
+    .ds-block-container-narrow {
+        padding: 3vw 12vw;
+    }
+}

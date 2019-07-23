@@ -11,9 +11,9 @@ button.btn-box {
     line-height: inherit;
     display: inline-block;
     padding: 12px 18px;
-    color: white;
+    margin-bottom: 4px;
     text-decoration: none;
-    text-transform: uppercase;
+    color: white;
     background-color: $swatch-1;
     &:visited {
         color: white;
@@ -29,12 +29,27 @@ button.btn-box {
             margin: 0 12px;
         }
     }
+    &.icon-before {
+        padding-right: 18px;
+        padding-left: 44px;
+    }
 }
 .btn-light {
     @extend .btn;
-    outline: 2px solid white;
-    outline-offset: -2px;
-    background-color: transparent;
+    color: $swatch-1;
+    background-color: white;
+    &:visited {
+        color: $swatch-1;
+    }
+    &:hover {
+        text-decoration: underline;
+        background-color: darken(white,5%);
+    }
+    &[class*="icon-"]{
+        &::after {
+            filter: $red;
+        }
+    }
 }
 .btn-secondary {
     @extend .btn;
@@ -54,11 +69,18 @@ button.btn-box {
     }
 }
 .btn-secondary-light {
-    @extend .btn;
-    background-color: rgba(black,.2);
+    @extend .btn-secondary;
+    color: white;
+    outline: 2px solid white;
+    &:visited {
+        color: white;
+    }
     &:hover {
-        text-decoration: underline;
-        background-color: rgba(black,.4);
+        background-color: rgba(black,.15);
+        outline: 2px solid white;
+    }
+    &[class*="icon-"]::after {
+        filter: $white;
     }
 }
 
@@ -104,10 +126,10 @@ button.btn-box {
 .btn-pill {
     @extend .btn-box;
     padding: 4px 16px;
-    border-radius: 16px;
+    border-radius: 20px;
 }
 .btn-pill-secondary {
     @extend .btn-box-secondary;
     padding: 4px 16px;
-    border-radius: 16px;
+    border-radius: 20px;
 }
