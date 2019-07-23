@@ -32,6 +32,10 @@ button.btn-box {
     &.icon-before {
         padding-right: 18px;
         padding-left: 44px;
+        &::after {
+            left: 0;
+            right: unset;
+        }
     }
 }
 .btn-light {
