@@ -138,7 +138,7 @@ button.btn-box {
     border-radius: 20px;
 }
 
-/* legacy buttons */
+/* legacy classes */
 .ltu-button {
     @extend .btn-secondary;
     @extend [class*="icon-"];
