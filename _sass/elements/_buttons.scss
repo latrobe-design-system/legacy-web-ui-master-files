@@ -137,3 +137,25 @@ button.btn-box {
     padding: 4px 16px;
     border-radius: 20px;
 }
+
+/* legacy buttons */
+.ltu-button {
+    @extend .btn-secondary;
+    @extend [class*="icon-"];
+}
+.ltu-button::after {
+    @extend .icon-chevron-right;
+}
+.ltu-button.light,
+.ltu-button.chat,
+.m-yellow .ltu-button,
+.m-brown .ltu-button {
+    @extend .btn-secondary-light;
+    @extend [class*="icon-"];
+}
+.ltu-button.chat {
+    @extend .icon-message-square;
+}
+.ltu-button[href^="mailto:"] {
+    @extend .icon-mail;
+}

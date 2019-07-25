@@ -2,11 +2,14 @@
     text-align: center;
 }
 .logo-showcase-logos {
+    list-style-type: none;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     max-width: 6*208px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     &[data-columns="5"] {
         max-width: 5*208px;
     }
@@ -15,9 +18,12 @@
     }
 }
 .logo-showcase-logo {
-    float: none !important;
-    padding: 0 !important;
-    margin: 4px;
+    margin: 4px !important;
     width: 200px;
-    max-width: 100%;
+    img {
+        float: none !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        max-width: 100%;
+    }
 }
