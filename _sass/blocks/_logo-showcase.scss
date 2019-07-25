@@ -20,6 +20,10 @@
 .logo-showcase-logo {
     margin: 4px !important;
     width: 200px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     img {
         float: none !important;
         margin: 0 auto !important;
