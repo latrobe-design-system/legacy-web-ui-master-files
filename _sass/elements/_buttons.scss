@@ -8,7 +8,8 @@ button.btn-box {
     border: 0;
     box-sizing: border-box;
     font-family: "Roboto Bold",sans-serif;
-    line-height: inherit;
+    font-size: 16px;
+    line-height: 24px;
     display: inline-block;
     padding: 12px 18px;
     margin-bottom: 4px;
@@ -36,6 +37,10 @@ button.btn-box {
             left: 0;
             right: unset;
         }
+    }
+    @media (min-width: 1400px) {
+        font-size: 18px;
+        line-height: 28px;
     }
 }
 .btn-light {
@@ -88,14 +93,15 @@ button.btn-box {
     }
 }
 
-.btn-box {
+.btn-pill {
     border: 2px solid $swatch-2;
     box-sizing: border-box;
     font-size: 16px;
     font-family: "Roboto Bold",sans-serif;
     line-height: inherit;
     display: inline-block;
-    padding: 4px 12px;
+    padding: 4px 16px;
+    border-radius: 20px;
     color: $swatch-2;
     text-decoration: none;
     background-color: white;
@@ -111,8 +117,8 @@ button.btn-box {
         background-color: $swatch-2;
     }
 }
-.btn-box-secondary {
-    @extend .btn-box;
+.btn-pill-alt {
+    @extend .btn-pill;
     border: 2px solid $swatch-1;
     color: $swatch-1;
     &:visited {
@@ -126,16 +132,6 @@ button.btn-box {
         color: white;
         background-color: $swatch-1;
     }
-}
-.btn-pill {
-    @extend .btn-box;
-    padding: 4px 16px;
-    border-radius: 20px;
-}
-.btn-pill-secondary {
-    @extend .btn-box-secondary;
-    padding: 4px 16px;
-    border-radius: 20px;
 }
 
 /* legacy classes */
