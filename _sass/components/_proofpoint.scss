@@ -1,0 +1,20 @@
+.proofpoint {
+    max-width: 400px;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.proofpoint-number {
+    font-size: 3em;
+    line-height: 0.9;
+    color: $swatch-1;
+}
+.proofpoint-text {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    &[data-columns="2"] {
+        columns: 2;
+        max-width: 1400px;
+    }
+}

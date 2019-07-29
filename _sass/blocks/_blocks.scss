@@ -1,7 +1,7 @@
 .ds-block {
     clear: both; /* incase there is a float */
-    &[data-bgcolor="grey1"] {
-        background: #f4f4f4;
+    &[data-bgcolor="grey"] {
+        background: $swatch-3b;
     }
 }
 .ds-block-container-narrow,
@@ -11,7 +11,7 @@
 @media (min-width: 640px) {
     .ds-block-container-narrow,
     .ds-block-container-wide {
-        padding: 3vw 6vw;
+        padding: 4vw 6vw;
     }
 }
 @media (min-width: 1660px) {
@@ -19,6 +19,12 @@
         padding: 3vw 12vw;
     }
 }
-.ds-block-heading[data-textcase="uppercase"] {
-    text-transform: uppercase;
+.ds-block-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.ds-block-header[data-textcase="uppercase"] {
+    h2 {
+        text-transform: uppercase;
+    }
 }
