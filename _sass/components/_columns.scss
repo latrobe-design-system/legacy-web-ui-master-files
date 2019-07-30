@@ -11,7 +11,10 @@
     @media(max-width: 1280px) {
         flex-wrap: wrap;
     }
-    /*@supports(display: grid) {
+}
+.columns-grid {
+    @extend .columns;
+    @supports(display: grid) {
         display: grid;
         justify-items: center;
         grid-column-gap: 32px;
@@ -20,5 +23,5 @@
         & > * {
             margin: 0 0 16px 0;
         }
-    }*/
+    }
 }

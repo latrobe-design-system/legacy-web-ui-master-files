@@ -2,13 +2,9 @@
     box-sizing: border-box;
     background: white;
     max-width: 450px;
-    border: solid 1px $swatch-3a;
     margin-top: 16px;
     margin-bottom: 16px;
     transition: all 0.3s;
-}
-.grey .card {
-    border: 0;
 }
 .card-img {
     float: none !important;
@@ -40,6 +36,7 @@ a.card {
     display: block;
     color: $swatch-2;
     text-decoration: none;
+    border: solid 1px $swatch-3a;
     &:hover{
         color: $swatch-2;
         text-decoration: none;
