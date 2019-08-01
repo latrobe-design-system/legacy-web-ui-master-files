@@ -1,4 +1,4 @@
-.ds-block {
+[class*="ds-block-container"] {
     clear: both; /* incase there is a float */
     &[data-bgcolor="grey"] {
         background: $swatch-3b;
@@ -11,12 +11,12 @@
 @media (min-width: 640px) {
     .ds-block-container-narrow,
     .ds-block-container-wide {
-        padding: 4% 6%;
+        padding: 3% 6%;
     }
 }
 @media (min-width: 1024px) {
     .ds-block-container-narrow {
-        padding: 4% 12%;
+        padding: 3% 12%;
     }
 }
 .ds-block-header {
