@@ -5,7 +5,6 @@
     }
 }
 .ds-block-container-narrow,
-.ds-block-container-narrow-always,
 .ds-block-container-wide {
     padding: 20px;
 }
@@ -16,7 +15,7 @@
     }
 }
 @media (min-width: 1024px) {
-    .ds-block-container-narrow-always {
+    .ds-block-container-narrow[data-width="always-narrow"] {
         padding: 4% 12%;
     }
 }
