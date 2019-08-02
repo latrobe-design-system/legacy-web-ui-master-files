@@ -1,38 +1,29 @@
-/// mixin for inline Icons
-/// @param {string} $icon
-///     The icon name (filename less extension)
-/// @param {string} $color
-///     The color version to use default is black (currentColor), other options red or white
-/// @param {string} $position
-///     Place icon before or after - default after
-/// @example scss - add red activity icon to `.foo` before .foo text
-///   .foo {
-///       @include icon(activity, red, before);
-///   }
-@mixin icon($icon, $color: none, $position: before) {
-    &::#{$position} {
-        content: "";
-        display: inline-block;
-        vertical-align: baseline;
-        width: 0.8em;
-        height: 0.8em;
-        line-height: inherit;
-        @if $position == after {
-            margin-left: 8px;
-        } @else {
-            margin-right: 8px;
-        }
-        background: {
-            @if $color == red {
-                image: url("icons/feather-red/" + $icon + ".svg");
-            } @else if $color == white {
-                image: url("icons/feather-white/" + $icon + ".svg");
-            } @else {
-                image: url("icons/feather/" + $icon + ".svg");
-            }
-            repeat: no-repeat;
-            size: 100%;
-            position: center;
+// @include these for flex or grid with flex fallback columns
+// optionally pass base width
+@mixin columns($basis-width: 280px) {
+    display: flex;
+    justify-content: center;
+    margin-right: -32px;
+    & > * {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: $basis-width;
+        margin-right: 32px;
+    }
+    @media(max-width: 1280px) {
+        flex-wrap: wrap;
+    }
+}
+@mixin columns-grid($basis-width: 280px) {
+    @include columns; /* flex fallback */
+    @supports(display: grid) {
+        display: grid;
+        justify-items: center;
+        grid-column-gap: 32px;
+        margin-right: 0;
+        grid-template-columns: repeat(auto-fit, minmax($basis-width, 1fr));
+        & > * {
+            margin: 0 0 16px 0;
         }
     }
 }

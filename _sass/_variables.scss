@@ -1,0 +1,20 @@
+/* colors */
+$swatch-1: #e42312; /* primary red */
+$swatch-2: #242424; /* near black */
+$swatch-2a: #414141; /* charcoal */
+$swatch-3a: #ccc;
+$swatch-3b: #f4f4f4;
+/* svg icon filters - changes black to color */
+$near-black: invert(7%) sepia(53%) saturate(0%) hue-rotate(173deg) brightness(107%) contrast(86%); /* #242424 */
+$charcoal: invert(24%) sepia(1%) saturate(0%) hue-rotate(118deg) brightness(92%) contrast(89%); /* #414141 */
+$red: invert(24%) sepia(78%) saturate(6864%) hue-rotate(357deg) brightness(93%) contrast(91%); /* #e42312 */
+$white: invert(100%) sepia(0%) saturate(2%) hue-rotate(132deg) brightness(113%) contrast(101%);
+/* font family placeholders use @extend to include thess */
+%font-primary {
+    font-family: 'Roboto', Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+%font-heading {
+    font-family: 'Roboto Bold',sans-serif;
+    font-weight:normal;
+}

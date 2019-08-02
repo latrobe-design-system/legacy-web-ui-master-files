@@ -1,0 +1,157 @@
+button.btn,
+button.btn-box {
+    /* remove browser styling from button element */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.btn {
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Bold",sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    padding: 12px 18px;
+    margin-bottom: 4px;
+    text-decoration: none;
+    color: white;
+    background-color: $swatch-1;
+    &:visited {
+        color: white;
+    }
+    &:hover {
+        text-decoration: underline;
+        background-color: darken($swatch-1,5%);
+    }
+    &[class*="icon-"]{
+        padding-right: 44px;
+        &::after {
+            filter: $white;
+            margin: 0 12px;
+        }
+    }
+    &.icon-before {
+        padding-right: 18px;
+        padding-left: 44px;
+        &::after {
+            left: 0;
+            right: unset;
+        }
+    }
+    @media (min-width: 1400px) {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+.btn-light {
+    @extend .btn;
+    color: $swatch-1;
+    background-color: white;
+    &:visited {
+        color: $swatch-1;
+    }
+    &:hover {
+        text-decoration: underline;
+        background-color: darken(white,5%);
+    }
+    &[class*="icon-"]{
+        &::after {
+            filter: $red;
+        }
+    }
+}
+.btn-secondary {
+    @extend .btn;
+    color: $swatch-2;
+    background-color: transparent;
+    outline: 2px solid $swatch-2;
+    outline-offset: -2px;
+    &:visited {
+        color: $swatch-2;
+    }
+    &:hover {
+        background-color: rgba(black,.15);
+        outline: 2px solid $swatch-2;
+    }
+    &[class*="icon-"]::after {
+        filter: $near-black;
+    }
+}
+.btn-secondary-light {
+    @extend .btn-secondary;
+    color: white;
+    outline: 2px solid white;
+    &:visited {
+        color: white;
+    }
+    &:hover {
+        background-color: rgba(black,.15);
+        outline: 2px solid white;
+    }
+    &[class*="icon-"]::after {
+        filter: $white;
+    }
+}
+
+.btn-pill {
+    border: 2px solid $swatch-2;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Roboto Bold",sans-serif;
+    line-height: inherit;
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 20px;
+    color: $swatch-2;
+    text-decoration: none;
+    background-color: white;
+    &:visited {
+        color: $swatch-2;
+    }
+    &:hover {
+        text-decoration: underline;
+        background-color: rgba(black,.15);
+    }
+    &.selected {
+        color: white;
+        background-color: $swatch-2;
+    }
+}
+.btn-pill-alt {
+    @extend .btn-pill;
+    border: 2px solid $swatch-1;
+    color: $swatch-1;
+    &:visited {
+        color: $swatch-1;
+    }
+    &:hover {
+        text-decoration: underline;
+        background-color: rgba($swatch-1,.15);
+    }
+    &.selected {
+        color: white;
+        background-color: $swatch-1;
+    }
+}
+
+/* legacy classes
+.ltu-button {
+    @extend .btn-secondary;
+    @extend [class*="icon-"];
+}
+.ltu-button::after {
+    @extend .icon-chevron-right;
+}
+.ltu-button.light,
+.ltu-button.chat,
+.m-yellow .ltu-button,
+.m-brown .ltu-button {
+    @extend .btn-secondary-light;
+    @extend [class*="icon-"];
+}
+.ltu-button.chat {
+    @extend .icon-message-square;
+}
+.ltu-button[href^="mailto:"] {
+    @extend .icon-mail;
+}*/
