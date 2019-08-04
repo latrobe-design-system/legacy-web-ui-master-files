@@ -551,12 +551,15 @@ body.locked {overflow:hidden;}
 .error {background:transparent url(https://latrobe.edu.au/__data/assets/image/0018/233910/no.png) no-repeat 0 0; color:#cc0000; padding-left:22px;}
 
 /* LTU Button */
+/*
 a.ltu-button,
 a.ltu-button.chat {border:4px solid #fff; font-size:16px;}
 a.ltu-button {background:transparent url(https://latrobe.edu.au/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat 98% center; background-size:40px; border-color:#414141; color:#414141; display:inline-block; font-family:"Roboto Bold",sans-serif; padding:4px 40px 4px 12px; text-decoration:none; text-transform:uppercase;}
 a.ltu-button:hover {background-color:rgba(0,0,0,0.15);}
 a.ltu-button.light {background:transparent url(https://latrobe.edu.au/__data/assets/image/0004/553369/chevron-lg-white-right.png) no-repeat right center; background-size:26px; border-color:#fff; color:#fff;}
+*/
 /* Widget bg overrides */
+/*
 .m-yellow a.ltu-button,
 .m-brown a.ltu-button {background:transparent url(https://latrobe.edu.au/__data/assets/image/0004/553369/chevron-lg-white-right.png) no-repeat right center; background-size:34px; border-color:#fff; color:#fff;}
 a.ltu-button[href^="mailto:"] {text-transform:lowercase;}
@@ -569,6 +572,7 @@ a.ltu-button:active {background-color:#e42312; box-shadow:0 0 4px #e42312; color
     a.ltu-button.chat {font-size:18px; padding:10px 46px 10px 26px;}
     a.ltu-button.chat {padding:10px 26px 10px 46px;}
 }
+*/
 
 /* Misc styles */
 .action {color:#008A00!important; text-shadow:0 0 2px #fff;}

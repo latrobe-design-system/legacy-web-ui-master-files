@@ -134,7 +134,7 @@ button.btn-box {
     }
 }
 
-/* legacy classes
+/* legacy classes */
 .ltu-button {
     @extend .btn-secondary;
     @extend [class*="icon-"];
@@ -154,4 +154,4 @@ button.btn-box {
 }
 .ltu-button[href^="mailto:"] {
     @extend .icon-mail;
-}*/
+}
