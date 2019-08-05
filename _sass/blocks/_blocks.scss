@@ -4,6 +4,12 @@
     &[data-bgcolor="grey"] {
         background: $color-3b;
     }
+    &[data-bgcolor="black"] {
+        background: $color-2;
+    }
+    &[data-bgcolor="red"] {
+        background: $color-1;
+    }
 }
 .ds-block-container-narrow,
 .ds-block-container-wide {
