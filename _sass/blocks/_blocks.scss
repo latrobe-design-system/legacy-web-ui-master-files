@@ -1,6 +1,8 @@
 [class*="ds-block-container"] {
     clear: both; /* incase there is a float */
-    margin: 40px 0;
+    &[data-bgcolor=""] {
+        margin: 40px 0;
+    }
     &[data-bgcolor="grey"] {
         background: $color-3b;
     }
@@ -19,7 +21,7 @@
     }
 }
 @media (min-width: 640px) {
-    [class*="ds-block-container"] {
+    [class*="ds-block-container"][data-bgcolor=""] {
         margin: 4% 0;
     }
     .ds-block-container-narrow,
