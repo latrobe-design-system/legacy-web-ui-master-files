@@ -14,10 +14,10 @@ background-position:center center; box-sizing:border-box; color:#fff; font-size:
 .our-course-search input[type=search] {border:none; border-radius:0; height:48px; padding:12px 20px;}
 .our-course-search input[type=submit] {background:#fff url(https://www.latrobe.edu.au/__data/assets/file/0007/841156/search-red.svg) no-repeat 0 0; border:none; border-radius:0; box-sizing:border-box; color:#242424; height:48px; margin-left:1px; padding:0; text-align:center; vertical-align:top; width:48px; border-radius: 0;}
 .our-course-search input[type=submit]:hover {background-color:rgba(0,0,0,0.2);}
-.our-course-search input[type=search]::-webkit-input-placeholder {color:#e42312; font-size:inherit; font-family:'Roboto Bold',sans-serif; line-height:28px;}
-.our-course-search input[type=search]::-moz-placeholder {color:#e42312; font-size:inherit; font-family:'Roboto Bold',sans-serif; opacity: 1;}
-.our-course-search input[type=search]:-ms-input-placeholder {color:#e42312; font-size:inherit; font-family:'Roboto Bold',sans-serif; font-weight:700;}
-.our-course-search input[type=search]:-moz-placeholder {color:#e42312; font-size:inherit; font-family:'Roboto Bold',sans-serif; opacity: 1;}
+.our-course-search input[type=search]::-webkit-input-placeholder {color:#e42312; font-size:inherit; font-family:'Roboto Condensed',sans-serif; line-height:28px;}
+.our-course-search input[type=search]::-moz-placeholder {color:#e42312; font-size:inherit; font-family:'Roboto Condensed',sans-serif; opacity: 1;}
+.our-course-search input[type=search]:-ms-input-placeholder {color:#e42312; font-size:inherit; font-family:'Roboto Condensed',sans-serif; font-weight:700;}
+.our-course-search input[type=search]:-moz-placeholder {color:#e42312; font-size:inherit; font-family:'Roboto Condensed',sans-serif; opacity: 1;}
 @media (min-width:768px) {
     .our-courses {padding:3vw 12vw;}
 }
@@ -33,7 +33,7 @@ background-position:center center; box-sizing:border-box; color:#fff; font-size:
 .fb-current-result-page {color:#999;}
 
 .main-content .discipline-list {list-style-type:none; margin:0; padding:0;}
-.discipline-list li {background-color:#fff; box-sizing:border-box; font-family:'Roboto Bold',sans-serif; line-height:24px; margin-bottom:4px; text-align:center; transition:transform 0.2s ease-in-out;}
+.discipline-list li {background-color:#fff; box-sizing:border-box; font-family:'Roboto Condensed',sans-serif; line-height:24px; margin-bottom:4px; text-align:center; transition:transform 0.2s ease-in-out;}
 .discipline-list li:hover {transform:scale(1.05);}
 .discipline-list a, .discipline-list button {box-sizing:border-box; display:block; padding:12px 20px; text-decoration:none;}
 .discipline-list a:visited {color:#e42312;}
