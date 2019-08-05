@@ -2,7 +2,7 @@
     clear: both; /* incase there is a float */
     margin: 40px 0;
     &[data-bgcolor="grey"] {
-        background: $swatch-3b;
+        background: $color-3b;
     }
 }
 .ds-block-container-narrow,
