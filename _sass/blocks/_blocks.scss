@@ -4,7 +4,7 @@
         margin: 40px 0;
     }
     &[data-bgcolor="grey"] {
-        background: $color-3b;
+        background-color: $color-3b;
     }
     &[data-bgcolor="black"] {
         background: $color-2;
@@ -13,21 +13,21 @@
         }
     }
     &[data-bgcolor="red"] {
-        background: $color-1;
+        background-color: $color-1;
         .ds-block-header {
             color: white;
         }
     }
     &[data-bgcolor="black-nodes"] {
-        background: $color-2;
-        background: url("img/bg-nodes.svg"), linear-gradient(to bottom, #242424 1%, #3a3a3a 100%);
+        background-color: $color-2;
+        background-image: url("img/bg-nodes.svg");
         .ds-block-header {
             color: white;
         }
     }
     &[data-bgcolor="red-nodes"] {
-        background: $color-1;
-        background: url("img/bg-nodes.svg"), linear-gradient(to bottom, #e2231b 1%, #d14124 100%);
+        background-color: $color-1;
+        background-image: url("img/bg-nodes.svg");
         .ds-block-header {
             color: white;
         }
