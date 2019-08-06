@@ -21,11 +21,7 @@ a:focus, *:focus:not(div) { outline: 2px dotted red; }
 body:focus {outline:none;}
 a:hover, a:active { outline: 0; }
 
-<<<<<<< HEAD
 h1,h2,h3,h4,h5,h6 {font-family:'Roboto Bold',sans-serif; font-weight:normal; margin:0 0 8px;}
-=======
-h1,h2,h3,h4,h5,h6 {font-family:'',sans-serif; font-weight:normal; margin:0 0 8px;}
->>>>>>> 65ddbca706b709ff8a46308417538645338b9d36
 h1 + h1 {display:none;}
 h2 strong, h3 strong, h4 strong, h2 b, h3 b, h4 b {font-weight:normal;}
 h1 {color:#e42312; font-size:36px; line-height:40px;}
