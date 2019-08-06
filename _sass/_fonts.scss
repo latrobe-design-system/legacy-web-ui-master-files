@@ -61,11 +61,8 @@
   font-family: 'Roboto Bold';
   font-style: normal;
   font-weight: 700;
-<<<<<<< HEAD
-  src: local('Roboto Bold Bold'), local('RobotoCondensed-Bold'),
-=======
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'),
   src: local(' Bold'), local('RobotoCondensed-Bold'),
->>>>>>> 65ddbca706b709ff8a46308417538645338b9d36
        url('fonts/roboto-condensed/roboto-condensed-v18-cyrillic_latin-ext_greek_vietnamese_latin_greek-ext_cyrillic-ext-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('fonts/roboto-condensed/roboto-condensed-v18-cyrillic_latin-ext_greek_vietnamese_latin_greek-ext_cyrillic-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

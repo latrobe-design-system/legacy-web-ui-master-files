@@ -1,10 +1,10 @@
-/* Error: expected "{".
+/* Error: expected ";".
  *    ,
- * 70 |        url('fonts/roboto-condensed/roboto-condensed-v18-cyrillic_latin-ext_greek_vietnamese_latin_greek-ext_cyrillic-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ *∕
- *    |                                                                                                                                                   ^
+ * 65 |   src: local(' Bold'), local('RobotoCondensed-Bold'),
+ *    |      ^
  *    '
- *   ltucss/_sass/_fonts.scss 70:147  root stylesheet
- *   ltucss/_sass/ltu.scss 4:9        root stylesheet */
+ *   ltucss/_sass/_fonts.scss 65:6  root stylesheet
+ *   ltucss/_sass/ltu.scss 4:9      root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: expected \"{\".\a    \2577 \a 70 \2502         url('fonts/roboto-condensed/roboto-condensed-v18-cyrillic_latin-ext_greek_vietnamese_latin_greek-ext_cyrillic-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */\a    \2502                                                                                                                                                    ^\a    \2575 \a   ltucss/_sass/_fonts.scss 70:147  root stylesheet\a   ltucss/_sass/ltu.scss 4:9        root stylesheet";
+  content: "Error: expected \";\".\a    \2577 \a 65 \2502    src: local(' Bold'), local('RobotoCondensed-Bold'),\a    \2502       ^\a    \2575 \a   ltucss/_sass/_fonts.scss 65:6  root stylesheet\a   ltucss/_sass/ltu.scss 4:9      root stylesheet";
 }
