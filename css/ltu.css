@@ -1,10 +1,10 @@
-/* Error: expected ";".
+/* Error: expected selector.
  *    ,
- * 65 |   src: local(' Bold'), local('RobotoCondensed-Bold'),
- *    |      ^
+ * 24 | <<<<<<< HEAD
+ *    | ^
  *    '
- *   ltucss/_sass/_fonts.scss 65:6  root stylesheet
- *   ltucss/_sass/ltu.scss 4:9      root stylesheet */
+ *   ltucss/_sass/unsorted/_core.scss 24:1  @import
+ *   ltucss/_sass/ltu.scss 6:9              root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: expected \";\".\a    \2577 \a 65 \2502    src: local(' Bold'), local('RobotoCondensed-Bold'),\a    \2502       ^\a    \2575 \a   ltucss/_sass/_fonts.scss 65:6  root stylesheet\a   ltucss/_sass/ltu.scss 4:9      root stylesheet";
+  content: "Error: expected selector.\a    \2577 \a 24 \2502  <<<<<<< HEAD\a    \2502  ^\a    \2575 \a   ltucss/_sass/unsorted/_core.scss 24:1  @import\a   ltucss/_sass/ltu.scss 6:9              root stylesheet";
 }
