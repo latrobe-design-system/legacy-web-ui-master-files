@@ -5,9 +5,9 @@ button.btn-box {
     -moz-appearance: none;
 }
 .btn {
+    @include font-roboto-condensed-bold;
     border: 0;
     box-sizing: border-box;
-    font-family: "Roboto Bold",sans-serif;
     font-size: 16px;
     line-height: 24px;
     display: inline-block;
@@ -15,13 +15,13 @@ button.btn-box {
     margin-bottom: 4px;
     text-decoration: none;
     color: white;
-    background-color: $swatch-1;
+    background-color: $color-1;
     &:visited {
         color: white;
     }
     &:hover {
         text-decoration: underline;
-        background-color: darken($swatch-1,5%);
+        background-color: darken($color-1,5%);
     }
     &[class*="icon-"]{
         padding-right: 44px;
@@ -45,10 +45,10 @@ button.btn-box {
 }
 .btn-light {
     @extend .btn;
-    color: $swatch-1;
+    color: $color-1;
     background-color: white;
     &:visited {
-        color: $swatch-1;
+        color: $color-1;
     }
     &:hover {
         text-decoration: underline;
@@ -62,16 +62,16 @@ button.btn-box {
 }
 .btn-secondary {
     @extend .btn;
-    color: $swatch-2;
+    color: $color-2;
     background-color: transparent;
-    outline: 2px solid $swatch-2;
+    outline: 2px solid $color-2;
     outline-offset: -2px;
     &:visited {
-        color: $swatch-2;
+        color: $color-2;
     }
     &:hover {
         background-color: rgba(black,.15);
-        outline: 2px solid $swatch-2;
+        outline: 2px solid $color-2;
     }
     &[class*="icon-"]::after {
         filter: $near-black;
@@ -94,19 +94,19 @@ button.btn-box {
 }
 
 .btn-pill {
-    border: 2px solid $swatch-2;
+    @include font-roboto-condensed-bold;
+    border: 2px solid $color-2;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: "Roboto Bold",sans-serif;
     line-height: inherit;
     display: inline-block;
     padding: 4px 16px;
     border-radius: 20px;
-    color: $swatch-2;
+    color: $color-2;
     text-decoration: none;
     background-color: white;
     &:visited {
-        color: $swatch-2;
+        color: $color-2;
     }
     &:hover {
         text-decoration: underline;
@@ -114,23 +114,23 @@ button.btn-box {
     }
     &.selected {
         color: white;
-        background-color: $swatch-2;
+        background-color: $color-2;
     }
 }
 .btn-pill-alt {
     @extend .btn-pill;
-    border: 2px solid $swatch-1;
-    color: $swatch-1;
+    border: 2px solid $color-1;
+    color: $color-1;
     &:visited {
-        color: $swatch-1;
+        color: $color-1;
     }
     &:hover {
         text-decoration: underline;
-        background-color: rgba($swatch-1,.15);
+        background-color: rgba($color-1,.15);
     }
     &.selected {
         color: white;
-        background-color: $swatch-1;
+        background-color: $color-1;
     }
 }
 
@@ -154,4 +154,5 @@ button.btn-box {
 }
 .ltu-button[href^="mailto:"] {
     @extend .icon-mail;
-}*/
+}
+*/

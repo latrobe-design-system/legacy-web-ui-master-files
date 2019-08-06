@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     max-width: 6*208px;
-    margin: 0 auto !important;
+    margin: 0 auto 24px auto !important;
     &[data-columns="5"] {
         max-width: 5*208px;
     }
