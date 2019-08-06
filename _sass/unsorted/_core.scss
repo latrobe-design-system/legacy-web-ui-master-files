@@ -103,11 +103,7 @@ input[type="radio"] {margin-right:5px; vertical-align:middle;}
 input[type="submit"] {}
 input:focus, textarea:focus {} /* style form elements on focus */
 label {font-weight:normal}
-<<<<<<< HEAD
 legend {color:#444; font-size:20px; font-family:'Roboto Bold', sans-serif; line-height:2.5; margin:0 0 0 -1px; padding-right:10px;}
-=======
-legend {color:#444; font-size:20px; font-family:'', sans-serif; line-height:2.5; margin:0 0 0 -1px; padding-right:10px;}
->>>>>>> 65ddbca706b709ff8a46308417538645338b9d36
 optgroup {}
 select {box-sizing:content-box; -ms-box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
 select:not([multiple]) {-webkit-appearance:none;}
@@ -121,11 +117,7 @@ textarea {box-sizing:content-box; -ms-box-sizing:content-box; -moz-box-sizing:co
 
 /* Lists */
 dl {margin:0; padding:0.5em 0;}
-<<<<<<< HEAD
 dt {margin:0; padding:0; font-family:'Roboto Bold',sans-serif; font-weight:normal;}
-=======
-dt {margin:0; padding:0; font-family:'',sans-serif; font-weight:normal;}
->>>>>>> 65ddbca706b709ff8a46308417538645338b9d36
 dd {margin:0 0 0.2em 0; padding:0;}
 dd + dt {margin-top:10px;}
 ul {padding-left:46px;}
@@ -135,19 +127,11 @@ li {margin-bottom:0;}
 
 /* Tables */
 table {border:none; width:100%;}
-<<<<<<< HEAD
 table caption {background-color:#242424; font-family:'Roboto Bold', sans-serif; color:#fff; font-size:28px; line-height:32px; margin-bottom:1px; padding:16px 24px; text-align:left;}
 table caption.subtle-right {background-color:#eee; color:#333; font-size:16px; line-height:inherit; padding:8px 24px; text-align: right;}
 table { border-collapse: collapse; border-spacing: 0; }
 th,td { vertical-align: top; }
 th {background-color:#333; color:#fff; font-family:'Roboto Bold', sans-serif; font-size:18px; font-weight:normal!important; padding:12px; text-align:left;}
-=======
-table caption {background-color:#242424; font-family:'', sans-serif; color:#fff; font-size:28px; line-height:32px; margin-bottom:1px; padding:16px 24px; text-align:left;}
-table caption.subtle-right {background-color:#eee; color:#333; font-size:16px; line-height:inherit; padding:8px 24px; text-align: right;}
-table { border-collapse: collapse; border-spacing: 0; }
-th,td { vertical-align: top; }
-th {background-color:#333; color:#fff; font-family:'', sans-serif; font-size:18px; font-weight:normal!important; padding:12px; text-align:left;}
->>>>>>> 65ddbca706b709ff8a46308417538645338b9d36
 th + th {border-left:1px solid #fff;}
 td {border-left:1px solid #ccc; border-right:1px solid #ccc; border-color:#ccc; padding:12px;}
 th:first-child, td:first-child {border-left:none; padding-left:24px;}
@@ -208,11 +192,7 @@ body:not(.flow_page) #content {min-height:45em;}
     .nav-out .nav-utility {-webkit-transform:translateY(-100%); transform:translateY(-100%);}
 }
 
-<<<<<<< HEAD
 .nav-utility > ul li {display:inline-block; font:14px/20px 'Roboto Bold',sans-serif; padding:2px 6px;}
-=======
-.nav-utility > ul li {display:inline-block; font:14px/20px '',sans-serif; padding:2px 6px;}
->>>>>>> 65ddbca706b709ff8a46308417538645338b9d36
 .separate {border-left:1px solid #ccc;}
 .nav-utility .dropdown {display:none; padding:0;}
 .nav-utility .dropdown:hover {background-color:#363636;}
@@ -226,11 +206,7 @@ ul.nav-utility-dropdown {background-color:#363636; float:none; max-height:0; ove
 .nav-utility .open .nav-utility-dropdown {max-height:100vh; padding:12px; visibility:visible;}
 ul.nav-utility-dropdown li {display:block;}
 .nav-utility-dropdown a, .nav-utility-dropdown a:visited {color:#fff;}
-<<<<<<< HEAD
 .nav-utility-dropdown span {display:block; font:16px/16px 'Roboto Bold',sans-serif;}
-=======
-.nav-utility-dropdown span {display:block; font:16px/16px '',sans-serif;}
->>>>>>> 65ddbca706b709ff8a46308417538645338b9d36
 @media (min-width:1024px) {
     .nav-utility {display:block;}
     .header-top {background-color:#fff; box-sizing:border-box; display:flex; justify-content:flex-end;}
@@ -252,11 +228,7 @@ ul.nav-utility-dropdown li {display:block;}
     .nav-out #favourite-count {position:static;}
 }
 
-<<<<<<< HEAD
 #hamburger {background-image: url(https://www.latrobe.edu.au/__data/assets/file/0006/806649/hamburger-white.svg); background-size:48px; background-color:#fff; cursor:pointer; font-family:'Roboto Bold', sans-serif; font-size:14px; height:48px; left:calc(100% - 48px); overflow:hidden; text-align:center; text-indent:-200px; top:80px; position:absolute; -webkit-transition:-webkit-transform 0.3s ease-in-out; transition:left 0.3s ease-in-out; width:48px;}
-=======
-#hamburger {background-image: url(https://www.latrobe.edu.au/__data/assets/file/0006/806649/hamburger-white.svg); background-size:48px; background-color:#fff; cursor:pointer; font-family:'', sans-serif; font-size:14px; height:48px; left:calc(100% - 48px); overflow:hidden; text-align:center; text-indent:-200px; top:80px; position:absolute; -webkit-transition:-webkit-transform 0.3s ease-in-out; transition:left 0.3s ease-in-out; width:48px;}
->>>>>>> 65ddbca706b709ff8a46308417538645338b9d36
 #hamburger:focus {outline:1px dotted #fff;}
 #hamburger:after {background-color:#fff; color:#000; content:url(https://www.latrobe.edu.au/__data/assets/file/0005/745196/plus-dark.svg); display:block; height:48px; left:0; position:absolute; top:0; text-indent:0; -webkit-transform:rotateZ(45deg) scale(1); transform:rotateZ(45deg) scale(1); transition:transform 0.3s; width:48px;}
 .nav-out #hamburger {background-color:#242424;}
@@ -314,11 +286,7 @@ ul.nav-utility-dropdown li {display:block;}
 /* Universe */
 .nav-universes {display:none; padding:0;}
 .nav-universes-list {background-color: #242424; list-style:none;margin:0;padding:4px;position:relative;}
-<<<<<<< HEAD
 .nav-universe {box-sizing:border-box; color:#000; font-family:'Roboto Bold', sans-serif; font-size:16px; margin:0; padding:0; perspective:2000px;}
-=======
-.nav-universe {box-sizing:border-box; color:#000; font-family:'', sans-serif; font-size:16px; margin:0; padding:0; perspective:2000px;}
->>>>>>> 65ddbca706b709ff8a46308417538645338b9d36
 .nav-universes-list .nav-universe {}
 .nav-universes-list .nav-universe.active {box-shadow:0 2px 0 #e42312 inset; background:white;}
 .nav-universes-list .nav-universe.current_site label:after {background-color:#e42312; border-radius:100%;}
@@ -357,11 +325,7 @@ ul.nav-utility-dropdown li {display:block;}
 .mega-menu-item > div {flex:1 0 0%; margin:0 20px;}
 .mega-menu-item h2 {font-size:18px; line-height:20px; margin:16px 0 12px 0;}
 .mega-menu-item p {font-family:Roboto,sans-serif; margin-bottom:16px;}
-<<<<<<< HEAD
 .mega-menu-item ul {font-family:'Roboto Bold',sans-serif; font-size:18px; line-height:20px; list-style-type:none; margin:8px 0 0 0; padding:0;}
-=======
-.mega-menu-item ul {font-family:'',sans-serif; font-size:18px; line-height:20px; list-style-type:none; margin:8px 0 0 0; padding:0;}
->>>>>>> 65ddbca706b709ff8a46308417538645338b9d36
 .mega-menu-item ul ul {font-family:'Roboto',sans-serif; font-size:16px; margin:4px 0 8px;}
 .mega-menu-item li {padding:4px 0;}
 .mega-menu-item img {display:inline-block; float:left; margin-right:12px;}
@@ -376,11 +340,7 @@ ul.nav-utility-dropdown li {display:block;}
 .mm-root-node a {background: transparent url(https://www.latrobe.edu.au/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat -12px -9px; background-size:40px; color:#e42312; padding-left:28px;}
 .mega-menu-item .mm-brag {border-top:2px solid #e42312; border-bottom:2px solid #e42312; font-size:24px; line-height:24px; padding:20px 15px;}
 .mega-menu-item .mm-brag-source {font-size:14px; margin-bottom:0px; text-align:right;}
-<<<<<<< HEAD
 .mm-cta {background:transparent url(https://www.latrobe.edu.au/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat right center; border:4px solid #363636; color:#363636; font-size:18px;	font-family:'Roboto Bold', sans-serif; padding:10px 46px 10px 26px; margin-bottom:15px; display:inline-block;}
-=======
-.mm-cta {background:transparent url(https://www.latrobe.edu.au/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat right center; border:4px solid #363636; color:#363636; font-size:18px;	font-family:'', sans-serif; padding:10px 46px 10px 26px; margin-bottom:15px; display:inline-block;}
->>>>>>> 65ddbca706b709ff8a46308417538645338b9d36
 ul.mm2 li, ul.mm3 li, ul.mm4 li {margin-left: 15px;}
 ul.mm2 li:before, ul.mm3 li:before, ul.mm4 li:before {content:url(https://www.latrobe.edu.au/__data/assets/file/0010/796384/chevron-left-d52b1e.svg); display:block; margin:-22px 0 0 -40px; position:absolute; transform:rotate(180deg) scale(.5);}
 .mm-browse > li {background-color:#EEE; float:left; margin:20px 20px 0 0; padding:10px 20px;}
@@ -402,11 +362,7 @@ ul.mm2 li:before, ul.mm3 li:before, ul.mm4 li:before {content:url(https://www.la
 /* Local nav */
 .nav-container button {background:transparent; border:none; display:block;}
 .local-nav {position:relative; transition:opacity 0.3s ease-in-out;}
-<<<<<<< HEAD
 .local-nav, .local-nav ul {font:16px/20px 'Roboto Bold',sans-serif; list-style-type:none; margin:0; padding:0;}
-=======
-.local-nav, .local-nav ul {font:16px/20px '',sans-serif; list-style-type:none; margin:0; padding:0;}
->>>>>>> 65ddbca706b709ff8a46308417538645338b9d36
 .local-nav li {box-shadow:0 -1px 0 rgba(0,0,0,0.1); margin:0; perspective:1000px; position:relative;}
 /* Hide site asset home pages listed as current page */
 .a549405 .local-nav li.current {display:none;} /* Home */
