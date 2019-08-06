@@ -5,9 +5,9 @@ button.btn-box {
     -moz-appearance: none;
 }
 .btn {
+    @extend %font-roboto-condensed-bold;
     border: 0;
     box-sizing: border-box;
-    font-family: "Roboto Bold",sans-serif;
     font-size: 16px;
     line-height: 24px;
     display: inline-block;
@@ -94,10 +94,10 @@ button.btn-box {
 }
 
 .btn-pill {
+    @extend %font-roboto-condensed-bold;
     border: 2px solid $color-2;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: "Roboto Bold",sans-serif;
     line-height: inherit;
     display: inline-block;
     padding: 4px 16px;
@@ -134,7 +134,7 @@ button.btn-box {
     }
 }
 
-/* legacy classes */
+/* legacy classes
 .ltu-button {
     @extend .btn-secondary;
     @extend [class*="icon-"];
@@ -155,3 +155,4 @@ button.btn-box {
 .ltu-button[href^="mailto:"] {
     @extend .icon-mail;
 }
+*/
