@@ -18,6 +18,20 @@
             color: white;
         }
     }
+    &[data-bgcolor="black-nodes"] {
+        background: $color-2;
+        background: url("img/bg-nodes.svg"), linear-gradient(to bottom, #242424 1%, #3a3a3a 100%);
+        .ds-block-header {
+            color: white;
+        }
+    }
+    &[data-bgcolor="red-nodes"] {
+        background: $color-1;
+        background: url("img/bg-nodes.svg"), linear-gradient(to bottom, #e2231b 1%, #d14124 100%);
+        .ds-block-header {
+            color: white;
+        }
+    }
 }
 .ds-block-container-narrow,
 .ds-block-container-wide {
