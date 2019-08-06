@@ -2,7 +2,7 @@
 .news-events {padding:20px;}
 .news-events .detail {float:right; font-size:18px; text-transform:none;}
 .news-events h2 {color:#e2231b; text-transform:uppercase;}
-p.more-news-events {font:18px/1 'Roboto Condensed',sans-serif; text-align:right;}
+p.more-news-events {font:18px/1 '',sans-serif; text-align:right;}
 p.more-news-events a {background:transparent url(https://www.latrobe.edu.au/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat 3px -3px; background-size:32px; padding-left:32px;}
 @media (min-width:1024px) {
     .news-events {display:flex; padding:3vw 12vw;}
@@ -13,7 +13,7 @@ p.more-news-events a {background:transparent url(https://www.latrobe.edu.au/__da
 .v6-events .event:last-child {margin-bottom:6vw;}
 .v6-events .event h3 {font-size:18px; line-height:22px; margin:0 0 0 20px; order:2; text-align:left;}
 .v6-events .event h3 a {box-sizing:border-box; display:block; margin-bottom:20px;}
-.v6-events .event-date {background-color:#f4f4f4; font-family:'Roboto Condensed', serif; min-width:100px; order:1; padding:12px 0; text-align:center;}
+.v6-events .event-date {background-color:#f4f4f4; font-family:'', serif; min-width:100px; order:1; padding:12px 0; text-align:center;}
 .v6-events .dateTime {display:inline-block; vertical-align:middle;}
 @media (min-width:1024px) {
     .v6-events {padding-right:24px;}

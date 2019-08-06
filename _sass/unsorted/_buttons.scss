@@ -5,7 +5,7 @@ button.button {
     -moz-appearance: none;
 }
 .button {
-    font-family: "Roboto Condensed",sans-serif;
+    font-family: "",sans-serif;
     display: inline-block;
     padding: 12px 16px;
     color: #e42312;
@@ -58,7 +58,7 @@ button.button-box {
 }
 .button-box {
     box-sizing: border-box;
-    font-family: "Roboto Condensed",sans-serif;
+    font-family: "",sans-serif;
     display: inline-block;
     padding: 8px 12px;
     border: 2px solid rgb(65, 65, 65);
@@ -77,7 +77,7 @@ button.button-box {
 
 .button-box-red {
     box-sizing: border-box;
-    font-family: "Roboto Condensed",sans-serif;
+    font-family: "",sans-serif;
     display: inline-block;
     padding: 8px 12px;
     border: 2px solid rgb(228, 35, 18);
