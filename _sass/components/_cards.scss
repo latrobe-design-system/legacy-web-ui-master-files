@@ -26,7 +26,7 @@
     padding: 0 10%;
 }
 .card-cta {
-    @extend %font-roboto-condensed-bold;
+    @include font-roboto-condensed-bold;
     @extend [class*="icon-"];
     color: $color-1;
     &::after {

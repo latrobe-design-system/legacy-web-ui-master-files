@@ -5,7 +5,7 @@ button.btn-box {
     -moz-appearance: none;
 }
 .btn {
-    @extend %font-roboto-condensed-bold;
+    @include font-roboto-condensed-bold;
     border: 0;
     box-sizing: border-box;
     font-size: 16px;
@@ -94,7 +94,7 @@ button.btn-box {
 }
 
 .btn-pill {
-    @extend %font-roboto-condensed-bold;
+    @include font-roboto-condensed-bold;
     border: 2px solid $color-2;
     box-sizing: border-box;
     font-size: 16px;
