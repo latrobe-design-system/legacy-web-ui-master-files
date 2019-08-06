@@ -8,9 +8,15 @@
     }
     &[data-bgcolor="black"] {
         background: $color-2;
+        .ds-block-header {
+            color: white;
+        }
     }
     &[data-bgcolor="red"] {
         background: $color-1;
+        .ds-block-header {
+            color: white;
+        }
     }
 }
 .ds-block-container-narrow,
