@@ -1,4 +1,4 @@
-[class*="ds-block-container"] {
+.ds-block-container {
     clear: both; /* incase there is a float */
     &[data-bgcolor=""] {
         margin: 40px 0;
@@ -33,19 +33,19 @@
         }
     }
 }
-.ds-block-container-narrow,
-.ds-block-container-wide {
+.ds-block-container[data-blockwidth="narrow"],
+.ds-block-container[data-blockwidth="wide"] {
     padding: 40px 20px;
     &[data-bgcolor=""] {
         padding: 0 20px;
     }
 }
 @media (min-width: 640px) {
-    [class*="ds-block-container"][data-bgcolor=""] {
+    .ds-block-container[data-bgcolor=""] {
         margin: 4% 0;
     }
-    .ds-block-container-narrow,
-    .ds-block-container-wide {
+    .ds-block-container[data-blockwidth="narrow"],
+    .ds-block-container[data-blockwidth="wide"] {
         padding: 4% 6%;
         &[data-bgcolor=""] {
             padding: 0 6%;
@@ -53,7 +53,7 @@
     }
 }
 @media (min-width: 1024px) {
-    .ds-block-container-narrow {
+    .ds-block-container[data-blockwidth="narrow"] {
         padding: 4% 12%;
         &[data-bgcolor=""] {
             padding: 0 12%;
