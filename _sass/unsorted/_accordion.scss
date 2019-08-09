@@ -51,7 +51,9 @@
     background: transparent;
     border: none;
     display: block;
-    font: normal 18px/24px 'Roboto Bold',sans-serif;
+    @include font-roboto-condensed-bold;
+    font-size: 18px;
+    line-height: 24px;
     padding: 12px 12px 12px 46px;
     text-align: left;
     transition: color 0.3s ease-in-out, text-indent 0.3s ease-in-out;
@@ -171,7 +173,9 @@
 .checkbox-expander label {
     cursor: pointer;
     display: block;
-    font: normal 20px/24px RobotoCondensed-Bold,sans-serif;
+    @include font-roboto-condensed-bold;
+    font-size: 20px;
+    line-height: 24px;
     margin-bottom: 0;
     padding: 12px 12px 12px 48px;
     position: relative;
