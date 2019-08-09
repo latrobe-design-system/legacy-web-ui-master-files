@@ -7,16 +7,20 @@
     font-family: 'Roboto', "Franklin Gothic Medium", Tahoma, sans-serif;
     font-weight: 500;
 }
-@mixin font-roboto-slab {
+@mixin font-roboto-slab-light {
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
+}
+@mixin font-roboto-slab {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
 }
 @mixin font-roboto-slab-bold {
     font-family: 'Roboto Slab', serif;
     font-weight: 500;
 }
 @mixin font-roboto-condensed-bold {
-    font-family: 'Roboto Condensed Bold', Impact, "Franklin Gothic Bold", sans-serif;
+    font-family: 'Roboto Condensed', Impact, "Franklin Gothic Bold", sans-serif;
     font-weight: 700;
 }
 
