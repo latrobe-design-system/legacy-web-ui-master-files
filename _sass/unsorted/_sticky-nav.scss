@@ -46,7 +46,9 @@
 .LP2-nav li {
     -webkit-flex: 1 0 40%;
     flex: 1 0 40%;
-    font: 14px/16px 'Roboto Bold', sans-serif;
+    @include font-roboto-condensed-bold;
+    font-size: 14px;
+    line-height: 16px;
     line-height: 20px;
     margin: 0;
     text-align: center;
