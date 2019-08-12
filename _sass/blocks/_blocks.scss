@@ -1,5 +1,4 @@
 .ds-block-container {
-    clear: both; /* incase there is a float */
     &[data-bgcolor=""] {
         margin: 40px 0;
     }
