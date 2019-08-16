@@ -1,9 +1,14 @@
 /* colors */
+/* red shades */
 $color-1: #e2231b; /* primary red */
+/* grey shades */
 $color-2: #242424; /* near black */
 $color-2a: #414141; /* charcoal */
 $color-3a: #ccc;
 $color-3b: #eee;
+/* brand alt sets */
+/* set 3 */
+$color-alt-3: rgb(0,170,152);
 /* svg icon filters - changes black to color */
 $near-black: invert(7%) sepia(53%) saturate(0%) hue-rotate(173deg) brightness(107%) contrast(86%); /* #242424 */
 $charcoal: invert(24%) sepia(1%) saturate(0%) hue-rotate(118deg) brightness(92%) contrast(89%); /* #414141 */
