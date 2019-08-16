@@ -155,3 +155,12 @@ button.btn-box {
 .ltu-button[href^="mailto:"] {
     @extend .icon-mail;
 }
+.story-widget[data-color=grey] .ltu-button.light,
+.story-widget[data-color=transparent] .ltu-button.light {
+    @extend .btn-secondary;
+}
+@media (min-width: 768px) {
+    .story-widget.wide[data-color=transparent] .ltu-button.light {
+        @extend .btn-secondary-light;
+    }
+}
