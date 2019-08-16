@@ -3,18 +3,18 @@
 @import "variables";
 @import "mixins";
 /* pre design system */
-@import "unsorted/core";
-@import "unsorted/styles";
-@import "unsorted/buttons";
-@import "unsorted/accordion";
-@import "unsorted/staff-profiles";
-@import "unsorted/jquery-ui.1.9.2.ltu";
-@import "unsorted/banner";
-@import "unsorted/course-search";
-@import "unsorted/sticky-nav";
-@import "unsorted/news-events";
-@import "unsorted/contacts";
-@import "unsorted/awesomeplete";
+@import "legacy/core";
+@import "legacy/styles";
+@import "legacy/buttons";
+@import "legacy/accordion";
+@import "legacy/staff-profiles";
+@import "legacy/jquery-ui.1.9.2.ltu";
+@import "legacy/banner";
+@import "legacy/course-search";
+@import "legacy/sticky-nav";
+@import "legacy/news-events";
+@import "legacy/contacts";
+@import "legacy/awesomeplete";
 /* end pre design system */
 @import "icons";
 @import "elements/buttons";
