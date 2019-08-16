@@ -159,3 +159,9 @@ button.btn-box {
 .story-widget[data-color=transparent] .ltu-button.light {
     @extend .btn-secondary;
 }
+.story-widget.wide[data-color=transparent] .ltu-button.light {
+    @media (min-width: 768px) {
+        color: white;
+        outline: 2px solid white;
+    }
+}
