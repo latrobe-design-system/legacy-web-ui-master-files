@@ -135,7 +135,8 @@ button.btn-box {
 }
 
 /* legacy classes */
-.ltu-button {
+.ltu-button,
+.content-box.m-beige .ltu-button {
     @extend .btn-secondary;
     @extend [class*="icon-"];
     padding-right: 44px;
@@ -147,7 +148,8 @@ button.btn-box {
 .ltu-button.chat,
 .m-yellow .ltu-button,
 .m-brown .ltu-button,
-.m-black .ltu-button {
+.m-black .ltu-button,
+.content-box .ltu-button {
     @extend .btn-secondary-light;
     @extend [class*="icon-"];
     padding-right: 44px;
