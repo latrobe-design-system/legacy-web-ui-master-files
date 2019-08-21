@@ -149,7 +149,8 @@ button.btn-box {
 .m-yellow .ltu-button,
 .m-brown .ltu-button,
 .m-black .ltu-button,
-.content-box .ltu-button {
+.content-box .ltu-button,
+blockquote .ltu-button {
     @extend .btn-secondary-light;
     @extend [class*="icon-"];
     padding-right: 44px;
