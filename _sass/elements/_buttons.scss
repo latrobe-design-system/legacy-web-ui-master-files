@@ -140,9 +140,6 @@ button.btn-box {
     @extend .btn-secondary;
     @extend [class*="icon-"];
     padding-right: 44px;
-    &::first-letter {
-        text-transform: uppercase;
-    }
 }
 .ltu-button::after {
     @extend .icon-chevron-right;
