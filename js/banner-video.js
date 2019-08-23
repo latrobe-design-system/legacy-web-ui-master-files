@@ -9,6 +9,8 @@ $('.banner-box-ctas').on('click', '#banner-video-play, #banner-video-play-mobile
             if (event.keyCode === undefined || event.keyCode == 13 || event.keyCode == 27) {
                 event.preventDefault();
                 overlay.fadeOut(function(){
+                    // stop the video
+                    $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
                     target.focus();
                 });
             }
