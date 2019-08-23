@@ -1,6 +1,6 @@
 /* Banner for discipline page */
 .banner-box {
-     position: relative;
+    position: relative;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
@@ -9,27 +9,30 @@
 
 .banner-box-text {
     text-align: left;
-    padding: 25px;
+    padding: 24px;
     background: $color-3b;
 }
 
 .banner-box-label {
     display: inline-block;
-    color: #999;
-    border-bottom: 2px solid #999;
+    color: $color-3c;
+    border-bottom: 2px solid $color-3c;
     padding: 0 0 20px;
-    font: 20px/24px 'Roboto Bold',sans-serif;
+    @include font-roboto-condensed-bold;
+    font-size: 20px;
+    line-height: 24px;
     text-transform: uppercase;
 }
 
 .banner-box-ctas {
     display: flex;
+    margin-bottom: 0 !important;
 }
 
 .banner-box-ctas .tablet-up {
     display: none;
 }
-@media (min-width:375px) {
+@media (min-width:414px) {
     .banner-box-ctas {
         display: block;
     }
@@ -49,16 +52,19 @@
 
     .banner-box-text {
         box-sizing: border-box;
-        color: #fff;
+        color: white;
         left: 50%;
         z-index: 1;
-        background: rgba(0,0,0,0.6);
+        background: rgba(black,0.6);
         width: 80%;
         max-width: 820px;
     }
 
     .banner-box-text h1 {
-        color: #fff;
+        color: white;
+        font-size: 36px;
+        line-height: 40px;
+        margin: 0 0 24px 0;
     }
 
     .banner-box-text p {
@@ -70,8 +76,8 @@
     }
 
     .banner-box-label {
-        color: #fff;
-        border-bottom: 2px solid #fff;
+        color: white;
+        border-bottom: 2px solid white;
     }
 
     .banner-box-ctas .mobile {
@@ -80,6 +86,52 @@
 
     .banner-box-ctas .tablet-up {
         display: inline-block;
+    }
+}
+/* end */
+
+/* banner overlay */
+.banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: rgba(black,0.8);
+    display: none;
+}
+
+#banner-overlay-close {
+    position: absolute;
+    bottom: 28px;
+    right: 10px;
+    z-index: 6;
+    @media (min-width:768px) {
+        top: 10px;
+        bottom: auto;
+    }
+}
+
+.banner-video {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 820px;
+    margin: auto;
+
+    @media (min-width:768px) {
+        bottom: 0;
+        top: auto;
+        transform: translateY(0);
+    }
+
+    .yt-video {
+        margin-bottom: 0;
     }
 }
 /* end */

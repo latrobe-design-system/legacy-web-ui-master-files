@@ -134,15 +134,48 @@ button.btn-box {
     }
 }
 
+.btn-round {
+    @extend .btn-pill;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    text-align: center;
+    border-radius: 50%;
+    text-indent: -10000px;
+    overflow: hidden;
+    &[class*="icon-"]::after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        transform: none;
+    }
+}
+.btn-round-light {
+    @extend .btn-round;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    &:visited {
+        color: white;
+    }
+    &:hover {
+        background-color: rgba(black,.15);
+        border: 2px solid white;
+    }
+    &[class*="icon-"]::after {
+        filter: $white;
+    }
+}
+
 /* legacy classes */
 .ltu-button,
 .content-box.m-beige .ltu-button {
     @extend .btn-secondary;
     @extend [class*="icon-"];
     padding-right: 44px;
-    &::first-letter {
-        text-transform: uppercase;
-    }
 }
 .ltu-button::after {
     @extend .icon-chevron-right;
