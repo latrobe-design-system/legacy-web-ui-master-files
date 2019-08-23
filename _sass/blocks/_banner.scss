@@ -122,12 +122,6 @@
     max-width: 820px;
     margin: auto;
 
-    @media (min-width:768px) {
-        bottom: 0;
-        top: auto;
-        transform: translateY(0);
-    }
-
     .yt-video {
         margin-bottom: 0;
     }
