@@ -20,6 +20,5 @@ $('.banner-box-ctas').on('click', '#banner-video-play, #banner-video-play-mobile
             $(closeOverlay).focus();
             //play video
             $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
-            });
-        );    
+        });    
 });
