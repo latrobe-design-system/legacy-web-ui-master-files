@@ -25,17 +25,12 @@
 }
 
 .banner-box-ctas {
-    display: flex;
+    display: block;
     margin-bottom: 0 !important;
 }
 
 .banner-box-ctas .tablet-up {
     display: none;
-}
-@media (min-width:414px) {
-    .banner-box-ctas {
-        display: block;
-    }
 }
 @media (min-width:768px) {
     .banner-box {
