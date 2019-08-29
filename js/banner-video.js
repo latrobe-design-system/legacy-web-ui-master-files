@@ -12,15 +12,19 @@ $('.banner-box-ctas').on('click', '#banner-video-play, #banner-video-play-mobile
             event.preventDefault();
             overlay.fadeOut(function(){
                 // delete video iframe to stop playing
-                $('#vid-'+videoId+').remove();
+                $('#vid-'+videoId+'').remove();
                 target.focus();
             });
         }
-    })
+    });
+    // close overlay on overlay click
+    overlay.on('click', function(event) {
+        closeOverlay.trigger( "click" );
+    });
 
     overlay.fadeIn(function(){
         $(closeOverlay).focus();
         // inject video with autoplay
-        $('.banner-video-wrapper .yt-video').append('<iframe id="vid-'+videoId+'" class="youtube-video" width="560" height="315" type="text/html" src="https://www.youtube.com/embed/'+videoId+'?rel=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $('.banner-video-embed').append('<iframe id="vid-'+videoId+'" class="youtube-video" width="560" height="315" type="text/html" src="https://www.youtube.com/embed/'+videoId+'?rel=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>');
     });
 });
