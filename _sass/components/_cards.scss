@@ -23,7 +23,7 @@
     padding: 20px 24px 0 24px;
 }
 .card-footer {
-    padding: 0 10%;
+    padding: 0 20px;
 }
 .card-cta {
     @include font-roboto-condensed-bold;
@@ -39,7 +39,7 @@ a.card {
     display: block;
     color: $color-2;
     text-decoration: none;
-    border: solid 1px $color-3a;
+    border: solid 1px $color-3b;
     &:hover{
         color: $color-2;
         text-decoration: none;

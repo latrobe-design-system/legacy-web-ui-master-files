@@ -1,0 +1,138 @@
+/* Banner for discipline page */
+.banner-box {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    padding-top: 56.25%;
+}
+
+.banner-box-text {
+    text-align: left;
+    padding: 24px;
+    background: $color-3a;
+}
+
+.banner-box-label {
+    display: inline-block;
+    color: $color-3c;
+    border-bottom: 2px solid $color-3c;
+    padding: 0 0 20px;
+    @include font-roboto-condensed-bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.banner-box-ctas {
+    display: block;
+    margin-bottom: 0 !important;
+}
+
+.banner-box-ctas .tablet-up {
+    display: none;
+}
+@media (min-width:768px) {
+    .banner-box {
+        background-size: cover;
+        background-position: center;
+        padding-top: 0;
+        min-height: 520px;
+        max-height: 52vh;
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-box-text {
+        box-sizing: border-box;
+        color: white;
+        left: 50%;
+        z-index: 1;
+        background: rgba(black,0.6);
+        width: 80%;
+        max-width: 820px;
+    }
+
+    .banner-box-text h1 {
+        color: white;
+        margin: 0 0 24px 0;
+    }
+
+    .banner-box-text p {
+        margin: 0 0 16px 0;
+    }
+
+    .banner-box-text li {
+        margin: 0;
+    }
+
+    .banner-box-label {
+        color: white;
+        border-bottom: 2px solid white;
+    }
+
+    .banner-box-ctas .mobile {
+        display: none;
+    }
+
+    .banner-box-ctas .tablet-up {
+        display: inline-block;
+    }
+}
+/* end */
+
+/* banner overlay */
+.banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: rgba(black,0.8);
+    display: none;
+}
+
+#banner-overlay-close {
+    position: absolute;
+    bottom: 28px;
+    right: 10px;
+    z-index: 6;
+    @media (min-width:768px) {
+        top: 10px;
+        bottom: auto;
+    }
+}
+
+.banner-video-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 820px;
+    margin: auto;
+
+    .banner-video-embed {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        margin-bottom: 0;
+
+        iframe {
+            border: none;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+}
+/* end */

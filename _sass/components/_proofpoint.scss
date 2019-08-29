@@ -1,25 +1,63 @@
 .proofpoint {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     max-width: 400px;
     text-align: center;
     margin-top: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 0;
+}
+.proofpont-icon {
+    float: none !important;
+    padding: 0 0 16px 0 !important;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+.proofpoint-title {
+    color: $color-1;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 16px 0 !important;
 }
 .proofpoint-number {
-    font-size: 28px;
-    line-height: 1;
+    @include font-roboto-condensed-bold;
     color: $color-1;
+    font-size: 40px;
+    line-height: 1;
+    margin: 0 0 16px 0 !important;
 }
-.proofpoint-text {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+.proofpoint-text,
+.proofpoint-legacy-content p:first-child {
+    @include font-roboto-condensed-bold;
+    color: $color-3d;
+    font-size: 20px;
+    line-height: 28px;
+}
+.proofpoint-footnote,
+.proofpoint-legacy-content p:first-child + p {
+    margin-top: auto !important;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-2a;
+}
+
+/* proof point set */
+.proofpoint-set {
+    @include columns;
+}
+.proofpoint-set-text {
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 16px auto 0 auto;
+    padding: 24px 24px 4px 24px;
+    background-color: $color-3a;
     @media(min-width: 768px){
         &[data-columns="2"] {
             columns: 2;
-            max-width: 1400px;
+            column-gap: 32px;
+            max-width: 1000px;
         }
     }
-}
-.proofpoint-set {
-    @include columns;
 }
