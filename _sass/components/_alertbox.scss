@@ -1,0 +1,40 @@
+.alertbox {
+    border: 2px solid rgba($color-alt-3, 0.2);
+    border-radius: 6px;
+    padding: 20px;
+    margin: 24px auto;
+    max-width: 700px;
+}
+.alertbox-heading {
+    @include font-roboto-slab;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 0 0 24px 0;
+    color: $color-alt-3;
+}
+.alertbox::before {
+    display: inline-block;
+    float: left;
+    content: "";
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    background-image: url("icons/feather/alert-circle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    filter: $teal;
+}
+@media(min-width: 768px){
+    .alertbox {
+        position: relative;
+        padding: 20px 80px;
+    }
+    .alertbox::before {
+        display: block;
+        position: absolute;
+        top: 18px;
+        left: 20px;
+    }
+}
