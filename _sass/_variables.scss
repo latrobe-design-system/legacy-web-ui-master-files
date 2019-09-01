@@ -11,7 +11,7 @@ $color-3d: #6C6C6C; /* accesible version of brand color #75787B; */
 /* brand alt sets */
 /* set 3 */
 $color-alt-3: rgb(0,170,152);
-/* svg icon filters - changes black to color */
+/* svg icon filters - changes black to color - https://codepen.io/sosuke/pen/Pjoqqp */
 $near-black: invert(7%) sepia(53%) saturate(0%) hue-rotate(173deg) brightness(107%) contrast(86%); /* #242424 */
 $charcoal: invert(24%) sepia(1%) saturate(0%) hue-rotate(118deg) brightness(92%) contrast(89%); /* #414141 */
 $red: invert(36%) sepia(31%) saturate(3720%) hue-rotate(337deg) brightness(81%) contrast(124%); /* #e2231b */
