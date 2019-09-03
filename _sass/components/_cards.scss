@@ -73,7 +73,7 @@ a.card {
     right: 0;
     margin-top: -40px;
     background-color: white;
-    label {
+    .save-course-icon + label {
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;
@@ -99,7 +99,7 @@ a.card {
             background-position: center;
         }
     }
-    input[type="checkbox"]:checked + label::before {
+    .save-course-icon:checked + label::before {
         background-image: url("icons/feather-fill/heart.svg");
         filter: $red;
     }
