@@ -54,6 +54,75 @@ a.card {
         }
     }
 }
+
+.card-course {
+    @extend .card;
+    .card-header {
+        position: relative;
+    }
+    p, li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.card-save {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    background-color: white;
+    label {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: white;
+        &::before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url("icons/feather/heart.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    input[type="checkbox"]:checked + label::before {
+        background-image: url("icons/feather-fill/heart.svg");
+        filter: $red;
+    }
+}
+
+.card-tag {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: $color-1;
+    padding: 8px 8px;
+    @include font-roboto-condensed-bold;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.card-tag-new {
+    @extend .card-tag;
+    background: $color-alt-3;
+}
+
 /* layouts */
 .card-set {
     @include columns-grid;
