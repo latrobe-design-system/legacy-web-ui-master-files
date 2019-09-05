@@ -41,7 +41,7 @@
     }
 }
 @mixin columns-grid($basis-width: 260px, $alignment: center, $wrap: auto-fit) {
-    @include columns; /* flex fallback */
+    @include columns($basis-width, $alignment); /* flex fallback */
     @supports(display: grid) {
         display: grid;
         justify-items: $alignment;
