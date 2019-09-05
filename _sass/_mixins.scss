@@ -26,9 +26,9 @@
 
 // @include these for flex or grid with flex fallback columns
 // optionally pass base width
-@mixin columns($basis-width: 260px) {
+@mixin columns($basis-width: 260px, $alignment: center) {
     display: flex;
-    justify-content: center;
+    justify-content: $alignment;
     margin-right: -32px;
     & > * {
         flex-grow: 1;
@@ -40,14 +40,14 @@
         flex-wrap: wrap;
     }
 }
-@mixin columns-grid($basis-width: 260px) {
+@mixin columns-grid($basis-width: 260px, $alignment: center, $wrap: auto-fit) {
     @include columns; /* flex fallback */
     @supports(display: grid) {
         display: grid;
-        justify-items: center;
+        justify-items: $alignment;
         grid-column-gap: 32px;
         margin-right: 0;
-        grid-template-columns: repeat(auto-fit, minmax($basis-width, 1fr));
+        grid-template-columns: repeat($wrap, minmax($basis-width, 1fr));
         & > * {
             margin: 0 0 16px 0;
         }

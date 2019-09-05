@@ -130,3 +130,6 @@ a.card {
 .card-set {
     @include columns-grid;
 }
+.card-set-left {
+    @include columns-grid(260px, center, auto-fill);
+}
