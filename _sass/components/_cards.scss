@@ -3,32 +3,42 @@
     background: white;
     width: 100%;
     max-width: 450px;
-    padding: 0 0 4px 0;
+    padding: 0 0 4px;
     margin-top: 16px;
     margin-bottom: 16px;
     transition: all 0.3s;
 }
+
+.card-header {
+    position: relative;
+}
+
 .card-img {
     float: none !important;
     padding: 0 !important;
     width: 100%;
 }
+
 .card-heading {
     margin: 0;
-    padding: 20px 24px 0 24px;
+    padding: 20px 24px 0;
     font-size: 20px;
     line-height: 24px;
 }
+
 .card-body {
-    padding: 20px 24px 0 24px;
+    padding: 20px 24px 0;
 }
+
 .card-footer {
     padding: 0 20px;
 }
+
 .card-cta {
     @include font-roboto-condensed-bold;
     @extend [class*="icon-"];
     color: $color-1;
+
     &::after {
         @extend .icon-chevron-right;
         filter: $red;
@@ -40,32 +50,21 @@ a.card {
     color: $color-2;
     text-decoration: none;
     border: solid 1px $color-3b;
-    &:hover{
+
+    &:hover {
         color: $color-2;
         text-decoration: none;
         cursor: pointer;
         box-shadow: 0 5px 20px 0 rgba(0,0,0,0.2);
+
         .card-heading {
             color: $color-1;
             text-decoration: underline;
         }
+
         .card-cta {
             text-decoration: underline;
         }
-    }
-}
-
-.card-course {
-    @extend .card;
-    .card-header {
-        position: relative;
-    }
-    p, li {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .interaction-note {
-        margin-top: 48px;
     }
 }
 
@@ -89,6 +88,7 @@ a.card {
         bottom: 0;
         left: 0;
         background: white;
+
         &::before {
             content: "";
             width: 40px;
@@ -104,6 +104,7 @@ a.card {
             background-position: center;
         }
     }
+
     .save-course-icon:checked + label::before {
         content: "";
         background-image: url("icons/feather-fill/heart.svg");
@@ -118,21 +119,35 @@ a.card {
     left: 0;
     color: white;
     background: $color-1;
-    padding: 8px 8px;
+    padding: 8px;
     @include font-roboto-condensed-bold;
     font-size: 16px;
     line-height: 1;
 }
 
-.card-tag-new {
+.card-tag-alt {
     @extend .card-tag;
     background: $color-alt-3;
 }
+/* course card specifics */
+.card-course {
+    @extend .card;
 
+    li,
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .interaction-note {
+        margin-top: 48px;
+    }
+}
 /* layouts */
 .card-set {
     @include columns-grid;
 }
+
 .card-set-left {
     @include columns-grid($alignment: left, $wrap: auto-fill);
 }
