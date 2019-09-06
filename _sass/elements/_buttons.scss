@@ -136,13 +136,15 @@ button.btn-box {
 
 .btn-round {
     @extend .btn-pill;
+    background-color: transparent;
     width: 48px;
     height: 48px;
     padding: 0;
     text-align: center;
     border-radius: 50%;
-    text-indent: -10000px;
+    text-indent: 100%;
     overflow: hidden;
+    white-space: nowrap;
     &[class*="icon-"]::after {
         position: absolute;
         right: 0;
@@ -157,7 +159,6 @@ button.btn-box {
     @extend .btn-round;
     color: white;
     border: 2px solid white;
-    background-color: transparent;
     &:visited {
         color: white;
     }
