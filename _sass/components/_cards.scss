@@ -151,3 +151,63 @@ a.card {
 .card-set-left {
     @include columns-grid($alignment: left, $wrap: auto-fill);
 }
+
+.card-profile {
+    display: block;
+    color: $color-2;
+    text-decoration: none;
+    border: solid 1px $color-3b;
+
+    @media(max-width: 768px){
+        margin-top: 67px;
+    }
+
+    @media(min-width: 768px){
+        border: none;
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: none;
+    }
+}
+
+.card-profile-image {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+
+    @media(max-width: 768px){
+        margin: auto;
+        margin-top: -60px;
+    }
+
+    @media(min-width: 768px){
+        width: 280px;
+        height: 280px;
+        flex-shrink: 0;
+    }
+}
+
+.card-profile-text {
+    .card-person-info {
+        margin: 0 0 24px;
+    }
+
+    @media(max-width: 768px){
+        padding-bottom: 1rem;
+    }
+
+    @media(min-width: 768px){
+        margin-right: 2rem;
+
+        .card-body {
+            border-bottom: 1px solid #CCCCCC;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .card-footer {
+            padding: 0;
+        }
+    }
+}
