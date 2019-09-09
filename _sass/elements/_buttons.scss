@@ -77,6 +77,36 @@ button.btn-box {
         filter: $near-black;
     }
 }
+
+.btn-small {
+    @extend .btn;
+    padding: 4px 16px;
+
+    &[class*="icon-"]{
+        padding-right: 32px;
+        &::after {
+            margin: 0 5px;
+        }
+    }
+
+    &.icon-before {
+        padding-right: 8px;
+        padding-left: 32px;
+
+        &::after {
+            left: 0;
+            right: unset;
+        }
+    }
+}
+
+.btn-secondary-small {
+    @extend .btn-secondary;
+    @extend .btn-small;
+
+    padding: 2px 14px;
+}
+
 .btn-secondary-light {
     @extend .btn-secondary;
     color: white;
