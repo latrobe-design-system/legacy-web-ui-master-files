@@ -79,6 +79,16 @@
         margin: 0 0 24px 0;
     }
 }
+.ds-block-container {
+    &:not([data-blockwidth]) .ds-block-header,
+    &[data-blockwidth=""] .ds-block-header {
+        padding: 4% 0 4px 0;
+        margin: 0;
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
 .ds-block-header[data-textalign="left"] {
     text-align: left;
 }
