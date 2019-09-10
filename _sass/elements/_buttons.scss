@@ -205,6 +205,12 @@ button.btn-box {
     }
 }
 
+.btn-round-small {
+    @extend .btn-round;
+    width: 36px;
+    height: 36px;
+}
+
 .btn-round-light {
     @extend .btn-round;
     color: white;
