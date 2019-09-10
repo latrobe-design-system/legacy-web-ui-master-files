@@ -205,6 +205,12 @@ button.btn-box {
     }
 }
 
+.btn-round-small {
+    @extend .btn-round;
+    width: 36px;
+    height: 36px;
+}
+
 .btn-round-light {
     @extend .btn-round;
     color: white;
@@ -219,6 +225,11 @@ button.btn-box {
     &[class*="icon-"]::after {
         filter: $white;
     }
+}
+
+.btn-round-small-light {
+    @extend .btn-round-light;
+    @extend .btn-round-small;
 }
 
 /* legacy classes */
