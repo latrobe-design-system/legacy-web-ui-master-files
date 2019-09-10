@@ -43,6 +43,30 @@ button.btn-box {
         line-height: 28px;
     }
 }
+
+.btn-small {
+    @extend .btn;
+    padding: 4px 16px;
+
+    &[class*="icon-"]{
+        padding-right: 28px;
+        &::after {
+            margin: 0 5px;
+            width: 16px;
+        }
+    }
+
+    &.icon-before {
+        padding-right: 16px;
+        padding-left: 28px;
+
+        &::after {
+            left: 0;
+            right: unset;
+        }
+    }
+}
+
 .btn-light {
     @extend .btn;
     color: $color-1;
@@ -59,7 +83,15 @@ button.btn-box {
             filter: $red;
         }
     }
+
+    &-small {
+        @extend .btn-small;
+        @extend .btn-light;
+        
+        padding: 4px 16px;
+    }
 }
+
 .btn-secondary {
     @extend .btn;
     color: $color-2;
@@ -76,35 +108,13 @@ button.btn-box {
     &[class*="icon-"]::after {
         filter: $near-black;
     }
-}
 
-.btn-small {
-    @extend .btn;
-    padding: 4px 16px;
+    &-small {
+        @extend .btn-small;
+        @extend .btn-secondary;
 
-    &[class*="icon-"]{
-        padding-right: 32px;
-        &::after {
-            margin: 0 5px;
-        }
+        padding: 2px 14px;
     }
-
-    &.icon-before {
-        padding-right: 8px;
-        padding-left: 32px;
-
-        &::after {
-            left: 0;
-            right: unset;
-        }
-    }
-}
-
-.btn-secondary-small {
-    @extend .btn-secondary;
-    @extend .btn-small;
-
-    padding: 2px 14px;
 }
 
 .btn-secondary-light {
@@ -121,7 +131,34 @@ button.btn-box {
     &[class*="icon-"]::after {
         filter: $white;
     }
+
+    &-small {
+        @extend .btn-small;
+        @extend .btn-secondary-light;
+
+        padding: 2px 14px;
+    }
 }
+
+// Icons
+
+.btn-secondary-small,
+.btn-secondary-light-small {
+    &[class*="icon-"]{
+        padding-right: 26px;
+    }
+
+    &.icon-before {
+        padding-right: 14px;
+        padding-left: 26px;
+
+        &::after {
+            left: 0;
+            right: unset;
+        }
+    }
+}
+
 
 .btn-pill {
     @include font-roboto-condensed-bold;
@@ -147,6 +184,7 @@ button.btn-box {
         background-color: $color-2;
     }
 }
+
 .btn-pill-alt {
     @extend .btn-pill;
     border: 2px solid $color-1;
@@ -185,6 +223,7 @@ button.btn-box {
         transform: none;
     }
 }
+
 .btn-round-light {
     @extend .btn-round;
     color: white;
