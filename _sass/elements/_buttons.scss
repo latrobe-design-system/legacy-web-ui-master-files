@@ -4,6 +4,7 @@ button.btn-box {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+
 .btn {
     @include font-roboto-condensed-bold;
     border: 0;
@@ -16,13 +17,17 @@ button.btn-box {
     text-decoration: none;
     color: white;
     background-color: $color-1;
+    border: 2px solid transparent;
+
     &:visited {
         color: white;
     }
+
     &:hover {
         text-decoration: underline;
         background-color: darken($color-1,5%);
     }
+
     &[class*="icon-"]{
         padding-right: 44px;
         &::after {
@@ -30,6 +35,7 @@ button.btn-box {
             margin: 0 12px;
         }
     }
+
     &.icon-before {
         padding-right: 18px;
         padding-left: 44px;
@@ -38,9 +44,62 @@ button.btn-box {
             right: unset;
         }
     }
+
     @media (min-width: 1400px) {
         font-size: 18px;
         line-height: 28px;
+    }
+}
+
+.btn-light {
+    @extend .btn;
+    color: $color-1;
+    background-color: white;
+    &:visited {
+        color: $color-1;
+    }
+    &:hover {
+        text-decoration: underline;
+        background-color: darken(white,5%);
+    }
+    &[class*="icon-"]{
+        &::after {
+            filter: $red;
+        }
+    }
+}
+
+.btn-secondary {
+    @extend .btn;
+    color: $color-2;
+    background-color: transparent;
+    border: 2px solid $color-2;
+    padding: 12px 18px;
+    &:visited {
+        color: $color-2;
+    }
+    &:hover {
+        background-color: rgba(black,.15);
+        border: 2px solid $color-2;
+    }
+    &[class*="icon-"]::after {
+        filter: $near-black;
+    }
+}
+
+.btn-secondary-light {
+    @extend .btn-secondary;
+    color: white;
+    border: 2px solid white;
+    &:visited {
+        color: white;
+    }
+    &:hover {
+        background-color: rgba(black,.15);
+        border: 2px solid white;
+    }
+    &[class*="icon-"]::after {
+        filter: $white;
     }
 }
 
@@ -67,98 +126,20 @@ button.btn-box {
     }
 }
 
-.btn-light {
-    @extend .btn;
-    color: $color-1;
-    background-color: white;
-    &:visited {
-        color: $color-1;
-    }
-    &:hover {
-        text-decoration: underline;
-        background-color: darken(white,5%);
-    }
-    &[class*="icon-"]{
-        &::after {
-            filter: $red;
-        }
-    }
-
-    &-small {
-        @extend .btn-small;
-        @extend .btn-light;
-        
-        padding: 4px 16px;
-    }
-}
-
-.btn-secondary {
-    @extend .btn;
-    color: $color-2;
-    background-color: transparent;
-    border: 2px solid $color-2;
-    padding: 10px 18px;
-    &:visited {
-        color: $color-2;
-    }
-    &:hover {
-        background-color: rgba(black,.15);
-        border: 2px solid $color-2;
-    }
-    &[class*="icon-"]::after {
-        filter: $near-black;
-    }
-
-    &-small {
-        @extend .btn-small;
-        @extend .btn-secondary;
-
-        padding: 2px 14px;
-    }
-}
-
-.btn-secondary-light {
+.btn-secondary-small {
+    @extend .btn-small;
     @extend .btn-secondary;
-    color: white;
-    border: 2px solid white;
-    &:visited {
-        color: white;
-    }
-    &:hover {
-        background-color: rgba(black,.15);
-        border: 2px solid white;
-    }
-    &[class*="icon-"]::after {
-        filter: $white;
-    }
-
-    &-small {
-        @extend .btn-small;
-        @extend .btn-secondary-light;
-
-        padding: 2px 14px;
-    }
 }
 
-// Icons
+.btn-light-small {
+    @extend .btn-small;
+    @extend .btn-light;
+}
 
-.btn-secondary-small,
 .btn-secondary-light-small {
-    &[class*="icon-"]{
-        padding-right: 26px;
-    }
-
-    &.icon-before {
-        padding-right: 14px;
-        padding-left: 26px;
-
-        &::after {
-            left: 0;
-            right: unset;
-        }
-    }
+    @extend .btn-small;
+    @extend .btn-secondary-light;
 }
-
 
 .btn-pill {
     @include font-roboto-condensed-bold;
