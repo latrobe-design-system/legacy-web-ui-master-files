@@ -227,6 +227,11 @@ button.btn-box {
     }
 }
 
+.btn-round-small-light {
+    @extend .btn-round-light;
+    @extend .btn-round-small;
+}
+
 /* legacy classes */
 .ltu-button,
 .content-box.m-beige .ltu-button {
