@@ -1,0 +1,20 @@
+body {
+    line-height: 1.5;
+}
+
+p,
+ul {
+    margin: 0 0 20px;
+}
+
+@media (min-width:1400px) {
+    p,
+    ul {
+        margin: 0 0 20px;
+    }
+}
+
+p.small {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}
