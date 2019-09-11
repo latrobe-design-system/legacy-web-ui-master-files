@@ -1,14 +1,37 @@
-@charset "UTF-8";
-@import "fonts";
-@import "variables";
-@import "mixins";
+// ==========================================================================
 
-@import "icons";
+// La Trobe Design System
+// Author:
+//
+// Built using the following as starting points, good ideas and best practices:
+// MaintainableCSS - https://maintainablecss.com/
+
+// ==========================================================================
+
+// Setup
+@import "base/reset";
+@import "base/fonts";
+@import "base/variables";
+@import "base/mixins";
+
+// Resets and HTML/Body styles
+@import "elements/html";
+
+// Elements
+@import "elements/icons";
 @import "elements/buttons";
+// @import "elements/embeds";
+// @import "elements/forms";
+// @import "elements/images";
+// @import "elements/links";
+// @import "elements/lists";
+// @import "elements/tables";
+
+// Components
 @import "components/alertbox";
 @import "components/cards";
-
 @import "components/proofpoint";
 
+// Blocks
 @import "blocks/blocks";
 @import "blocks/banner";
