@@ -108,16 +108,16 @@ button.btn-box {
     padding: 4px 16px;
 
     &[class*="icon-"]{
-        padding-right: 28px;
+        padding-right: 32px;
         &::after {
-            margin: 0 5px;
+            margin: 0 8px;
             width: 16px;
         }
     }
 
     &.icon-before {
         padding-right: 16px;
-        padding-left: 28px;
+        padding-left: 32px;
 
         &::after {
             left: 0;
