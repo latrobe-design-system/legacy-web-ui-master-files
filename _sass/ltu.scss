@@ -1,7 +1,7 @@
-@charset "UTF-8";
 @import "fonts";
 @import "variables";
 @import "mixins";
+
 /* pre design system */
 @import "legacy/core";
 @import "legacy/styles";
@@ -15,13 +15,6 @@
 @import "legacy/news-events";
 @import "legacy/contacts";
 @import "legacy/awesomeplete";
-/* end pre design system */
-@import "icons";
-@import "elements/buttons";
-@import "components/alertbox";
-@import "components/cards";
-/*@import "components/logo-showcase";*/
-@import "components/proofpoint";
-/*@import "components/tile-mosaic";*/
-@import "blocks/blocks";
-@import "blocks/banner";
+
+/* new design system */
+@import "ds-ltu";
