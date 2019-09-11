@@ -157,6 +157,7 @@ a.card {
     color: $color-2;
     text-decoration: none;
     border: solid 1px $color-3b;
+    margin: auto;
 
     @media(max-width: 768px){
         margin-top: 67px;
@@ -190,7 +191,11 @@ a.card {
 
 .card-profile-text {
     .card-person-info {
-        margin: 0 0 24px;
+        margin: 0 0 20px;
+    }
+
+    .person-degree {
+        color: $color-1;
     }
 
     @media(max-width: 768px){
@@ -202,7 +207,7 @@ a.card {
 
         .card-body {
             border-bottom: 1px solid #CCCCCC;
-            padding-left: 0;
+            padding: 0;
             margin-bottom: 20px;
         }
 
