@@ -4,66 +4,91 @@
     padding: 0;
     list-style-type: none;
 }
+
 .tile {
     box-sizing: border-box;
     margin: 0 !important;
     position: relative;
     width: 50%;
     max-width: 100%;
-    min-width: 140px;
-    @media(min-width: 640px){
+    min-width: 135px;
+    @media(min-width: 500px) {
         width: 20%;
         min-width: 200px;
     }
     background-color: $color-3a;
     float: left;
     overflow: hidden;
+
+    &:hover {
+        .tile-title {
+            text-decoration: underline;
+        }
+    }
+
     &:after {
         /* make it square */
         content: "";
         display: block;
         padding-bottom: 100%;
     }
+
     &:nth-child(odd) {
         background-color: $color-3b;
     }
+
     &[data-bg="black"],
-    &[data-bg="red"]{
+    &[data-bg="red"] {
         color: white;
+
         .tile-content-footer a,
         .tile-content-footer a:visited {
             color: white;
         }
     }
-    &[data-bg="black"]{
+
+    &[data-bg="black"] {
         background-color: $color-2;
     }
-    &[data-bg="red"]{
+
+    &[data-bg="red"] {
         background-color: $color-1;
     }
-    &[data-bg="image"]{
+
+    &[data-bg="image"] {
         .tile-image {
             display: block;
         }
+
         .tile-title {
             margin-top: auto;
             color: white;
             font-size: 20px;
             line-height: 24px;
+            font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+            line-height: calc(20px + 6 * ((100vw - 320px) / 680));
+            @media screen and (min-width: 1000px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
-        .tile-description,
-        .tile-content-footer {
+
+        .tile-content-footer,
+        .tile-description {
             display: none;
         }
     }
+
     .tile-wrapper {
         position: absolute;
         width: 100%;
         height: 100%;
     }
+
     .tile-image {
         display: none;
     }
+
     .tile-link {
         display: block;
         position: absolute;
@@ -75,10 +100,8 @@
         overflow: hidden;
         white-space: nowrap;
         cursor: pointer;
-        &:hover {
-            background: rgba($color-1,0.2);
-        }
     }
+
     .tile-content {
         position: absolute;
         top: 0;
@@ -89,9 +112,20 @@
         display: flex;
         flex-direction: column;
     }
+
+    .tile-title {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+        line-height: calc(20px + 6 * ((100vw - 320px) / 680));
+        @media screen and (min-width: 1000px) {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+
     .tile-content-footer {
         margin-top: auto;
     }
+
     .tile-image {
         float: none !important;
         padding: 0 !important;
@@ -107,33 +141,40 @@
 .tile-primary {
     @extend .tile;
     width: 100%;
-    min-width: 280px;
-    @media(min-width: 640px){
+    min-width: 270px;
+    @media(min-width: 500px) {
         width: 40%;
         min-width: 400px;
     }
+
     .tile-title {
-        font-size: 32px;
-        line-height: 36px;
+        font-size: 24px;
+        line-height: 28px;
+        font-size: calc(24px + 6 * ((100vw - 320px) / 680));
+        line-height: calc(28px + 6 * ((100vw - 320px) / 680));
+        @media screen and (min-width: 1000px) {
+            font-size: 32px;
+            line-height: 36px;
+        }
     }
 }
-@supports(display:grid){
+@supports(display:grid) {
     .tile-mosaic {
         overflow-x: scroll;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(140px,20%));
-        @media(min-width: 640px){
-            grid-template-columns: repeat(auto-fill, minmax(200px,20%));
-        }
-        &::before,
-        &::after {
+        grid-template-columns: repeat(auto-fill, minmax(135px,20%));
+        &::after,
+        &::before {
             display: none;
         }
     }
+
     .tile,
     .tile-primary {
+        min-width: 100%;
         width: 100%;
     }
+
     .tile-primary {
         grid-column: span 2;
         grid-row: span 2;
