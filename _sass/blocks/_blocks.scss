@@ -37,6 +37,7 @@
     &:not([data-bgcolor]),
     &[data-bgcolor=""] {
         padding: 0 20px;
+        margin: 40px 0;
     }
 }
 @media (min-width: 640px) {
@@ -57,6 +58,7 @@
         &:not([data-bgcolor]),
         &[data-bgcolor=""] {
             padding: 0 6%;
+            margin: 4% 0;
         }
     }
 }
