@@ -1,0 +1,191 @@
+.mosaic {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.mosaic-tile {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    width: 50%;
+    max-width: 100%;
+    min-width: 135px;
+    @media(min-width: 500px) {
+        width: 20%;
+        min-width: 200px;
+    }
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    &:hover {
+        .mosaic-tile-title {
+            text-decoration: underline;
+        }
+        .mosaic-tile-image {
+            height: 105%;
+        }
+    }
+
+    &:after {
+        /* make it square */
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+
+    &[data-bg="grey"] {
+        background-color: $color-3a;
+    }
+    &[data-bg="black"],
+    &[data-bg="red"] {
+        color: white;
+
+        .mosaic-tile-content-footer a,
+        .mosaic-tile-content-footer a:visited {
+            color: white;
+        }
+    }
+
+    &[data-bg="black"] {
+        background-color: $color-2;
+    }
+
+    &[data-bg="red"] {
+        background-color: $color-1;
+    }
+
+    &[data-bg="image"] {
+        .mosaic-tile-content {
+            background: linear-gradient(to top, #242424, transparent 50%);
+        }
+        .mosaic-tile-image {
+            display: block;
+        }
+
+        .mosaic-tile-title {
+            margin-top: auto;
+            color: white;
+            font-size: 20px;
+            line-height: 24px;
+            font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+            line-height: calc(20px + 6 * ((100vw - 320px) / 680));
+            @media screen and (min-width: 1000px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+
+        .mosaic-tile-content-footer,
+        .mosaic-tile-description {
+            display: none;
+        }
+    }
+
+    .mosaic-tile-wrapper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mosaic-tile-image {
+        display: none;
+    }
+
+    .mosaic-tile-link {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-indent: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    .mosaic-tile-content {
+        text-align: left;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mosaic-tile-title {
+        margin: 0 0 0 0;
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+        line-height: calc(20px + 6 * ((100vw - 320px) / 680));
+        @media screen and (min-width: 1000px) {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+
+    .mosaic-tile-content-footer {
+        margin-top: auto;
+    }
+
+    .mosaic-tile-image {
+        padding: 0;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        transition: height 0.5s ease;
+    }
+}
+
+.mosaic-tile-primary {
+    @extend .mosaic-tile;
+    width: 100%;
+    min-width: 270px;
+    @media(min-width: 500px) {
+        width: 40%;
+        min-width: 400px;
+    }
+
+    .mosaic-tile-title {
+        margin: 0 0 8% 0;
+        font-size: 24px;
+        line-height: 28px;
+        font-size: calc(24px + 6 * ((100vw - 320px) / 680));
+        line-height: calc(28px + 6 * ((100vw - 320px) / 680));
+        @media screen and (min-width: 1000px) {
+            font-size: 32px;
+            line-height: 36px;
+        }
+    }
+}
+@supports(display:grid) {
+    .mosaic {
+        overflow-x: scroll;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(135px,20%));
+        &::after,
+        &::before {
+            display: none;
+        }
+    }
+
+    .mosaic-tile,
+    .mosaic-tile-primary {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .mosaic-tile-primary {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}

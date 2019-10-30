@@ -17,8 +17,7 @@
     display: inline-block;
     color: $color-3c;
     border-bottom: 2px solid $color-3c;
-    padding: 0 0 20px;
-    @include font-roboto-condensed-bold;
+    padding: 0 0 4px 0;
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
@@ -26,7 +25,7 @@
 
 .banner-box-ctas {
     display: block;
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
 }
 
 .banner-box-ctas .tablet-up {
@@ -80,59 +79,6 @@
 
     .banner-box-ctas .tablet-up {
         display: inline-block;
-    }
-}
-/* end */
-
-/* banner overlay */
-.banner-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 5;
-    background-color: rgba(black,0.8);
-    display: none;
-}
-
-#banner-overlay-close {
-    position: absolute;
-    bottom: 28px;
-    right: 10px;
-    z-index: 6;
-    @media (min-width:768px) {
-        top: 10px;
-        bottom: auto;
-    }
-}
-
-.banner-video-wrapper {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-width: 820px;
-    margin: auto;
-
-    .banner-video-embed {
-        height: 0;
-        overflow: hidden;
-        padding-bottom: 56.25%;
-        position: relative;
-        margin-bottom: 0;
-
-        iframe {
-            border: none;
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
     }
 }
 /* end */

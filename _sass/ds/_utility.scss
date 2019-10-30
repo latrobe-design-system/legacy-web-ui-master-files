@@ -1,0 +1,29 @@
+/* overlay */
+.overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(black,0.8);
+    display: none;
+}
+
+#overlay-close {
+    position: absolute;
+    bottom: 28px;
+    right: 10px;
+    z-index: 10001;
+    @media (min-width:768px) {
+        top: 10px;
+        bottom: auto;
+    }
+}
+
+body.overlay-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+/* end */

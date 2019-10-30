@@ -1,0 +1,28 @@
+// Responsive video
+.video-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 820px;
+    margin: auto;
+
+    .video-embed {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        margin-bottom: 0;
+
+        iframe {
+            border: none;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+}

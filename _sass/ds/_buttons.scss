@@ -6,10 +6,10 @@ button.btn-box {
 }
 
 .btn {
-    @include font-roboto-condensed-bold;
     border: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-weight: 400;
     line-height: 24px;
     display: inline-block;
     padding: 12px 18px;
@@ -142,7 +142,6 @@ button.btn-box {
 }
 
 .btn-pill {
-    @include font-roboto-condensed-bold;
     border: 2px solid $color-2;
     box-sizing: border-box;
     font-size: 16px;
@@ -230,42 +229,4 @@ button.btn-box {
 .btn-round-light-small {
     @extend .btn-round-light;
     @extend .btn-round-small;
-}
-
-/* legacy classes */
-.ltu-button,
-.content-box.m-beige .ltu-button {
-    @extend .btn-secondary;
-    @extend [class*="icon-"];
-    padding-right: 44px;
-}
-.ltu-button::after {
-    @extend .icon-chevron-right;
-}
-.ltu-button.light,
-.ltu-button.chat,
-.m-yellow .ltu-button,
-.m-brown .ltu-button,
-.m-black .ltu-button,
-.content-box .ltu-button,
-blockquote .ltu-button {
-    @extend .btn-secondary-light;
-    @extend [class*="icon-"];
-    padding-right: 44px;
-}
-.ltu-button.chat {
-    @extend .icon-message-square;
-}
-.ltu-button[href^="mailto:"] {
-    @extend .icon-mail;
-}
-.story-widget[data-color=grey] .ltu-button.light,
-.story-widget[data-color=transparent] .ltu-button.light {
-    @extend .btn-secondary;
-}
-.story-widget.wide[data-color=transparent] .ltu-button.light {
-    @media (min-width: 768px) {
-        color: white;
-        border: 2px solid white;
-    }
 }
