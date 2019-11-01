@@ -93,7 +93,13 @@
 }
 .ds-block-header[data-textalign="left"] {
     text-align: left;
+    h2, p {
+        margin-left: 0;
+    }
 }
 .ds-block-header[data-textalign="right"] {
     text-align: right;
+    h2, p {
+        margin-right: 0;
+    }
 }
