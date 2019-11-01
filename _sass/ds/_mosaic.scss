@@ -104,6 +104,7 @@
         overflow: hidden;
         white-space: nowrap;
         cursor: pointer;
+        outline-offset: -2px; // for focus style
     }
 
     .mosaic-tile-content {
