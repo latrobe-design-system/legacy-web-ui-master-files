@@ -1,0 +1,178 @@
+.story-widget {
+  background: none;
+  height: auto;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.story-widget__content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.story-widget__content-title, .story-widget__content-subtitle, .story-widget__content-description {
+  width: 100%;
+}
+.story-widget .story-widget__background {
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+  position: relative;
+  width: 100%;
+}
+.story-widget .story-widget__video {
+  background-size: contain;
+  background: url(/?a=550155) no-repeat center;
+  border-radius: 99px;
+  border: 5px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  height: 40px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  opacity: 0.8;
+}
+.story-widget .story-widget__video.enlarge {
+  margin: 0 !important;
+}
+.story-widget .story-widget__wrapper {
+  background: none;
+  color: white;
+}
+.story-widget .story-widget__wrapper__content {
+  background: none;
+}
+.story-widget[data-position=left] .story-widget__background {
+  order: 2;
+}
+.story-widget[data-color=black] .story-widget__wrapper {
+  background: #242424;
+}
+.story-widget[data-color=red] .story-widget__wrapper {
+  background: #e42312;
+}
+.story-widget[data-color=grey] .story-widget__wrapper {
+  background: #f4f4f4;
+  color: #242424;
+}
+/*.story-widget[data-color=grey] .ltu-button.light {
+  background: transparent url(/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat 98% center;
+  border-color: #242424;
+  color: #242424;
+}*/
+.story-widget[data-color=transparent] .story-widget__wrapper {
+  background: none;
+  color: #242424;
+}
+/*.story-widget[data-color=transparent] .ltu-button.light {
+  background: transparent url(/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat 98% center;
+  border-color: #242424;
+  color: #242424;
+}*/
+
+@media (min-width: 768px) {
+  .story-widget {
+    display: flex;
+    flex-direction: row;
+  }
+  .story-widget__content {
+    padding: 50px;
+    min-height: 350px;
+  }
+  .story-widget__wrapper {
+    width: 60vw;
+  }
+  .story-widget.wide[data-position=right] .story-widget__wrapper {
+    justify-content: flex-end;
+  }
+  .story-widget.wide .story-widget__background {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .story-widget.wide .story-widget__wrapper {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /*padding: 3vw 12vw 3vw;*/
+    padding: 3% 6% 3%;
+    width: auto;
+    width: 100%;
+  }
+  .standard_page .story-widget.wide .story-widget__wrapper {
+      padding: 3% 6% 3%;;
+  }
+  .story-widget.wide .story-widget__content {
+    padding: 20px;
+    width: 43%;
+  }
+  .story-widget.wide[data-color=black] .story-widget__wrapper, .story-widget.wide[data-color=red] .story-widget__wrapper, .story-widget.wide[data-color=grey] .story-widget__wrapper, .story-widget.wide[data-color=transparent] .story-widget__wrapper {
+    background: none;
+  }
+  .story-widget.wide[data-color=black] .story-widget__content {
+    background: rgba(36, 36, 36, 0.7);
+  }
+  .story-widget.wide[data-color=red] .story-widget__content {
+    background: rgba(228, 35, 18, 0.7);
+  }
+  .story-widget.wide[data-color=grey] .story-widget__content {
+    background: rgba(244, 244, 244, 0.7);
+    color: #242424;
+  }
+  .story-widget.wide[data-color=transparent] .story-widget__content,
+.story-widget.wide[data-color=transparent] .story-widget__wrapper {
+    background: none;
+    color: #fff;
+  }
+  /*.story-widget.wide[data-color=transparent] .ltu-button.light {
+    background: transparent url(/__data/assets/image/0004/553369/chevron-lg-white-right.png) no-repeat right center;
+    background-size: 26px;
+    border-color: #fff;
+    color: #fff;
+  }*/
+}
+
+.story-widget.wide[data-tcolor=black] .story-widget__content,
+.story-widget.wide[data-tcolor=black] .story-widget__wrapper{
+  color: #242424;
+}
+
+/*.story-widget.wide[data-tcolor=black] .ltu-button,
+.story-widget.wide[data-tcolor=black] .ltu-button.light {
+  color: #242424;
+  border-color: #242424;
+  background: transparent url(/__data/assets/file/0003/764841/chevron-sm-000000.svg) no-repeat 98% center;
+}*/
+
+
+.story-widget.wide[data-tcolor=white] .story-widget__content,
+.story-widget.wide[data-tcolor=white] .story-widget__wrapper {
+  color: white;
+}
+
+/*.story-widget.wide[data-tcolor=white] .ltu-button,
+.story-widget.wide[data-tcolor=white] .ltu-button.light{
+  color: white;
+  border-color: white;
+  background: transparent url(/__data/assets/image/0004/553369/chevron-lg-white-right.png) no-repeat right center;
+}*/
+
+@media (max-width: 768px) {
+  .story-widget.wide[data-tcolor=white] .story-widget__content,
+  .story-widget.wide[data-tcolor=white] .story-widget__wrapper {
+    background: #242424;
+  }
+
+  .story-widget.wide[data-tcolor=black] .story-widget__content,
+  .story-widget.wide[data-tcolor=black] .story-widget__wrapper {
+    background: white;
+  }
+}
