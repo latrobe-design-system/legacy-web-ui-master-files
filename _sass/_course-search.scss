@@ -12,10 +12,6 @@
     padding: 20px;
 }
 
-.our-courses.push-up {
-    margin-top: -86px;
-}
-
 .our-courses .section-heading,
 .our-courses h1 {
     color: #fff;
@@ -104,6 +100,16 @@
 @media (min-width:768px) {
     .our-courses {
         padding: 3vw 12vw;
+    }
+
+    .our-courses.push-up {
+        margin-top: -86px;
+    }
+
+    .home .our-courses {
+        margin: calc(-3vw - 86px) 6vw 0 6vw;
+        padding: 3vw;
+        position: relative;
     }
 }
 @media (min-width:1400px) {
