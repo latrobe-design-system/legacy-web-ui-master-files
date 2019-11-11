@@ -216,3 +216,14 @@ blockquote .ltu-button {
         margin-bottom: 24px !important;
     }
 }
+
+
+// STEPS-LIST
+// ==================================================================================================================
+@import "ds/step-list";
+.step-list {
+    box-sizing: border-box;
+}
+.step-list-item {
+    margin: 0 !important;
+}
