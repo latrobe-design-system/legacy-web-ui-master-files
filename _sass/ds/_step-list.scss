@@ -26,6 +26,7 @@
         content: counter(my-awesome-counter);
         display: block;
         position: absolute;
+        z-index: 1;
         left: -80px;
         top: 22px;
         color: $color-1;
@@ -53,7 +54,6 @@
         top: 0;
         left: calc(-80px + 21px);
         content: "";
-        z-index: -1;
 
         @media(min-width: 1440px) {
             left: calc(-80px + 23px);
