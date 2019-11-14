@@ -1,4 +1,4 @@
-.ds-block-container {
+.ds-block {
     margin: 0;
     padding: 0;
     &[data-bgcolor="grey"] {
@@ -31,8 +31,8 @@
         }
     }
 }
-.ds-block-container[data-blockwidth="narrow"],
-.ds-block-container[data-blockwidth="wide"] {
+.ds-block[data-blockwidth="narrow"],
+.ds-block[data-blockwidth="wide"] {
     padding: 40px 20px;
     &:not([data-bgcolor]),
     &[data-bgcolor=""] {
@@ -41,7 +41,7 @@
     }
 }
 @media (min-width: 640px) {
-    .ds-block-container {
+    .ds-block {
         &:not([data-bgcolor]),
         &[data-bgcolor=""] {
             margin: 4% 0;
@@ -52,8 +52,8 @@
             padding: 0;
         }
     }
-    .ds-block-container[data-blockwidth="narrow"],
-    .ds-block-container[data-blockwidth="wide"] {
+    .ds-block[data-blockwidth="narrow"],
+    .ds-block[data-blockwidth="wide"] {
         padding: 4% 6%;
         &:not([data-bgcolor]),
         &[data-bgcolor=""] {
@@ -63,7 +63,7 @@
     }
 }
 @media (min-width: 1024px) {
-    .ds-block-container[data-blockwidth="narrow"] {
+    .ds-block[data-blockwidth="narrow"] {
         padding: 4% 12%;
         &:not([data-bgcolor]),
         &[data-bgcolor=""] {
@@ -81,7 +81,7 @@
         margin: 0 0 24px 0;
     }
 }
-.ds-block-container {
+.ds-block {
     &:not([data-blockwidth]) .ds-block-header,
     &[data-blockwidth=""] .ds-block-header {
         padding: 4% 0 4px 0;
