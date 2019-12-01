@@ -1925,7 +1925,11 @@ li.hide-nav {
     }
 
     .study_option .main-content {
-        padding: 20px 20vw;
+        padding: 20px 0;
+    }
+
+    .study_option .main-content > * {
+        padding: 0 20vw;
     }
 }
 @media (min-width:1400px) {
