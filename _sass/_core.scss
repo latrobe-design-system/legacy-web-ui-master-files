@@ -1928,8 +1928,9 @@ li.hide-nav {
         padding: 20px 0;
     }
 
-    .study_option .main-content > * {
-        padding: 0 20vw;
+    .study_option .main-content .content-wrapper > * {
+        padding-left: 20vw;
+        padding-right: 20vw;
     }
 }
 @media (min-width:1400px) {
