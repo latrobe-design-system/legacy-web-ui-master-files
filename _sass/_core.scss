@@ -1919,6 +1919,10 @@ li.hide-nav {
 .standard_page .main-content {
     padding: 20px;
 }
+.study_option .main-content .content-wrapper > *:not(.ds-block) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 @media (min-width: 1024px) {
     .standard_page .main-content {
         padding: 20px 60px;
