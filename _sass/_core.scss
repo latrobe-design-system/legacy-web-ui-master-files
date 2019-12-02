@@ -1928,7 +1928,7 @@ li.hide-nav {
         padding: 20px 0;
     }
 
-    .study_option .main-content .content-wrapper > * {
+    .study_option .main-content .content-wrapper > *:not(.ds-block) {
         padding-left: 20vw;
         padding-right: 20vw;
     }
