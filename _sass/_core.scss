@@ -1648,22 +1648,26 @@ ul.mm4 li:before {
     position: relative;
 }
 /* Hide site asset home pages listed as current page */
+/* Home */
 .a549405 .local-nav li.current {
     display: none;
 }
-/* Home */
+
+/* Alumni */
 .a877547 .local-nav li.current {
     display: none;
 }
-/* Alumni */
+
+/* Students */
 .a59031 .local-nav li.current {
     display: none;
 }
-/* Students */
+
+/* Staff
 .a124552 .local-nav li.current {
     display: none;
-}
-/* Staff */
+} */ /* made redundant 20/1/2020 */
+
 .local-nav a {
     color: #363636;
     display: block;
