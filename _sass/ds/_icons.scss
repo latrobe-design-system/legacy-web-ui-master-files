@@ -1,9 +1,9 @@
-[class*="icon-"] {
+[class*="icon-"]:not([class*="ui-icon"]) {
     position: relative;
     padding-right: 32px;
 }
 
-[class*="icon-"]::after {
+[class*="icon-"]:not([class*="ui-icon"])::after {
     position: absolute;
     right: 0;
     top: 50%;
