@@ -1,0 +1,59 @@
+.ds-callout {
+    border-left: 4px solid rgba($color-alt-3, 1);
+    border-radius: 2px;
+    position: relative;
+    font-weight: 400;
+    padding: $spacer * 4;
+    box-shadow: $shadow-1;
+    display: flex;
+
+    @media(min-width: 768px){
+        position: relative;
+        padding: $spacer * 8;
+
+        &::before {
+            display: block;
+            position: absolute;
+            left: 24px;
+            top: 24px;
+        }
+    }
+
+    &--center {
+        border: none;
+    }
+}
+
+.ds-callout__icon {
+    padding-right: 16px;
+    
+    @media(max-width: 768px){
+        margin-bottom: 24px;
+    }
+
+    @media(min-width: 768px){
+        float: left;
+        padding-right: 32px;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+        stroke: $color-alt-3;
+
+        @media(min-width: 768px){
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+.ds-callout__heading {
+    font-size: $h3;
+    color: rgba($color-alt-3, 1);
+}
+
+.ds-callout__text {
+    align-self: stretch;
+    margin-top: 0;
+}

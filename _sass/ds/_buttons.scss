@@ -193,6 +193,9 @@ button.btn-box {
     text-indent: 100%;
     overflow: hidden;
     white-space: nowrap;
+    &[class*="icon-"]{
+        padding-right: 0;
+    }
     &[class*="icon-"]::after {
         position: absolute;
         right: 0;
