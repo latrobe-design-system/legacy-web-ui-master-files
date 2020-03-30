@@ -1,0 +1,23 @@
+{
+  "name": "legacy-web-ui-master-files",
+  "version": "1.0.0",
+  "description": "ltu legacy css",
+  "main": "index.html",
+  "scripts": {
+    "test": "testing",
+    "scss": "node-sass --watch --style=compressed _sass -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/latrobe-design-system/legacy-web-ui-master-files.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/latrobe-design-system/legacy-web-ui-master-files/issues"
+  },
+  "homepage": "https://github.com/latrobe-design-system/legacy-web-ui-master-files#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

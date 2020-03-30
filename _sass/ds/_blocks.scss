@@ -58,13 +58,13 @@
         &:not([data-bgcolor]),
         &[data-bgcolor=""] {
             padding: 0 6%;
-            margin: 4% 0;
+            margin: 4rem 0;
         }
     }
 }
 @media (min-width: 1024px) {
     .ds-block[data-blockwidth="narrow"] {
-        padding: 4% 12%;
+        padding: 4rem 12%;
         &:not([data-bgcolor]),
         &[data-bgcolor=""] {
             padding: 0 12%;
