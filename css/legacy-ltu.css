@@ -10509,10 +10509,10 @@ li.need-help a:visited {
   font-size: 18px;
   text-transform: none; }
 
-.news-events h2 {
-  color: #e2231b;
-  text-transform: uppercase; }
-
+/*.news-events h2 {
+    color: #e2231b;
+    text-transform: uppercase;
+}*/
 p.more-news-events {
   font-family: "Roboto Condensed", Impact, "Franklin Gothic Bold", sans-serif;
   font-weight: 700;
