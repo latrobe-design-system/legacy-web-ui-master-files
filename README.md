@@ -8,12 +8,22 @@
 
 Dart SASS - https:/https://sass-lang.com/install
 
+OR
+
+If using node sass:
+
+Run - npm install - to install node modules
+
+Then run - npm run scss - to watch sass
+
 ### Workflow
 
 ### Edit and publish to GitHub
 
 1. Clone this repo to your desktop
-2. Run ./sass-watch.sh **Note**: this file must be executable - chmod 755 sass-watch.sh
+2. 
+a. DART SASS: Run ./sass-watch.sh **Note**: this file must be executable - chmod 755 sass-watch.sh
+b. Node SASS: Run npm run scss
 3. Make changes to SCSS and or JavaScript - you can create html samples in the samples folder to test your changes
 4. Commit changes
 5. Push changes to GitHub
