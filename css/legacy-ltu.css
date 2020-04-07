@@ -10308,14 +10308,10 @@ body .ui-tooltip {
   .our-courses {
     margin: 0 6vw;
     padding: 3vw; }
-  .our-courses.push-up {
+  .our-courses--push-up {
     position: relative;
-    transform: translateY(-86px);
-    z-index: 9; }
-  .home .our-courses {
-    margin: calc(-3vw - 86px) 6vw 0 6vw;
-    padding: 3vw;
-    position: relative; } }
+    transform: translateY(calc(-3vw - 86px));
+    z-index: 9; } }
 
 @media (min-width: 1400px) {
   .our-courses h3 {

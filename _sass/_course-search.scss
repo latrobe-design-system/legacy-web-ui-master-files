@@ -103,17 +103,11 @@
         padding: 3vw;
     }
 
-    .our-courses.push-up {
+    .our-courses--push-up {
         position: relative;
         //margin-top: -86px;
-        transform: translateY(-86px);
+        transform: translateY(calc(-3vw - 86px));
         z-index: 9;
-    }
-
-    .home .our-courses {
-        margin: calc(-3vw - 86px) 6vw 0 6vw;
-        padding: 3vw;
-        position: relative;
     }
 }
 @media (min-width:1400px) {
