@@ -38,7 +38,7 @@ $(document).ready(function() {
     $('.notice-expand__close').click(function() {
       
       var regionId = $(this).attr('aria-controls');
-      $('.expand-control[aria-controls="'+regionId+'"]').trigger('click');
+      $('.expand-control[aria-controls="'+regionId+'"]').trigger('click').focus();
 
     });
 
