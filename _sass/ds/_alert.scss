@@ -104,6 +104,13 @@
     margin: 0;
 }
 
+.notice--full-width-tight {
+    @extend .notice--full-width;
+    @media(min-width: 768px){
+        padding: 4px * 4 4px * 7;
+    }
+}
+
 .notice--center-align {
     justify-content: center;
 }

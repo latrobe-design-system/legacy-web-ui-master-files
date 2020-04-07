@@ -12224,9 +12224,13 @@ blockquote .ltu-button {
 .notice__text > :only-child {
   font-weight: 500; }
 
-.notice--full-width {
+.notice--full-width, .notice--full-width-tight {
   border: 0;
   margin: 0; }
+
+@media (min-width: 768px) {
+  .notice--full-width-tight {
+    padding: 16px 28px; } }
 
 .notice--center-align {
   justify-content: center; }
