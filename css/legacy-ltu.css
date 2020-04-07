@@ -2355,11 +2355,13 @@ h3.reduce {
 .profile-expanding,
 .research-strength,
 .search-results,
-.standard_page .our-courses,
 .tabs,
 .vcard-wide .vcard,
 .yt-video {
   margin: 0 0 24px; }
+
+.standard_page .our-courses {
+  margin-bottom: 24px; }
 
 /* Lists */
 .main-content li > ol,
