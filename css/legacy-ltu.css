@@ -11894,10 +11894,13 @@ button.btn-link {
 
 .btn-link {
   color: #e2231b;
-  text-decoration: underline;
+  padding: 0;
   border: 0;
   background: none;
-  display: inline; }
+  display: inline;
+  text-decoration: underline; }
+  .btn-link:hover {
+    text-decoration: none; }
 
 .btn, .btn-light, .btn-light-small, .btn-secondary, .btn-secondary-light, .btn-secondary-light-small, .ltu-button.light,
 .ltu-button.chat,
@@ -12214,8 +12217,6 @@ blockquote .ltu-button {
 .notice__text p {
   margin: 0 !important;
   color: #242424; }
-  .notice__text p a {
-    margin-left: 24px; }
 
 @media (min-width: 768px) {
   .notice__text {

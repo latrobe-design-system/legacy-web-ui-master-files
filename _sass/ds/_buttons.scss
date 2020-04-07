@@ -8,10 +8,14 @@ button.btn-link {
 
 .btn-link {
     color: $color-1;
-    text-decoration: underline;
+    padding: 0;
     border: 0;
     background: none;
     display: inline;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .btn {
