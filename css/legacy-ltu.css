@@ -10424,7 +10424,7 @@ li.need-help a:visited {
   @media (min-width: 768px) {
     .our-courses--hasNotice {
       margin: 68px 6vw 0 6vw; }
-      .our-courses--hasNotice.our-courses-push-up {
+      .our-courses--hasNotice.our-courses--push-up {
         margin-top: calc(-3vw - 86px); } }
 
 .our-courses .notice {
