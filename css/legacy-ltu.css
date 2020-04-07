@@ -2361,6 +2361,8 @@ h3.reduce {
   margin: 0 0 24px; }
 
 .standard_page .our-courses {
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 24px; }
 
 /* Lists */
