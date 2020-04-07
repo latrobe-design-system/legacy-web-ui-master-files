@@ -237,7 +237,7 @@ li.need-help a:visited {
     position: relative;
     margin-top: 68px;
     &.our-courses--push-up {
-        margin-top: calc(-34px);
+        margin-top: -34px;
     }
     @media (min-width:768px) {
         margin: 68px 6vw 0 6vw;
