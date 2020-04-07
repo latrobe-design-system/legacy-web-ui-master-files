@@ -12203,9 +12203,6 @@ blockquote .ltu-button {
   padding-right: 16px;
   vertical-align: top;
   height: 24px; }
-  @media (min-width: 768px) {
-    .notice__icon {
-      padding-right: 20px; } }
   .notice__icon svg {
     width: 24px;
     height: 24px; }

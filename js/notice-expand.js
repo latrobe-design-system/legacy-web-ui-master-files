@@ -13,7 +13,7 @@ $(document).ready(function() {
           // move focus to the region
           
           $('#'+regionId).slideDown(function(){
-            $(this).removeAttr('hidden').focus();
+            $(this).removeAttr('hidden');
           });
   
           // update the button label
@@ -23,7 +23,7 @@ $(document).ready(function() {
         else { // region is expanded
   
           // update the aria-expanded attribute of the region
-          $(this).attr('aria-expanded', 'false').focus();
+          $(this).attr('aria-expanded', 'false');
 
           $('#'+regionId).slideUp(function(){
             $(this).attr('hidden','hidden');
