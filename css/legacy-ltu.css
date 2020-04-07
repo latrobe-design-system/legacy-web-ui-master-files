@@ -10314,7 +10314,7 @@ body .ui-tooltip {
     padding: 3vw; }
   .our-courses--push-up {
     position: relative;
-    transform: translateY(calc(-3vw - 86px));
+    margin-top: calc(-3vw - 86px);
     z-index: 9; } }
 
 @media (min-width: 1400px) {
@@ -10423,7 +10423,9 @@ li.need-help a:visited {
   margin-top: 68px; }
   @media (min-width: 768px) {
     .our-courses--hasNotice {
-      margin: 68px 6vw 0 6vw; } }
+      margin: 68px 6vw 0 6vw; }
+      .our-courses--hasNotice.our-courses-push-up {
+        margin-top: calc(-3vw - 86px); } }
 
 .our-courses .notice {
   margin-top: calc(-20px - 34px); }
