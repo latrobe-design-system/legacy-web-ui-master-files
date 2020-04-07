@@ -10310,7 +10310,7 @@ body .ui-tooltip {
     padding: 3vw; }
   .our-courses.push-up {
     position: relative;
-    margin-top: -86px;
+    transform: translateY(-86px);
     z-index: 9; }
   .home .our-courses {
     margin: calc(-3vw - 86px) 6vw 0 6vw;
@@ -10417,6 +10417,19 @@ li.need-help a:visited {
 @media (min-width: 1400px) {
   li.need-help {
     background-position: calc(50% - 82px) center; } }
+
+.our-courses--hasNotice {
+  position: relative;
+  margin-top: 68px; }
+  @media (min-width: 768px) {
+    .our-courses--hasNotice {
+      margin: 68px 6vw 0 6vw; } }
+
+.our-courses .notice {
+  margin-top: calc(-20px - 34px); }
+  @media (min-width: 768px) {
+    .our-courses .notice {
+      margin-top: calc(-3vw - 34px); } }
 
 .LP2-nav {
   background-color: #ddd;
@@ -11869,10 +11882,18 @@ button.ltu-button.chat,
 .content-box button.ltu-button, button.btn-secondary-small, button.ltu-button,
 .content-box.m-beige button.ltu-button, .story-widget[data-color=grey] button.ltu-button.light,
 .story-widget[data-color=transparent] button.ltu-button.light, button.btn-small,
-button.btn-box {
+button.btn-box,
+button.btn-link {
   /* remove browser styling from button element */
   -webkit-appearance: none;
   -moz-appearance: none; }
+
+.btn-link {
+  color: #e2231b;
+  text-decoration: underline;
+  border: 0;
+  background: none;
+  display: inline; }
 
 .btn, .btn-light, .btn-light-small, .btn-secondary, .btn-secondary-light, .btn-secondary-light-small, .ltu-button.light,
 .ltu-button.chat,
@@ -12166,22 +12187,17 @@ blockquote .ltu-button {
     left: 20px; } }
 
 .notice {
+  box-sizing: border-box;
   border: 2px solid #00aa98;
   border-radius: 4px;
   position: relative;
   font-weight: 400;
   display: flex;
   padding: 16px;
-  margin-bottom: 1em; }
+  margin: 1rem 0; }
   @media (min-width: 768px) {
     .notice {
       padding: 28px; } }
-
-.notice--info {
-  background-color: rgba(0, 170, 152, 0.05);
-  border-color: #00aa98; }
-  .notice--info svg * {
-    color: #00aa98; }
 
 .notice__icon {
   padding-right: 16px;
@@ -12189,13 +12205,16 @@ blockquote .ltu-button {
   height: 24px; }
   @media (min-width: 768px) {
     .notice__icon {
-      padding-right: 24px; } }
+      padding-right: 20px; } }
   .notice__icon svg {
     width: 24px;
     height: 24px; }
 
 .notice__text p {
-  margin: 0 !important; }
+  margin: 0 !important;
+  color: #242424; }
+  .notice__text p a {
+    margin-left: 24px; }
 
 @media (min-width: 768px) {
   .notice__text {
@@ -12203,6 +12222,44 @@ blockquote .ltu-button {
 
 .notice__text > :only-child {
   font-weight: 500; }
+
+.notice--full-width {
+  border: 0;
+  margin: 0; }
+
+.notice--center-align {
+  justify-content: center; }
+
+.notice--info {
+  background-color: rgba(0, 170, 152, 0.05);
+  border-color: #00aa98; }
+  .notice--info svg {
+    color: #00aa98; }
+
+.notice--rounded {
+  background-color: white;
+  width: 100%;
+  max-width: 800px;
+  border-width: 4px;
+  border-radius: 60px;
+  margin: 0 auto 1rem auto;
+  padding: 16px; }
+
+.notice-expand {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 1024px;
+  background: white;
+  color: #242424;
+  padding: 2rem 2.5rem;
+  margin: 0 auto 1rem auto;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.6); }
+
+.notice-expand__close {
+  position: absolute !important;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer; }
 
 /*@import "components/logo-showcase";
 

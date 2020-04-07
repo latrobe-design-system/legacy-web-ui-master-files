@@ -105,7 +105,8 @@
 
     .our-courses.push-up {
         position: relative;
-        margin-top: -86px;
+        //margin-top: -86px;
+        transform: translateY(-86px);
         z-index: 9;
     }
 
@@ -236,5 +237,20 @@ li.need-help a:visited {
 @media (min-width:1400px) {
     li.need-help {
         background-position: calc(50% - 82px) center;
+    }
+}
+
+.our-courses--hasNotice {
+    position: relative;
+    margin-top: 68px;
+    @media (min-width:768px) {
+        margin: 68px 6vw 0 6vw;
+    }
+}
+
+.our-courses .notice {
+    margin-top: calc(-20px - 34px);
+    @media (min-width:768px) {
+        margin-top: calc(-3vw - 34px);
     }
 }

@@ -1,8 +1,17 @@
 button.btn,
-button.btn-box {
+button.btn-box,
+button.btn-link {
     /* remove browser styling from button element */
     -webkit-appearance: none;
     -moz-appearance: none;
+}
+
+.btn-link {
+    color: $color-1;
+    text-decoration: underline;
+    border: 0;
+    background: none;
+    display: inline;
 }
 
 .btn {

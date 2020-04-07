@@ -49,26 +49,23 @@
     }
 }
 
+
+//
+// Notice
+//
+
 .notice {
+    box-sizing: border-box;
     border: 2px solid rgba($color-alt-3, 1);
     border-radius: 4px;
     position: relative;
     font-weight: 400;
     display: flex;
     padding: 4px * 4;
-    margin-bottom: 1em;
+    margin: 1rem 0;
 
     @media(min-width: 768px){
         padding: 4px * 7;
-    }
-}
-
-.notice--info {
-    background-color: rgba($color-alt-3, 0.05);
-    border-color: rgba($color-alt-3, 1);
-
-    svg * {
-        color: rgba($color-alt-3, 1);
     }
 }
 
@@ -78,7 +75,7 @@
     height: 4px * 6;
 
     @media(min-width: 768px){
-        padding-right: 24px;
+        padding-right: 20px;
     }
 
     svg {
@@ -90,6 +87,11 @@
 .notice__text {
     p {
         margin: 0 !important;
+        color: $color-2;
+
+        a {
+            margin-left: 24px;
+        }
     }
 
     @media(min-width: 768px){
@@ -99,4 +101,51 @@
     >:only-child {
         font-weight: 500;
     }
+}
+
+.notice--full-width {
+    border: 0;
+    margin: 0;
+}
+
+.notice--center-align {
+    justify-content: center;
+}
+
+.notice--info {
+    background-color: rgba($color-alt-3, 0.05);
+    border-color: rgba($color-alt-3, 1);
+
+    svg {
+        color: rgba($color-alt-3, 1);
+    }
+}
+
+.notice--rounded {
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    border-width: 4px;
+    border-radius: 60px;
+    margin: 0 auto 1rem auto;
+    padding: 16px;
+}
+
+.notice-expand {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1024px;
+    background: white;
+    color: $color-2;
+    padding: 2rem 2.5rem;
+    margin: 0 auto 1rem auto;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.6);
+
+}
+
+.notice-expand__close {
+    position: absolute !important;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
 }
