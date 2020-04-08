@@ -10242,7 +10242,7 @@ body .ui-tooltip {
 .our-courses form {
   background-color: rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
-  margin-bottom: 24px;
+  margin-bottom: 0;
   padding: 20px; }
 
 #our-course-search .awesomplete {
@@ -10376,7 +10376,8 @@ body .ui-tooltip {
     flex-direction: column;
     justify-content: center;
     margin-left: 2%;
-    margin-bottom: 24px;
+    margin-bottom: 0;
+    margin-top: 24px;
     min-height: 72px; }
   .discipline-list a,
   .discipline-list button {
