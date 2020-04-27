@@ -734,6 +734,9 @@ body:not(.flow_page) #content {
     }
 }
 @media (min-width:1024px) and (min-height:600px) {
+    html {
+        scroll-padding-top: 160px; /* clear sticky header for anchor links */
+    }
     #header {
         position: -webkit-sticky;
         position: sticky;
