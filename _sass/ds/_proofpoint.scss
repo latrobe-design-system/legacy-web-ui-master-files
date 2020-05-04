@@ -60,3 +60,78 @@
         }
     }
 }
+
+.proofpont-icon {
+    float: none !important;
+    padding: 0 0 16px 0 !important;
+}
+
+.proofpoint-title {
+    margin: 0 0 16px 0 !important;
+}
+
+.proofpoint-number {
+    margin: 0 0 16px 0 !important;
+}
+
+.proofpoint-footnote,
+.proofpoint-legacy-content p:first-child + p {
+    margin-top: auto !important;
+}
+
+
+// enable DS proofpoints to work on legacy pages
+.ds-proofpoint {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.ds-proofpont__icon {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.ds-proofpoint__body {
+    >*:first-child {
+        margin-top: 1em;
+    }
+}
+
+.ds-proofpoint__title {
+    color: $color-1;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.ds-proofpoint__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.ds-proofpoint__footnote {
+    font-size: 0.8rem;
+}
+
+/* proof point set */
+.ds-proofpoint-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 24px;
+    margin-right: -2rem;
+    & > * {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 280px;
+        margin: 1rem 2rem 0 0;
+    }
+}

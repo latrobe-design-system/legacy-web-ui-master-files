@@ -11603,7 +11603,8 @@ body.overlay-open {
 .icon-play-circle::after {
   background-image: url("icons/feather/play-circle.svg"); }
 
-.icon-play::after {
+.icon-play::after,
+.ds-icon-play::after {
   background-image: url("icons/feather/play.svg"); }
 
 .icon-plus-circle::after {
@@ -11887,9 +11888,11 @@ button.ltu-button.chat,
 .m-yellow button.ltu-button,
 .m-brown button.ltu-button,
 .m-black button.ltu-button,
-.content-box button.ltu-button, button.btn-secondary-small, button.ltu-button,
+.content-box button.ltu-button, button.btn-secondary-small,
+button.ds-btn-secondary.ds-btn--small, button.ltu-button,
 .content-box.m-beige button.ltu-button, .story-widget[data-color=grey] button.ltu-button.light,
-.story-widget[data-color=transparent] button.ltu-button.light, button.btn-small,
+.story-widget[data-color=transparent] button.ltu-button.light,
+button.ds-btn-secondary, button.btn-small,
 button.btn-box,
 button.btn-link {
   /* remove browser styling from button element */
@@ -11912,9 +11915,11 @@ button.btn-link {
 .m-brown .ltu-button,
 .m-black .ltu-button,
 .content-box .ltu-button,
-blockquote .ltu-button, .btn-secondary-small, .ltu-button,
+blockquote .ltu-button, .btn-secondary-small,
+.ds-btn-secondary.ds-btn--small, .ltu-button,
 .content-box.m-beige .ltu-button, .story-widget[data-color=grey] .ltu-button.light,
-.story-widget[data-color=transparent] .ltu-button.light, .btn-small {
+.story-widget[data-color=transparent] .ltu-button.light,
+.ds-btn-secondary, .btn-small {
   border: 0;
   box-sizing: border-box;
   font-size: 16px;
@@ -11929,11 +11934,13 @@ blockquote .ltu-button, .btn-secondary-small, .ltu-button,
   border: 2px solid transparent; }
   .btn:visited, .btn-light:visited, .btn-light-small:visited, .btn-secondary:visited, .btn-secondary-light:visited, .btn-secondary-light-small:visited, .btn-secondary-small:visited, .ltu-button:visited,
   .content-box.m-beige .ltu-button:visited, .story-widget[data-color=grey] .ltu-button.light:visited,
-  .story-widget[data-color=transparent] .ltu-button.light:visited, .btn-small:visited {
+  .story-widget[data-color=transparent] .ltu-button.light:visited,
+  .ds-btn-secondary:visited, .btn-small:visited {
     color: white; }
   .btn:hover, .btn-light:hover, .btn-light-small:hover, .btn-secondary:hover, .btn-secondary-light:hover, .btn-secondary-light-small:hover, .btn-secondary-small:hover, .ltu-button:hover,
   .content-box.m-beige .ltu-button:hover, .story-widget[data-color=grey] .ltu-button.light:hover,
-  .story-widget[data-color=transparent] .ltu-button.light:hover, .btn-small:hover {
+  .story-widget[data-color=transparent] .ltu-button.light:hover,
+  .ds-btn-secondary:hover, .btn-small:hover {
     text-decoration: underline;
     background-color: #cb1f18; }
   .btn[class*="icon-"], .btn-light[class*="icon-"], .btn-light-small[class*="icon-"], .btn-light-small.card-cta, .btn-light.card-cta, .btn-secondary[class*="icon-"], .btn-secondary-light[class*="icon-"], .btn-secondary-light-small[class*="icon-"], .btn-secondary-light-small.card-cta, .ltu-button.light,
@@ -11944,7 +11951,8 @@ blockquote .ltu-button, .btn-secondary-small, .ltu-button,
   .content-box .ltu-button,
   blockquote .ltu-button,
   .content-box.m-beige .ltu-button, .btn-secondary-light.card-cta, .btn-secondary-small[class*="icon-"], .btn-secondary-small.card-cta, .ltu-button, .story-widget[data-color=grey] .ltu-button.light,
-  .story-widget[data-color=transparent] .ltu-button.light, .btn-secondary.card-cta, .btn-small[class*="icon-"], .btn-small.card-cta, .ltu-button.btn-secondary-light, .btn.card-cta {
+  .story-widget[data-color=transparent] .ltu-button.light, .btn-secondary.card-cta,
+  .ds-btn-secondary[class*="icon-"], .ds-btn-secondary.card-cta, .btn-small[class*="icon-"], .btn-small.card-cta, .ltu-button.btn-secondary-light, .btn.card-cta {
     padding-right: 44px; }
     .btn[class*="icon-"]::after, .btn-light[class*="icon-"]::after, .btn-light-small[class*="icon-"]::after, .btn-light-small.card-cta::after, .btn-light.card-cta::after, .btn-secondary[class*="icon-"]::after, .btn-secondary-light[class*="icon-"]::after, .btn-secondary-light-small[class*="icon-"]::after, .btn-secondary-light-small.card-cta::after, .ltu-button.light::after, .ltu-button.chat::after,
     .m-yellow .ltu-button::after,
@@ -11952,17 +11960,20 @@ blockquote .ltu-button, .btn-secondary-small, .ltu-button,
     .m-black .ltu-button::after,
     .content-box .ltu-button::after,
     .content-box.m-beige .ltu-button::after, .btn-secondary-light.card-cta::after, .btn-secondary-small[class*="icon-"]::after, .btn-secondary-small.card-cta::after, .ltu-button::after, .story-widget[data-color=grey] .ltu-button.light::after,
-    .story-widget[data-color=transparent] .ltu-button.light::after, .btn-secondary.card-cta::after, .btn-small[class*="icon-"]::after, .btn-small.card-cta::after, .ltu-button.btn-secondary-light::after, .btn.card-cta::after {
+    .story-widget[data-color=transparent] .ltu-button.light::after, .btn-secondary.card-cta::after,
+    .ds-btn-secondary[class*="icon-"]::after, .ds-btn-secondary.card-cta::after, .btn-small[class*="icon-"]::after, .btn-small.card-cta::after, .ltu-button.btn-secondary-light::after, .btn.card-cta::after {
       filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(132deg) brightness(113%) contrast(101%);
       margin: 0 12px; }
   .btn.icon-before, .icon-before.btn-light, .icon-before.btn-light-small, .icon-before.btn-secondary, .icon-before.btn-secondary-light, .icon-before.btn-secondary-light-small, .icon-before.btn-secondary-small, .icon-before.ltu-button,
   .content-box.m-beige .icon-before.ltu-button, .story-widget[data-color=grey] .icon-before.ltu-button.light,
-  .story-widget[data-color=transparent] .icon-before.ltu-button.light, .icon-before.btn-small {
+  .story-widget[data-color=transparent] .icon-before.ltu-button.light,
+  .icon-before.ds-btn-secondary, .icon-before.btn-small {
     padding-right: 18px;
     padding-left: 44px; }
     .btn.icon-before::after, .icon-before.btn-light::after, .icon-before.btn-light-small::after, .icon-before.btn-secondary::after, .icon-before.btn-secondary-light::after, .icon-before.btn-secondary-light-small::after, .icon-before.btn-secondary-small::after, .icon-before.ltu-button::after,
     .content-box.m-beige .icon-before.ltu-button::after, .story-widget[data-color=grey] .icon-before.ltu-button.light::after,
-    .story-widget[data-color=transparent] .icon-before.ltu-button.light::after, .icon-before.btn-small::after {
+    .story-widget[data-color=transparent] .icon-before.ltu-button.light::after,
+    .icon-before.ds-btn-secondary::after, .icon-before.btn-small::after {
       left: 0;
       right: unset; }
   @media (min-width: 1400px) {
@@ -11972,9 +11983,11 @@ blockquote .ltu-button, .btn-secondary-small, .ltu-button,
     .m-brown .ltu-button,
     .m-black .ltu-button,
     .content-box .ltu-button,
-    blockquote .ltu-button, .btn-secondary-small, .ltu-button,
+    blockquote .ltu-button, .btn-secondary-small,
+    .ds-btn-secondary.ds-btn--small, .ltu-button,
     .content-box.m-beige .ltu-button, .story-widget[data-color=grey] .ltu-button.light,
-    .story-widget[data-color=transparent] .ltu-button.light, .btn-small {
+    .story-widget[data-color=transparent] .ltu-button.light,
+    .ds-btn-secondary, .btn-small {
       font-size: 18px;
       line-height: 28px; } }
 
@@ -11995,20 +12008,26 @@ blockquote .ltu-button, .btn-secondary-small, .ltu-button,
 .m-brown .ltu-button,
 .m-black .ltu-button,
 .content-box .ltu-button,
-blockquote .ltu-button, .btn-secondary-small, .ltu-button,
+blockquote .ltu-button, .btn-secondary-small,
+.ds-btn-secondary.ds-btn--small, .ltu-button,
 .content-box.m-beige .ltu-button, .story-widget[data-color=grey] .ltu-button.light,
-.story-widget[data-color=transparent] .ltu-button.light {
+.story-widget[data-color=transparent] .ltu-button.light,
+.ds-btn-secondary {
   color: #242424;
   background-color: transparent;
   border: 2px solid #242424;
   padding: 12px 18px; }
-  .btn-secondary:visited, .btn-secondary-light:visited, .btn-secondary-light-small:visited, .btn-secondary-small:visited, .ltu-button:visited,
+  .btn-secondary:visited, .btn-secondary-light:visited, .btn-secondary-light-small:visited, .btn-secondary-small:visited,
+  .ds-btn-secondary.ds-btn--small:visited, .ltu-button:visited,
   .content-box.m-beige .ltu-button:visited, .story-widget[data-color=grey] .ltu-button.light:visited,
-  .story-widget[data-color=transparent] .ltu-button.light:visited {
+  .story-widget[data-color=transparent] .ltu-button.light:visited,
+  .ds-btn-secondary:visited {
     color: #242424; }
-  .btn-secondary:hover, .btn-secondary-light:hover, .btn-secondary-light-small:hover, .btn-secondary-small:hover, .ltu-button:hover,
+  .btn-secondary:hover, .btn-secondary-light:hover, .btn-secondary-light-small:hover, .btn-secondary-small:hover,
+  .ds-btn-secondary.ds-btn--small:hover, .ltu-button:hover,
   .content-box.m-beige .ltu-button:hover, .story-widget[data-color=grey] .ltu-button.light:hover,
-  .story-widget[data-color=transparent] .ltu-button.light:hover {
+  .story-widget[data-color=transparent] .ltu-button.light:hover,
+  .ds-btn-secondary:hover {
     background-color: rgba(0, 0, 0, 0.15);
     border: 2px solid #242424; }
   .btn-secondary[class*="icon-"]::after, .btn-secondary-light[class*="icon-"]::after, .btn-secondary-light-small[class*="icon-"]::after, .btn-secondary-light-small.card-cta::after, .ltu-button.light::after, .ltu-button.chat::after,
@@ -12016,8 +12035,12 @@ blockquote .ltu-button, .btn-secondary-small, .ltu-button,
   .m-brown .ltu-button::after,
   .m-black .ltu-button::after,
   .content-box .ltu-button::after,
-  .content-box.m-beige .ltu-button::after, .btn-secondary-light.card-cta::after, .btn-secondary-small[class*="icon-"]::after, .btn-secondary-small.card-cta::after, .ltu-button::after, .story-widget[data-color=grey] .ltu-button.light::after,
-  .story-widget[data-color=transparent] .ltu-button.light::after, blockquote .ltu-button.btn-secondary-light::after, blockquote .ltu-button.btn-secondary-small::after, .btn-secondary.card-cta::after {
+  .content-box.m-beige .ltu-button::after, .btn-secondary-light.card-cta::after, .btn-secondary-small[class*="icon-"]::after, .btn-secondary-small.card-cta::after,
+  .ds-btn-secondary.ds-btn--small[class*="icon-"]::after, .ds-btn-secondary.ds-btn--small.ltu-button::after, .ds-btn-secondary.ds-btn--small.card-cta::after, .ltu-button::after, .story-widget[data-color=grey] .ltu-button.light::after,
+  .story-widget[data-color=transparent] .ltu-button.light::after, blockquote .ltu-button.btn-secondary-light::after, blockquote .ltu-button.btn-secondary-small::after, .btn-secondary.card-cta::after,
+  .ds-btn-secondary[class*="icon-"]::after,
+  .ds-btn-secondary.ltu-button::after,
+  .ds-btn-secondary.card-cta::after {
     filter: invert(7%) sepia(53%) saturate(0%) hue-rotate(173deg) brightness(107%) contrast(86%); }
 
 .btn-secondary-light, .btn-secondary-light-small, .ltu-button.light,
@@ -12055,17 +12078,22 @@ blockquote .ltu-button {
   .content-box.m-beige .ltu-button::after, .btn-secondary-light.card-cta::after {
     filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(132deg) brightness(113%) contrast(101%); }
 
-.btn-small, .btn-secondary-small, .btn-light-small, .btn-secondary-light-small {
+.btn-small, .btn-secondary-small,
+.ds-btn-secondary.ds-btn--small, .btn-light-small, .btn-secondary-light-small {
   padding: 4px 16px; }
-  .btn-small[class*="icon-"], .btn-secondary-small[class*="icon-"], .btn-secondary-small.ltu-button, .btn-secondary-small.card-cta, .btn-light-small[class*="icon-"], .btn-light-small.ltu-button, .btn-light-small.card-cta, .btn-secondary-light-small[class*="icon-"], .btn-secondary-light-small.ltu-button, .btn-secondary-light-small.card-cta, .btn-small.ltu-button, .btn-small.card-cta {
+  .btn-small[class*="icon-"], .btn-secondary-small[class*="icon-"], .btn-secondary-small.ltu-button, .btn-secondary-small.card-cta,
+  .ds-btn-secondary.ds-btn--small[class*="icon-"], .ds-btn-secondary.ds-btn--small.ltu-button, .ds-btn-secondary.ds-btn--small.card-cta, .btn-light-small[class*="icon-"], .btn-light-small.ltu-button, .btn-light-small.card-cta, .btn-secondary-light-small[class*="icon-"], .btn-secondary-light-small.ltu-button, .btn-secondary-light-small.card-cta, .btn-small.ltu-button, .btn-small.card-cta {
     padding-right: 28px; }
-    .btn-small[class*="icon-"]::after, .btn-secondary-small[class*="icon-"]::after, .btn-secondary-small.ltu-button::after, .btn-secondary-small.card-cta::after, .btn-light-small[class*="icon-"]::after, .btn-light-small.ltu-button::after, .btn-light-small.card-cta::after, .btn-secondary-light-small[class*="icon-"]::after, .btn-secondary-light-small.ltu-button::after, .btn-secondary-light-small.card-cta::after, .btn-small.ltu-button::after, .btn-small.card-cta::after {
+    .btn-small[class*="icon-"]::after, .btn-secondary-small[class*="icon-"]::after, .btn-secondary-small.ltu-button::after, .btn-secondary-small.card-cta::after,
+    .ds-btn-secondary.ds-btn--small[class*="icon-"]::after, .ds-btn-secondary.ds-btn--small.ltu-button::after, .ds-btn-secondary.ds-btn--small.card-cta::after, .btn-light-small[class*="icon-"]::after, .btn-light-small.ltu-button::after, .btn-light-small.card-cta::after, .btn-secondary-light-small[class*="icon-"]::after, .btn-secondary-light-small.ltu-button::after, .btn-secondary-light-small.card-cta::after, .btn-small.ltu-button::after, .btn-small.card-cta::after {
       margin: 0 5px;
       width: 16px; }
-  .btn-small.icon-before, .icon-before.btn-secondary-small, .icon-before.btn-light-small, .icon-before.btn-secondary-light-small {
+  .btn-small.icon-before, .icon-before.btn-secondary-small,
+  .icon-before.ds-btn-secondary.ds-btn--small, .icon-before.btn-light-small, .icon-before.btn-secondary-light-small {
     padding-right: 16px;
     padding-left: 28px; }
-    .btn-small.icon-before::after, .icon-before.btn-secondary-small::after, .icon-before.btn-light-small::after, .icon-before.btn-secondary-light-small::after {
+    .btn-small.icon-before::after, .icon-before.btn-secondary-small::after,
+    .icon-before.ds-btn-secondary.ds-btn--small::after, .icon-before.btn-light-small::after, .icon-before.btn-secondary-light-small::after {
       left: 0;
       right: unset; }
 
@@ -12271,21 +12299,6 @@ blockquote .ltu-button {
   right: 0.5rem;
   cursor: pointer; }
 
-/*@import "components/logo-showcase";
-
-.logo-showcase-logos {
-    margin: 0 auto 24px auto !important;
-}
-
-.logo-showcase-logo {
-    margin: 4px !important;
-
-    img {
-        float: none !important;
-        margin: 0 auto !important;
-        padding: 0 !important;
-    }
-}*/
 .card, .card-course {
   box-sizing: border-box;
   background: white;
@@ -12536,6 +12549,51 @@ a.card, a.card-course {
 .proofpoint-legacy-content p:first-child + p {
   margin-top: auto !important; }
 
+.ds-proofpoint {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0; }
+
+.ds-proofpont__icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0; }
+
+.ds-proofpoint__body > *:first-child {
+  margin-top: 1em; }
+
+.ds-proofpoint__title {
+  color: #e2231b;
+  font-size: 28px;
+  line-height: 32px; }
+
+.ds-proofpoint__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px; }
+
+.ds-proofpoint__footnote {
+  font-size: 0.8rem; }
+
+/* proof point set */
+.ds-proofpoint-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 24px;
+  margin-right: -2rem; }
+  .ds-proofpoint-set > * {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 280px;
+    margin: 1rem 2rem 0 0; }
+
 .testimonial {
   display: block;
   color: #242424;
@@ -12619,8 +12677,6 @@ a.card, a.card-course {
   background: transparent;
   color: #242424;
   overflow: auto;
-  font-family: "Roboto Slab", serif;
-  font-weight: 300;
   margin: 0 0 24px 0;
   padding: 0; }
   .testimonial-copy blockquote :first-child:before {
@@ -12629,10 +12685,154 @@ a.card, a.card-course {
     content: close-quote; }
   .testimonial-copy blockquote p {
     margin: 0 0 24px 0 !important; }
+  .testimonial-copy blockquote footer {
+    font-size: 0.8rem; }
+    .testimonial-copy blockquote footer:before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: #999;
+      margin: 1rem 0 0.8rem 0; }
 
 .testimonial-copy p.small {
   font-size: 80% !important;
   line-height: 1.5 !important; }
+
+.ds-testimonial {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1rem; }
+
+.ds-testimonial__image {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 0 0;
+  position: relative; }
+  .ds-testimonial__image img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.ds-testimonial__copy {
+  padding: 8px 0px 20px 0px; }
+  .ds-testimonial__copy blockquote {
+    background: transparent;
+    color: #242424;
+    overflow: auto;
+    margin: 1em 0 0 0;
+    padding-left: 0;
+    border-left: none;
+    quotes: "‘" "’" "“" "”"; }
+    .ds-testimonial__copy blockquote > p {
+      font-size: 1rem; }
+    .ds-testimonial__copy blockquote > p:first-child::before {
+      content: open-quote; }
+    .ds-testimonial__copy blockquote > p:last-of-type::after {
+      content: close-quote; }
+    .ds-testimonial__copy blockquote footer {
+      font-size: 0.8rem;
+      line-height: 1.5; }
+      .ds-testimonial__copy blockquote footer:before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #999;
+        margin: 1rem 0 0.8rem 0; }
+    .ds-testimonial__copy blockquote a {
+      color: #e2231b; }
+  .ds-testimonial__copy .ds-testimonial__cta {
+    margin-top: 20px; }
+
+.ds-testimonial-set {
+  display: flex;
+  justify-content: center;
+  margin-right: -32px;
+  /* flex fallback */
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto !important;
+  max-width: 1600px; }
+  .ds-testimonial-set > * {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 260px;
+    margin-right: 32px; }
+  @media (max-width: 1280px) {
+    .ds-testimonial-set {
+      flex-wrap: wrap; } }
+  @supports (display: grid) {
+    .ds-testimonial-set {
+      display: grid;
+      justify-items: center;
+      grid-column-gap: 32px;
+      margin-right: 0;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+      .ds-testimonial-set > * {
+        margin: 0 0 16px 0; } }
+  .ds-testimonial-set .ds-testimonial {
+    max-width: 1024px; }
+  .ds-testimonial-set .ds-testimonial__image {
+    margin: 0 auto 0 auto; }
+    .ds-testimonial-set .ds-testimonial__image img {
+      float: none !important;
+      padding: 0 !important; }
+
+.card-set,
+.ds-testimonial-set {
+  /* if only one exists in set */
+  /* if only two exist */ }
+  @media (min-width: 600px) {
+    .card-set .ds-testimonial:nth-last-child(1):first-child .ds-testimonial__image,
+    .card-set .ds-testimonial:nth-last-child(1):first-child ~ .ds-testimonial .ds-testimonial__image,
+    .ds-testimonial-set .ds-testimonial:nth-last-child(1):first-child .ds-testimonial__image,
+    .ds-testimonial-set .ds-testimonial:nth-last-child(1):first-child ~ .ds-testimonial .ds-testimonial__image {
+      width: 280px;
+      height: 280px;
+      margin: 0 0 20px 20px;
+      float: right; }
+    .card-set .ds-testimonial:nth-last-child(1):first-child .ds-testimonial__copy,
+    .card-set .ds-testimonial:nth-last-child(1):first-child ~ .ds-testimonial .ds-testimonial__copy,
+    .ds-testimonial-set .ds-testimonial:nth-last-child(1):first-child .ds-testimonial__copy,
+    .ds-testimonial-set .ds-testimonial:nth-last-child(1):first-child ~ .ds-testimonial .ds-testimonial__copy {
+      padding-top: 20px; }
+      .card-set .ds-testimonial:nth-last-child(1):first-child .ds-testimonial__copy blockquote > p,
+      .card-set .ds-testimonial:nth-last-child(1):first-child ~ .ds-testimonial .ds-testimonial__copy blockquote > p,
+      .ds-testimonial-set .ds-testimonial:nth-last-child(1):first-child .ds-testimonial__copy blockquote > p,
+      .ds-testimonial-set .ds-testimonial:nth-last-child(1):first-child ~ .ds-testimonial .ds-testimonial__copy blockquote > p {
+        font-size: 1rem; } }
+  @media (min-width: 1024px) {
+    .card-set .ds-testimonial:nth-last-child(1):first-child .ds-testimonial__image,
+    .card-set .ds-testimonial:nth-last-child(1):first-child ~ .ds-testimonial .ds-testimonial__image,
+    .ds-testimonial-set .ds-testimonial:nth-last-child(1):first-child .ds-testimonial__image,
+    .ds-testimonial-set .ds-testimonial:nth-last-child(1):first-child ~ .ds-testimonial .ds-testimonial__image {
+      width: 360px;
+      height: 360px; } }
+  .card-set .ds-testimonial:nth-last-child(2):first-child,
+  .card-set .ds-testimonial:nth-last-child(2):first-child ~ .ds-testimonial,
+  .ds-testimonial-set .ds-testimonial:nth-last-child(2):first-child,
+  .ds-testimonial-set .ds-testimonial:nth-last-child(2):first-child ~ .ds-testimonial {
+    grid-column-gap: 4rem; }
+    @media (min-width: 1200px) {
+      .card-set .ds-testimonial:nth-last-child(2):first-child .ds-testimonial__image,
+      .card-set .ds-testimonial:nth-last-child(2):first-child ~ .ds-testimonial .ds-testimonial__image,
+      .ds-testimonial-set .ds-testimonial:nth-last-child(2):first-child .ds-testimonial__image,
+      .ds-testimonial-set .ds-testimonial:nth-last-child(2):first-child ~ .ds-testimonial .ds-testimonial__image {
+        width: 280px;
+        height: 280px;
+        margin: 0 0 20px 20px;
+        float: right; }
+      .card-set .ds-testimonial:nth-last-child(2):first-child .ds-testimonial__copy,
+      .card-set .ds-testimonial:nth-last-child(2):first-child ~ .ds-testimonial .ds-testimonial__copy,
+      .ds-testimonial-set .ds-testimonial:nth-last-child(2):first-child .ds-testimonial__copy,
+      .ds-testimonial-set .ds-testimonial:nth-last-child(2):first-child ~ .ds-testimonial .ds-testimonial__copy {
+        border: 0px;
+        padding-top: 20px; } }
 
 .video-wrapper {
   position: absolute;

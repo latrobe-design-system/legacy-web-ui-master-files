@@ -148,3 +148,8 @@ a.card {
 .card-set-left {
     @include columns-grid($alignment: left, $wrap: auto-fill);
 }
+
+.card-img {
+    float: none !important;
+    padding: 0 !important;
+}

@@ -82,7 +82,8 @@ button.btn-link {
     }
 }
 
-.btn-secondary {
+.btn-secondary,
+.ds-btn-secondary {
     @extend .btn;
     color: $color-2;
     background-color: transparent;
@@ -139,7 +140,8 @@ button.btn-link {
     }
 }
 
-.btn-secondary-small {
+.btn-secondary-small,
+.ds-btn-secondary.ds-btn--small {
     @extend .btn-small;
     @extend .btn-secondary;
 }
@@ -245,4 +247,42 @@ button.btn-link {
 .btn-round-light-small {
     @extend .btn-round-light;
     @extend .btn-round-small;
+}
+
+/* legacy classes */
+.ltu-button,
+.content-box.m-beige .ltu-button {
+    @extend .btn-secondary;
+    @extend [class*="icon-"];
+    padding-right: 44px;
+}
+.ltu-button::after {
+    @extend .icon-chevron-right;
+}
+.ltu-button.light,
+.ltu-button.chat,
+.m-yellow .ltu-button,
+.m-brown .ltu-button,
+.m-black .ltu-button,
+.content-box .ltu-button,
+blockquote .ltu-button {
+    @extend .btn-secondary-light;
+    @extend [class*="icon-"];
+    padding-right: 44px;
+}
+.ltu-button.chat {
+    @extend .icon-message-square;
+}
+.ltu-button[href^="mailto:"] {
+    @extend .icon-mail;
+}
+.story-widget[data-color=grey] .ltu-button.light,
+.story-widget[data-color=transparent] .ltu-button.light {
+    @extend .btn-secondary;
+}
+.story-widget.wide[data-color=transparent] .ltu-button.light {
+    @media (min-width: 768px) {
+        color: white;
+        border: 2px solid white;
+    }
 }

@@ -32,7 +32,6 @@
 
 // UTILITY
 // ==================================================================================================================
-
 @import "ds/utility";
 @import "ds/icons";
 
@@ -41,189 +40,40 @@
 // ==================================================================================================================
 @import "ds/buttons";
 
-/* legacy classes */
-.ltu-button,
-.content-box.m-beige .ltu-button {
-    @extend .btn-secondary;
-    @extend [class*="icon-"];
-    padding-right: 44px;
-}
-.ltu-button::after {
-    @extend .icon-chevron-right;
-}
-.ltu-button.light,
-.ltu-button.chat,
-.m-yellow .ltu-button,
-.m-brown .ltu-button,
-.m-black .ltu-button,
-.content-box .ltu-button,
-blockquote .ltu-button {
-    @extend .btn-secondary-light;
-    @extend [class*="icon-"];
-    padding-right: 44px;
-}
-.ltu-button.chat {
-    @extend .icon-message-square;
-}
-.ltu-button[href^="mailto:"] {
-    @extend .icon-mail;
-}
-.story-widget[data-color=grey] .ltu-button.light,
-.story-widget[data-color=transparent] .ltu-button.light {
-    @extend .btn-secondary;
-}
-.story-widget.wide[data-color=transparent] .ltu-button.light {
-    @media (min-width: 768px) {
-        color: white;
-        border: 2px solid white;
-    }
-}
-
 // ALERTBOX
 // =================================================================================================================
 @import "ds/alert";
-
-// LOGO SHOWCASE
-// ==================================================================================================================
-/*@import "components/logo-showcase";
-
-.logo-showcase-logos {
-    margin: 0 auto 24px auto !important;
-}
-
-.logo-showcase-logo {
-    margin: 4px !important;
-
-    img {
-        float: none !important;
-        margin: 0 auto !important;
-        padding: 0 !important;
-    }
-}*/
-
 
 // CARDS
 // =================================================================================================================
 @import "ds/cards";
 
-.card-img {
-    float: none !important;
-    padding: 0 !important;
-}
-
-
 // PROOFPOINTS
 // ==================================================================================================================
 @import "ds/proofpoint";
-
-.proofpont-icon {
-    float: none !important;
-    padding: 0 0 16px 0 !important;
-}
-
-.proofpoint-title {
-    margin: 0 0 16px 0 !important;
-}
-
-.proofpoint-number {
-    margin: 0 0 16px 0 !important;
-}
-
-.proofpoint-footnote,
-.proofpoint-legacy-content p:first-child + p {
-    margin-top: auto !important;
-}
-
 
 // TESTIMONIALS
 // ==================================================================================================================
 
 @import "ds/testimonial";
 
-.testimonial-image {
-    img {
-        float: none !important;
-        padding: 0 !important;
-    }
-}
-
-.testimonial-copy {
-    blockquote {
-        background: transparent;
-        color: $color-2;
-        overflow: auto;
-
-        @include font-roboto-slab-light;
-        margin: 0 0 24px 0;
-        padding: 0;
-        :first-child:before {
-            content: open-quote;
-        }
-        :last-child:after {
-            content: close-quote;
-        }
-
-        p {
-            margin: 0 0 24px 0 !important;
-        }
-    }
-
-    p.small {
-        font-size: 80% !important;
-        line-height: 1.5 !important;
-    }
-}
-
 // RESPONSIVE VIDEO
 // ==================================================================================================================
-
 @import "ds/video";
-
 
 // BLOCKS
 // ==================================================================================================================
 @import "ds/blocks";
 
-.standard_page {
-    .ds-block {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-}
-
 // BANNERS
 // ==================================================================================================================
 @import "ds/banner";
-
-.banner-box-ctas {
-    margin-bottom: 0 !important;
-}
-
 
 // MOSAIC
 // ==================================================================================================================
 @import "ds/mosaic";
 
-.mosaic-tile {
-    margin: 0 !important;
-    .mosaic-tile-image {
-        float: none !important;
-        padding: 0 !important;
-    }
-    .mosaic-tile-description {
-        margin-bottom: 24px !important;
-    }
-}
-
-
 // STEPS-LIST
 // ==================================================================================================================
 @import "ds/step-list";
-.step-list {
-    box-sizing: border-box;
-}
-.step-list-item {
-    margin: 0 !important;
-}
+
