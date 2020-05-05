@@ -82,8 +82,7 @@ button.btn-link {
     }
 }
 
-.btn-secondary,
-.ds-btn-secondary {
+.btn-secondary {
     @extend .btn;
     color: $color-2;
     background-color: transparent;
@@ -140,8 +139,7 @@ button.btn-link {
     }
 }
 
-.btn-secondary-small,
-.ds-btn-secondary.ds-btn--small {
+.btn-secondary-small {
     @extend .btn-small;
     @extend .btn-secondary;
 }
