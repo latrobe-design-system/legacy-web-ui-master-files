@@ -1906,6 +1906,9 @@ li.hide-nav {
 .footer-node .weibo a {
   background-position: 0 -560px; }
 
+.footer-node .tiktok a {
+  background-position: 0 -640px; }
+
 @media (min-width: 768px) {
   #fat-footer {
     display: flex;
